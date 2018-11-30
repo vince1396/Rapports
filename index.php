@@ -10,19 +10,26 @@
   require_once 'dompdf/src/Autoloader.php';
   Dompdf\Autoloader::register();
 
-  if (!isset($_GET['p']) || $_GET['p'] == "")
+  if(isset($_SESSION['id']))
   {
-    $page = 'login';
+      $page = "rapportType";
   }
   else
   {
-    if (!file_exists("controller/" . $_GET['p'] . ".php"))
+    if (!isset($_GET['p']) || $_GET['p'] == "")
     {
-      $page = $_GET['p'] = '404';
+      $page = "login";
     }
     else
     {
-      $page = $_GET['p'];
+      if (!file_exists("controller/" . $_GET['p'] . ".php"))
+      {
+        $page = "404";
+      }
+      else
+      {
+        $page = $_GET['p'];
+      }
     }
   }
 
