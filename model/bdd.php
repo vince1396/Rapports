@@ -1,8 +1,8 @@
 <?php
   /* Connexion à une base MySQL avec l'invocation de pilote */
-  $dbname = 'mysql:dbname=rapports;host=127.0.0.1;charset=UTF-8';
+  $dbname = 'mysql:dbname=rapports;host=127.0.0.1';
   $user = 'root';
-  $mdp = '6283';
+  $mdp = 'b6311963a';
 
   try
   {
@@ -12,4 +12,3 @@
   {
       echo 'Connexion échouée : ' . $e->getMessage();
   }
-?>

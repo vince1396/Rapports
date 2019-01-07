@@ -34,10 +34,16 @@
           </div>
 
           <div class="row">
-            <button type="submit" class="btn btn-primary col-lg-4 offset-5">Se connecter</button>
+            <button type="submit" name="submit" class="btn btn-primary col-lg-4 offset-5">Se connecter</button>
           </div>
 
         </form>
+          <?php
+            if(isset($log))
+            {
+                echo $log;
+            }
+          ?>
       </div>
 
     </div>

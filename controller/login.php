@@ -9,11 +9,11 @@
   if(isset($_POST['submit']))
   {
     $email = $_POST['email'];
-    $mdp = $_POST['mdp'];
+    $mdp = sha1($_POST['mdp']);
 
     if(empty($email) OR empty($mdp))
     {
-      $log = "Veuillez remplir tous les champs du formulaire."
+      $log = "Veuillez remplir tous les champs du formulaire.";
     }
     else
     {
@@ -21,7 +21,7 @@
 
       if($rep = $req->fetch())
       {
-        $_SESSION['id'] = $rep['id_user'];
+        $_SESSION['id'] = $rep['id_tech'];
         $_SESSION['nom'] = $rep['nom'];
         $_SESSION['prenom'] = $rep['prenom'];
         $_SESSION['email'] = $rep['email'];
