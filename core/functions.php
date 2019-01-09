@@ -65,6 +65,8 @@ function makeTabSha1($post)
 {
     foreach ($post as $k => $v)
     {
-        $post[$k] = sha1($post[$k]);
+        $post[$k] = sha1($v);
     }
+
+    return $post;
 }

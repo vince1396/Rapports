@@ -5,12 +5,8 @@
     {
         if(isset($_POST['submit']))
         {
-
-            //TODO Probleme isEmpty
             $log = "";
             $post = getPost();
-            $post = crypt($post);
-            print_r($post);
 
             if(isEmpty($post))
             {
@@ -18,7 +14,8 @@
             }
             else
             {
-
+                $post = makeTabSha1($post);
+                print_r($post);
                 $req = getInfosTech();
                 $rep = $req->fetch();
 
@@ -28,13 +25,13 @@
                 }
                 else
                 {
-                    if($newmdp !== $confirm)
+                    if($post['newmdp'] !== $post['confirm'])
                     {
                         $log = "Les mots de passe ne correspondent pas";
                     }
                     else
                     {
-                        updateMdp($newmdp);
+                        updateMdp($post['newmdp']);
                         $log = "Le mot de passe a bien été modifié";
                     }
                 }
