@@ -20,7 +20,7 @@
             <a class="nav-link badge-dark" href="profil">Mon profil</a>
           </li>
         </ul>
-        <a class="nav-link badge-danger" href="#">Déconnexion</a>
+        <a class="nav-link badge-danger" href="logout">Déconnexion</a>
       </div>
     </nav> <?php
   } ?>

@@ -14,7 +14,7 @@
         <label for="confirm">Confirmez le mot de passe : </label>
         <input type="password" name="confirm">
         <br />
-        <input type="submit"   name="submit">
+        <input type="submit" name="submit" value="submit">
     </form>
 
     <p><?php echo $log; ?></p>

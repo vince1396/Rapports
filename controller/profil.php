@@ -1,24 +1,28 @@
 <?php
   require 'model/profil.php';
 
-    if(isset($_SESSION['id']))
+    if(isset($_SESSION['id_tech']))
     {
         if(isset($_POST['submit']))
         {
-            if(empty($_POST['oldmdp']) OR empty($_POST['newmdp']) OR empty($_POST['confirm']))
+
+            //TODO Probleme isEmpty
+            $log = "";
+            $post = getPost();
+            $post = crypt($post);
+            print_r($post);
+
+            if(isEmpty($post))
             {
                 $log = "Veuillez remplir tous les champs du formulaire";
             }
             else
             {
-                $oldmdp = $_POST['oldmdp'];
-                $newmdp = $_POST['newmdp'];
-                $confirm = $_POST['confirm'];
 
                 $req = getInfosTech();
                 $rep = $req->fetch();
 
-                if($oldmdp !== $rep['mdp'])
+                if($post['oldmdp'] !== $rep['mdp'])
                 {
                     $log = "L'ancien mot de passe est incorrect";
                 }

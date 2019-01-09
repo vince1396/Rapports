@@ -27,14 +27,14 @@
           <div class="form-group row perso">
             <div class="checkbox col-lg-6 offset-5">
               <label>
-                <input type="checkbox" value="">
+                <input type="checkbox" name="remember" value="remember">
                 Se souvenir de moi
               </label>
             </div>
           </div>
 
           <div class="row">
-            <button type="submit" name="submit" class="btn btn-primary col-lg-4 offset-5">Se connecter</button>
+            <button type="submit" name="submit" value="submit" class="btn btn-primary col-lg-4 offset-5">Se connecter</button>
           </div>
 
         </form>
