@@ -7,5 +7,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="gestion" />
+    <orderEntry type="library" name="@types/jquery" level="application" />
   </component>
 </module>

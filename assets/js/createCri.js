@@ -1,0 +1,5 @@
+$(function () {
+    $('.dateInter').change(function () {
+
+    });
+});

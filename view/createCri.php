@@ -1,6 +1,7 @@
 <body>
     <p>createCri</p>
     <br />
+    <span id="testjs"></span>
     <br />
     <br />
 
@@ -33,6 +34,8 @@
         <br />
 
         <label for="ville">Ville : </label>
+        <input type="text" name="ville" id="ville"><!-- $_POST['ville'] = *saisie* -->
+        <br />        <label for="ville">Ville : </label>
         <input type="text" name="ville" id="ville"><!-- $_POST['ville'] = *saisie* -->
         <br />
 
@@ -73,8 +76,10 @@
         <label for="probleme">Problèmes rencontrés : </label>
         <textarea name="probleme" id="probleme"></textarea><!-- $_POST['probleme'] = *saisie* -->
         <br />
+        <br />
 
         <!-- ========================================================================== -->
+        <!-- =============================== Actions ================================== -->
         <?php
             foreach ($actions as $k => $v)
             {
