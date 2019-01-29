@@ -5,5 +5,7 @@
     <mapping directory="$PROJECT_DIR$/dompdf" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/dompdf/lib/php-font-lib" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/dompdf/lib/php-svg-lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/php-font-lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/php-svg-lib" vcs="Git" />
   </component>
 </project>

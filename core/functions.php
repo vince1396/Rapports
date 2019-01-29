@@ -4,11 +4,22 @@
 function getPost()
 {
     $arrayToReturn = array();
+
     if(isset($_POST['submit']))
     {
         foreach($_POST as $key => $value)
         {
-            $arrayToReturn[$key] = htmlentities($value);
+            if(is_array($_POST[$key]))
+            {
+                foreach($_POST[$key] as $k => $v)
+                {
+                    $arrayToReturn[$key][$k] = htmlentities($value);
+                }
+            }
+            else
+            {
+                $arrayToReturn[$key] = htmlentities($value);
+            }
         }
     }
     // Possibly add elements to the array
@@ -19,7 +30,6 @@ function getPost()
 //Check if a form has an empty field
 function isEmpty($post)
 {
-    //No field can be null even submit
     $empty = false;
 
     foreach ($post as $k => $v)

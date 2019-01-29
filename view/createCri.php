@@ -1,7 +1,6 @@
 <body>
     <p>createCri</p>
     <br />
-    <span id="testjs"></span>
     <br />
     <br />
 
@@ -35,20 +34,20 @@
 
         <label for="ville">Ville : </label>
         <input type="text" name="ville" id="ville"><!-- $_POST['ville'] = *saisie* -->
-        <br />        <label for="ville">Ville : </label>
-        <input type="text" name="ville" id="ville"><!-- $_POST['ville'] = *saisie* -->
         <br />
 
         <!-- =========================================================================== -->
         <label for="dateInter">Date(s) d'intervention : </label>
-        <input type="date" name="dateInter" id="dateInter"><!-- Plusieurs dates -->
+        <input type="date" name="dateInter[]" id="dateInter"><!-- Plusieurs dates -->
+
+        <div id="multiDate"></div>
         <!-- =========================================================================== -->
 
         <br />
 
         <!-- =========================================================================== -->
         <label for="tech">Intervenants Decimale : </label> <!-- Select -->
-        <select name="tech" id="tech"><!-- $_POST['tech'] = *selection* -->
+        <select name="tech[]" id="tech"><!-- $_POST['tech'] = *selection* -->
             <?php
                 foreach ($techs as $k => $v)
                 {
@@ -59,6 +58,7 @@
 
         <br />
 
+        <!-- =========================================================================== -->
         <label for="reseau">Réseau concerné : </label> <!-- Select -->
         <select name="reseau" id="reseau"><!-- $_POST['reseau'] = *selection* -->
             <?php
@@ -67,14 +67,17 @@
                     echo "<option value=".$v['id_reseau'].">".$v['nom_reseau']."</option>";
                 } ?>
         </select>
+
         <br />
 
         <label for="detailPresta">Détails prestation : </label>
         <textarea name="detailPresta" id="detailPresta"></textarea><!-- $_POST['detailPresta'] = *saisie* -->
+
         <br />
 
         <label for="probleme">Problèmes rencontrés : </label>
         <textarea name="probleme" id="probleme"></textarea><!-- $_POST['probleme'] = *saisie* -->
+
         <br />
         <br />
 
@@ -89,18 +92,21 @@
         <!-- ========================================================================== -->
 
         <br />
-<!-- =================================================================================================================== -->
-        <br /><h2>Pièces à changer</h2><br />
+
+        <!-- ========================================================================== -->
+        <h2>Pièces à changer</h2><br />
 
         <p>Pièce(s) à changer ?</p><br />
         <input type="radio" name="pieceAChanger" id="ouiPiece" value="ouiPiece">
-        <label for="ouiPiece">Oui</label>
-                                                              <!-- $_POST['pieceAChanger'] = ouiPiece ou nonPiece -->
+        <label for="ouiPiece">Oui</label><!-- $_POST['pieceAChanger'] = ouiPiece ou nonPiece -->
+
         <input type="radio" name="pieceAChanger" id="nonPiece" value="nonPiece">
         <label for="nonPiece">Non</label>
 
         <br />
         <br />
+        <!-- ========================================================================== -->
+        <!-- ====== To display only if pieceAChanger is true ====== -->
 
         <label for="refPiece">Référence : </label>
         <input type="text" name="refPiece" id="refPiece"><!-- $_POST['refPiece'] = *saisie* -->
@@ -113,31 +119,34 @@
         <label for="qtePiece">Quantité : </label>
         <input type="number" name="qtePiece" id="qtePiece"><!-- $_POST['qtePiece'] = *saisie* -->
         <br />
-
+        <!-- ========================================================================== -->
         <br />
         <br />
-<!-- =================================================================================================================== -->
+        <!-- ========================================================================== -->
         <h2>Conclusion</h2><br />
 
-        <p>A l'issue de notre intervention le réseau est : </p><br />
+        <p>A l'issue de notre intervention le réseau est : </p>
         <?php
             foreach ($etat as $k => $v)
             {
-                echo "<input type='radio' name='etatReseau' id=".$v['id_etat']." value=".$v['id_etat']."><label for=".$v['id_etat'].">".$v['desc_etat']."</label><br />";
+                echo "<input type='radio' name='etatReseau' id=".$v['id_etat']." value=".$v['id_etat'].">
+                      <label for=".$v['id_etat'].">".$v['desc_etat']."</label><br />";
             }
         ?>
-
 
         <br />
 
         <p>Nécessite une nouvelle intervention : </p>
+
         <input type="radio" name="needInter" id="ouiInter" value="ouiInter">
         <label for="ouiInter">Oui</label>
+
         <input type="radio" name="needInter" id="nonInter" value="nonInter">
         <label for="nonInter">Non</label>
+        <!-- ========================================================================== -->
 
         <br />
-
+        <!-- ========================================================================== -->
         <label for="commentaire">Autres commentaires éventuels : </label>
         <textarea name="commentaire" id="commentaire"></textarea>
         <br />

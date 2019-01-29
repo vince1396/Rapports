@@ -2,7 +2,7 @@
   /* Connexion à une base MySQL avec l'invocation de pilote */
   $dbname = 'mysql:dbname=rapports;host=127.0.0.1';
   $user = 'root';
-  $mdp = 'b6311963a';
+  $mdp = '6283';
 
   try
   {
