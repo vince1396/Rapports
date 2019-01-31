@@ -1,5 +1,6 @@
 <body>
     <p>createCri</p>
+
     <br />
     <br />
     <br />
@@ -38,9 +39,15 @@
 
         <!-- =========================================================================== -->
         <label for="dateInter">Date(s) d'intervention : </label>
-        <input type="date" name="dateInter[]" id="dateInter"><!-- Plusieurs dates -->
-
-        <div id="multiDate"></div>
+        <div id="divDateInter">
+            <span id="dateInterFields">
+                <input type="date" name="dateInter[]" class="dateInter" id="dateInter"><!-- Plusieurs dates -->
+            </span>
+            <div id="buttonDateInter">
+                <button id="dateInterAdd">Add</button>
+                <button id="dateInterRemove">Remove</button>
+            </div>
+        </div>
         <!-- =========================================================================== -->
 
         <br />
@@ -48,6 +55,7 @@
         <!-- =========================================================================== -->
         <label for="tech">Intervenants Decimale : </label> <!-- Select -->
         <select name="tech[]" id="tech"><!-- $_POST['tech'] = *selection* -->
+            <option value=" ">Sélectionnez un ou plusieurs intervenants</option>
             <?php
                 foreach ($techs as $k => $v)
                 {
