@@ -13,11 +13,6 @@ $(function () {
     dateInterRemove.hide();
     
     // =================================================================================================================
-    // ========== Intervenants (global) ===========
-    
-    let techSelect = $("#tech");
-    
-    // =================================================================================================================
     // ========== Dates d'interventions ==========
     
     //Clone field dateInter and add it to dateInterFields <div>
@@ -33,7 +28,7 @@ $(function () {
     });
     
     //Remove the last dateInter field
-    dateInterRemove.on("click", function(e) {
+    dateInterRemove.on("click", function (e) {
     
         e.preventDefault();
         if(dateInterCounter > 0)
@@ -41,15 +36,16 @@ $(function () {
             lastDateInter = $(".dateInter:last");
             lastDateInter.remove();
             dateInterCounter--;
-            
         }
-        if(dateInterCounter == 0)
+        
+        if(dateInterCounter === 0)
             dateInterRemove.hide("fade");
     });
     
     // =================================================================================================================
-    // ========== Intervenants ===========
+    // TODO : JQuery Intervenants
     
-    
+    // =================================================================================================================
+    // ========== JQuery UI ==========
     
 });

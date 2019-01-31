@@ -13,7 +13,7 @@ function getPost()
             {
                 foreach($_POST[$key] as $k => $v)
                 {
-                    $arrayToReturn[$key][$k] = htmlentities($value);
+                    $arrayToReturn[$key][$k] = htmlentities($v);
                 }
             }
             else

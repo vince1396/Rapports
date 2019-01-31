@@ -1,23 +1,28 @@
 <?php
 require 'model/createCri.php';
 
-    $techs = getTech()->fetchAll();
-    $reseau = getReseau()->fetchAll();
-    $actions = getActions()->fetchAll();
-    $etat = getEtatReseau()->fetchAll();
-
-    if(isset($_POST['submit']))
+    if(isset($_SESSION['id_tech']))
     {
-        $post = getPost();
+        $techs = getTech()->fetchAll();
+        $reseau = getReseau()->fetchAll();
+        $actions = getActions()->fetchAll();
+        $etat = getEtatReseau()->fetchAll();
 
-        if(isEmpty($post))
+        if (isset($_POST['submit']))
         {
-            $log = "Veuillez remplir tous les champs";
+            $post = getPost();
+            print_r($post);
+
+            if (isEmpty($post)) {
+                $log = "Veuillez remplir tous les champs";
+            } else {
+                //TODO : Traitement
+            }
         }
-        else
-        {
-            //TODO : Traitement
-        }
+    }
+    else
+    {
+        header("Location: login");
     }
 
 require 'view/createCri.php';

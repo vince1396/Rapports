@@ -53,17 +53,19 @@
         <br />
 
         <!-- =========================================================================== -->
-        <label for="tech">Intervenants Decimale : </label> <!-- Select -->
-        <select name="tech[]" id="tech"><!-- $_POST['tech'] = *selection* -->
-            <option value=" ">Sélectionnez un ou plusieurs intervenants</option>
+        <label for="tech">Sélectionnez un ou plusieurs intervenants (Ctrl + clic gauche) </label>
+        <br /> <!-- Select -->
+        <select multiple name="tech[]" id="tech"><!-- $_POST['tech'] = *selection* -->
             <?php
-                foreach ($techs as $k => $v)
-                {
-                    echo "<option value=".$v['id_tech'].">".$v['prenom']." ".$v['nom']."</option>";
-                } ?>
+            foreach ($techs as $k => $v)
+            {
+                echo "<option value=".$v['id_tech'].">".$v['prenom']." ".$v['nom']."</option>";
+            } ?>
         </select>
         <!-- =========================================================================== -->
 
+        <br />
+        <br />
         <br />
 
         <!-- =========================================================================== -->
