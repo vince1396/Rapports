@@ -5,12 +5,12 @@
     <br />
     <br />
 
-    <form action="#" method="POST">
+    <form action="#" method="POST" id="formCri">
 
         <h2>Détails de l'intervention</h2><br />
 
         <label for="ref">Ma référence : </label>
-        <input type="text" name="ref" id="ref"> <!-- $_POST['ref'] = *saisie* -->
+        <input type="text" name="ref" id="ref" class="required"> <!-- $_POST['ref'] = *saisie* -->
         <br />
 
         <label for="date_rapport">Date : </label>
@@ -53,9 +53,9 @@
         <br />
 
         <!-- =========================================================================== -->
-        <label for="tech">Sélectionnez un ou plusieurs intervenants (Ctrl + clic gauche) </label>
+        <label for="tech"> Sélectionnez un ou plusieurs intervenants </label>
         <br /> <!-- Select -->
-        <select multiple name="tech[]" id="tech"><!-- $_POST['tech'] = *selection* -->
+        <select multiple name="tech[]" id="tech" class="chosen-select"><!-- $_POST['tech'] = *selection* -->
             <?php
             foreach ($techs as $k => $v)
             {
@@ -93,10 +93,11 @@
 
         <!-- ========================================================================== -->
         <!-- =============================== Actions ================================== -->
+        <p> Actions réalisées </p>
         <?php
             foreach ($actions as $k => $v)
             {
-                echo "<input type='checkbox' name=".$v['libelle']." id=".$v['libelle']." /><label for=".$v['libelle'].">".$v['libelle']." ".$v['desc_action']."</label><br />";
+                echo "<input class='ibox' type='checkbox' name=".$v['libelle']." id=".$v['libelle']." /> <label for=".$v['libelle'].">".$v['libelle']." ".$v['desc_action']."</label><br />";
             }
         ?>
         <!-- ========================================================================== -->
@@ -110,7 +111,7 @@
         <input type="radio" name="pieceAChanger" id="ouiPiece" value="ouiPiece">
         <label for="ouiPiece">Oui</label><!-- $_POST['pieceAChanger'] = ouiPiece ou nonPiece -->
 
-        <input type="radio" name="pieceAChanger" id="nonPiece" value="nonPiece">
+        <input type="radio" name="pieceAChanger" id="nonPiece" value="nonPiece" checked>
         <label for="nonPiece">Non</label>
 
         <br />
@@ -129,6 +130,7 @@
         <label for="qtePiece">Quantité : </label>
         <input type="number" name="qtePiece" id="qtePiece"><!-- $_POST['qtePiece'] = *saisie* -->
         <br />
+        
         <!-- ========================================================================== -->
         <br />
         <br />
@@ -139,7 +141,7 @@
         <?php
             foreach ($etat as $k => $v)
             {
-                echo "<input type='radio' name='etatReseau' id=".$v['id_etat']." value=".$v['id_etat'].">
+                echo "<input checked type='radio' name='etatReseau' id=".$v['id_etat']." value=".$v['id_etat'].">
                       <label for=".$v['id_etat'].">".$v['desc_etat']."</label><br />";
             }
         ?>
@@ -151,7 +153,7 @@
         <input type="radio" name="needInter" id="ouiInter" value="ouiInter">
         <label for="ouiInter">Oui</label>
 
-        <input type="radio" name="needInter" id="nonInter" value="nonInter">
+        <input type="radio" name="needInter" id="nonInter" value="nonInter" checked>
         <label for="nonInter">Non</label>
         <!-- ========================================================================== -->
 

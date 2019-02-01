@@ -22,8 +22,6 @@
     print_r($_SESSION); echo "<br />";
     echo "cookie : ";
     print_r($_COOKIE); echo "<br />";
-    echo "persoPost : ";
-    print_r($post); echo "<br />";
     // ===================================================================
 
     if (!isset($_GET['p']) || $_GET['p'] == "") //Si l'utilisateur vient d'arriver sur le site

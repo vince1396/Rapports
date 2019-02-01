@@ -48,4 +48,20 @@ $(function () {
     // =================================================================================================================
     // ========== JQuery UI ==========
     
+    $("button").button();
+    $("#submit").button();
+    
+    // =================================================================================================================
+    // ========== Plugins ==========
+    
+    //Chosen
+    $(".chosen-select").chosen({rtl: true});
+    
+    //iCheck
+    $("input").iCheck({
+        checkboxClass: 'icheckbox_square-blue',
+        radioClass: 'iradio_square-blue',
+        increaseArea: '20%' // optional
+    });
+    
 });
