@@ -167,8 +167,6 @@
                             } ?>
                     </div>
                 </div>
-                
-                
                 <!-- =============================================================================================== -->
                 <!-- =================================== Titre Pièce à changer ===================================== -->
                 <div class="row pieceTitle">
@@ -179,7 +177,7 @@
                 <!-- =============================================================================================== -->
                 <!-- ================================== Switch Pièce à changer ===================================== -->
                 <div class="row">
-                    <div class="col s12 l6">
+                    <div class="col s12 l6 offset-l2">
                         <div class="switch">
                             <label for="pieceAChanger" class="labelCri">
                                 Non
@@ -192,12 +190,15 @@
                 </div>
                 <!-- =============================================================================================== -->
                 <!-- ============================= Bloc to display if pieceAChanger ================================ -->
-                <div class="row">
+                <!-- Todo : Pièces multiples -->
+                
+                <div class="row" id="rowDisplayPiece">
                     <div class="col s12">
                         <!-- ======================================================================================= -->
                         <!-- =================================== Ref Piece ========================================= -->
                         <div class="row">
                             <div class="input-field col s12 l6">
+                                <i class="material-icons prefix">edit</i>
                                 <input class="validate" type="text" name="refPiece" id="refPiece">
                                 <label for="refPiece" class="labelCri">Référence : </label>
                             </div>
@@ -206,6 +207,7 @@
                         <!-- ================================= Détails Pièce ======================================= -->
                         <div class="row">
                             <div class="input-field col s12 l6">
+                                <i class="material-icons prefix">edit</i>
                                 <input class="validate" type="text" name="detailPiece" id="detailPiece">
                                 <label for="detailPiece" class="labelCri">Détails de l'article : </label>
                             </div>
@@ -214,6 +216,7 @@
                         <!-- ================================= Quantité Pièce ====================================== -->
                         <div class="row">
                             <div class="input-field col s12 l6">
+                                <i class="material-icons prefix">edit</i>
                                 <input class="validate" type="number" name="qtePiece" id="qtePiece" min="1">
                                 <label for="qtePiece" class="labelCri">Quantité : </label>
                             </div>
@@ -221,17 +224,18 @@
                         <!-- ======================================================================================= -->
                     </div>
                 </div>
+                <br />
                 <!-- =============================================================================================== -->
-                <!-- ========================================= Titre Pièce ========================================= -->
+                <!-- ====================================== Titre Conclusion ======================================= -->
                 <div class="row">
-                    <div class="col s12 l6">
+                    <div class="col s12 l6 offset-l1">
                         <h3>Conclusion</h3>
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
                 <!-- ========================================= Etat Réseau ========================================= -->
                 <div class="row">
-                    <div class="col s12 l6">
+                    <div class="col s12 l6 offset-l1">
                         <p>A l'issue de notre intervention le réseau est : </p>
                         <?php
                             foreach ($etat as $k => $v)
@@ -247,7 +251,7 @@
                 <!-- =============================================================================================== -->
                 <!-- =================================== Nouvelle Intervention ===================================== -->
                 <div class="row">
-                    <div class="col s12 l6">
+                    <div class="col s12 l6 offset-l1">
                         <p>Nécessite une nouvelle intervention : </p>
                         <input type="radio" name="needInter" id="ouiInter" value="ouiInter">
                         <label class="labelCri" for="ouiInter">Oui</label>
@@ -260,6 +264,7 @@
                 <!-- ================================== Autres Commentaires ======================================== -->
                 <div class="row">
                     <div class="input-field col s12 l6">
+                        <i class="material-icons prefix">insert_comment</i>
                         <label for="commentaire">Autres commentaires éventuels : </label>
                         <textarea name="commentaire" id="commentaire" class="materialize-textarea"></textarea>
                     </div>
@@ -268,7 +273,8 @@
                 <!-- ========================================= Submit ============================================== -->
                 <div class="row">
                     <div class="col s12 l6 offset-l2 submit">
-                        <button class="btn waves-effect waves-light" type="submit" name="sumbit" id="submit" value="Valider">Submit
+                        <button class="btn waves-effect waves-light" type="submit" name="submit" id="submit" value="Valider">
+                            Valider
                             <i class="material-icons right">send</i>
                         </button>
                     </div>

@@ -10,7 +10,11 @@ $(function () {
     let lastDateInter   = $(".dateInterRow:last");
     let datepicker      = $(".datepicker");
     
+    let rowDisplayPiece = $("#rowDisplayPiece");
+    let pieceAChanger = $("#pieceAChanger");
+    
     dateInterRemove.hide();
+    rowDisplayPiece.hide();
     
     // =================================================================================================================
     // ========== Dates d'interventions ==========
@@ -22,7 +26,7 @@ $(function () {
         if(dateInterCounter < 9)
         {
             $("#dateInterRemove").show('fade');
-            dateInterRow.clone().removeAttr("id").insertAfter(dateInterRow);
+            dateInterRow.clone().removeAttr("id").hide().insertAfter(dateInterRow).fadeIn(1000);
             dateInterCounter++;
         }
     });
@@ -45,6 +49,20 @@ $(function () {
     // =================================================================================================================
     // TODO : JQuery Intervenants
     
+    // =================================================================================================================
+    //========== Pièces à changer ==========
+    
+    pieceAChanger.on("change", function() {
+    
+        if($(this).is(":checked"))
+        {
+            rowDisplayPiece.show("fade");
+        }
+        else
+        {
+            rowDisplayPiece.hide("fade");
+        }
+    });
     
     // =================================================================================================================
     //Materialize
@@ -58,6 +76,7 @@ $(function () {
         close: 'Ok',
         closeOnSelect: false, // Close upon selecting a date,
         container: undefined, // ex. 'body' will append picker to body
+        format: 'dd/mm/yyyy'
     });
     
     $('select').material_select();
