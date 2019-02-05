@@ -16,12 +16,12 @@
 
     // ===================================================================
     //      Affichages des superglobales (A supprimer en production)
-    echo "post : ";
+    /*echo "post : ";
     print_r($_POST); echo "<br />";
     echo "session : ";
     print_r($_SESSION); echo "<br />";
     echo "cookie : ";
-    print_r($_COOKIE); echo "<br />";
+    print_r($_COOKIE); echo "<br />";*/
     // ===================================================================
 
     if (!isset($_GET['p']) || $_GET['p'] == "") //Si l'utilisateur vient d'arriver sur le site

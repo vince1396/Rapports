@@ -2,33 +2,32 @@
 <html lang="en">
 
     <head>
+        <!-- Titre -->
+        <title>Rapports</title>
+        
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- General CSS -->
+        <link href="assets/css/general.css"
+              rel="stylesheet">
+        
         <!-- Login CSS -->
         <link href="assets/css/login.css"
               rel="stylesheet">
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
-        <!-- Bootstap CSS -->
+        <!-- Materialize CSS -->
         <link rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-              crossorigin="anonymous">
+              href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
         <!-- JQuery UI CSS -->
         <link rel="stylesheet"
               href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-
-        <!-- iCheck plugin CSS -->
-        <link href="assets/icheck/skins/square/blue.css"
-              rel="stylesheet">
-
-        <!-- Chosen plugin CSS -->
-        <link rel="stylesheet"
-              href="assets/css/chosen.css" />
-
-        <title>Rapports</title>
+        
     </head>
 
     <header>

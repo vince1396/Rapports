@@ -4,11 +4,11 @@ $(function () {
     // =========== Dates d'interventions (global) ==========
     let dateInterCounter = 0;
     
+    let dateInterRow    = $("#spanDateInter > *");
     let dateInterRemove = $("#dateInterRemove");
-    let dateInterAdd = $("#dateInterAdd");
-    let dateInter = $("#dateInter");
-    let dateInterFields = $("#dateInterFields");
-    let lastDateInter = $(".dateInter:last");
+    let dateInterAdd    = $("#dateInterAdd");
+    let lastDateInter   = $(".dateInterRow:last");
+    let datepicker      = $(".datepicker");
     
     dateInterRemove.hide();
     
@@ -22,7 +22,7 @@ $(function () {
         if(dateInterCounter < 9)
         {
             $("#dateInterRemove").show('fade');
-            dateInter.clone().removeAttr("id").appendTo(dateInterFields);
+            dateInterRow.clone().removeAttr("id").insertAfter(dateInterRow);
             dateInterCounter++;
         }
     });
@@ -33,7 +33,7 @@ $(function () {
         e.preventDefault();
         if(dateInterCounter > 0)
         {
-            lastDateInter = $(".dateInter:last");
+            lastDateInter = $(".dateInterRow:last");
             lastDateInter.remove();
             dateInterCounter--;
         }
@@ -45,23 +45,21 @@ $(function () {
     // =================================================================================================================
     // TODO : JQuery Intervenants
     
-    // =================================================================================================================
-    // ========== JQuery UI ==========
-    
-    $("button").button();
-    $("#submit").button();
     
     // =================================================================================================================
-    // ========== Plugins ==========
+    //Materialize
     
-    //Chosen
-    $(".chosen-select").chosen({rtl: true});
-    
-    //iCheck
-    $("input").iCheck({
-        checkboxClass: 'icheckbox_square-blue',
-        radioClass: 'iradio_square-blue',
-        increaseArea: '20%' // optional
+    datepicker.pickadate( {
+        
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15, // Creates a dropdown of 15 years to control year,
+        today: 'Date du jour',
+        clear: 'Réinitialiser',
+        close: 'Ok',
+        closeOnSelect: false, // Close upon selecting a date,
+        container: undefined, // ex. 'body' will append picker to body
     });
+    
+    $('select').material_select();
     
 });
