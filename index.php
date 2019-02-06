@@ -23,6 +23,9 @@
     echo "cookie : ";
     print_r($_COOKIE); echo "<br />";*/
     // ===================================================================
+    
+    // On enregistre la fonction en autoload pour qu'elle soit appelée dès qu'on instanciera une classe non déclarée.
+    spl_autoload_register('chargerClasse');
 
     if (!isset($_GET['p']) || $_GET['p'] == "") //Si l'utilisateur vient d'arriver sur le site
     {

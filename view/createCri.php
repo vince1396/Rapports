@@ -1,7 +1,6 @@
 <body>
     <div class="container">
         <div class="row">
-
             <form action="#" method="POST" id="formCri" class="col s12 l8 offset-l4">
                 <!-- =============================================================================================== -->
                 <!-- ========================================= Titre =============================================== -->
@@ -140,7 +139,7 @@
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
-                <!-- ================================= Problèmes rencontrés ======================================== -->
+                <!-- ===================================== Problèmes rencontrés ==================================== -->
                 <div class="row">
                     <div class=" input-field col s12 l6">
                         <i class="material-icons prefix">insert_comment</i>
@@ -149,7 +148,7 @@
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
-                <!-- ======================================== Actions ============================================== -->
+                <!-- =========================================== Actions =========================================== -->
                 <div class="row">
                     <div class="col s12">
                         <div>
@@ -166,65 +165,94 @@
                                              <br />";
                             } ?>
                     </div>
-                </div>
+                </div><br /><br />
                 <!-- =============================================================================================== -->
-                <!-- =================================== Titre Pièce à changer ===================================== -->
-                <div class="row pieceTitle">
-                    <div class="col s12 l6">
-                        <h3>Pièce(s) à changer ?</h3>
-                    </div>
-                </div>
-                <!-- =============================================================================================== -->
-                <!-- ================================== Switch Pièce à changer ===================================== -->
+                <!-- ======================================== PIECES A CHANGER ===================================== -->
                 <div class="row">
-                    <div class="col s12 l6 offset-l2">
-                        <div class="switch">
-                            <label for="pieceAChanger" class="labelCri">
-                                Non
-                                <input name="pieceAChanger" id="pieceAChanger" type="checkbox">
-                                <span class="lever"></span>
-                                Oui
-                            </label>
+                    <div class="col s12 l6 rowPieceAChanger">
+                        <!-- ======================================================================================= -->
+                        <!-- =============================== Titre Pièce à changer ================================= -->
+                        <div class="row pieceTitle">
+                            <div class="col s12">
+                                <h3>Pièce(s) à changer ?</h3>
+                            </div>
                         </div>
+                        <!-- ======================================================================================= -->
+                        <!-- =============================== Switch Pièce à changer ================================ -->
+                        <div class="row">
+                            <div class="col s12 offset-l4">
+                                <div class="switch">
+                                    <label for="pieceAChanger" class="labelCri">
+                                        Non
+                                        <input name="pieceAChanger" id="pieceAChanger" type="checkbox">
+                                        <span class="lever"></span>
+                                        Oui
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ======================================================================================= -->
+                        <!-- ============================ Block to display if pieceAChanger ======================== -->
+                        <div class="row" id="rowDisplayPiece">
+                            <div class="col s12">
+                                <span id="clonePiece">
+                                    <div class="row rowDisplayPiece">
+                                        <div class="col s12">
+                                            <!-- =================================================================== -->
+                                            <!-- ========================== Counter Pieces ========================= -->
+                                            <div class="row">
+                                                <div class="col s12 l8 offset-l4">
+                                                    <h5>Pièce 1</h5>
+                                                </div>
+                                            </div>
+                                            <!-- =================================================================== -->
+                                            <!-- ============================= Ref Piece =========================== -->
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <i class="material-icons prefix">edit</i>
+                                                    <input class="validate" type="text" name="refPiece">
+                                                    <label class="labelCri">Référence : </label>
+                                                </div>
+                                            </div>
+                                            <!-- =================================================================== -->
+                                            <!-- =========================== Détails Pièce ========================= -->
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <i class="material-icons prefix">edit</i>
+                                                    <input class="validate" type="text" name="detailPiece">
+                                                    <label class="labelCri">Détails de l'article : </label>
+                                                </div>
+                                            </div>
+                                            <!-- =================================================================== -->
+                                            <!-- ============================ Quantité Pièce ======================= -->
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <i class="material-icons prefix">edit</i>
+                                                    <input class="validate" type="number" name="qtePiece" min="1">
+                                                    <label class="labelCri">Quantité : </label>
+                                                </div>
+                                            </div>
+                                            <!-- =================================================================== -->
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- ======================================================================================= -->
+                        <!-- ============================= Boutons Pieces ========================================== -->
+                        <div class="row" id="buttonPiece">
+                            <div class="col s12">
+                                <a class="btn-floating btn-small waves-effect waves-light blue" id="addPiece">
+                                    <i class="material-icons">add</i>
+                                </a>
+                                <a class="btn-floating btn-small waves-effect waves-light blue" id="removePiece">
+                                    <i class="material-icons">remove</i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ======================================================================================= -->
                     </div>
-                </div>
-                <!-- =============================================================================================== -->
-                <!-- ============================= Bloc to display if pieceAChanger ================================ -->
-                <!-- Todo : Pièces multiples -->
-                
-                <div class="row" id="rowDisplayPiece">
-                    <div class="col s12">
-                        <!-- ======================================================================================= -->
-                        <!-- =================================== Ref Piece ========================================= -->
-                        <div class="row">
-                            <div class="input-field col s12 l6">
-                                <i class="material-icons prefix">edit</i>
-                                <input class="validate" type="text" name="refPiece" id="refPiece">
-                                <label for="refPiece" class="labelCri">Référence : </label>
-                            </div>
-                        </div>
-                        <!-- ======================================================================================= -->
-                        <!-- ================================= Détails Pièce ======================================= -->
-                        <div class="row">
-                            <div class="input-field col s12 l6">
-                                <i class="material-icons prefix">edit</i>
-                                <input class="validate" type="text" name="detailPiece" id="detailPiece">
-                                <label for="detailPiece" class="labelCri">Détails de l'article : </label>
-                            </div>
-                        </div>
-                        <!-- ======================================================================================= -->
-                        <!-- ================================= Quantité Pièce ====================================== -->
-                        <div class="row">
-                            <div class="input-field col s12 l6">
-                                <i class="material-icons prefix">edit</i>
-                                <input class="validate" type="number" name="qtePiece" id="qtePiece" min="1">
-                                <label for="qtePiece" class="labelCri">Quantité : </label>
-                            </div>
-                        </div>
-                        <!-- ======================================================================================= -->
-                    </div>
-                </div>
-                <br />
+                </div><br /><br />
                 <!-- =============================================================================================== -->
                 <!-- ====================================== Titre Conclusion ======================================= -->
                 <div class="row">
@@ -279,7 +307,6 @@
                         </button>
                     </div>
                 </div>
-                
             </form>
         </div>
     </div>

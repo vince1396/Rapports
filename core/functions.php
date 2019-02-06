@@ -1,82 +1,87 @@
 <?php
-
-// Get All Post Datas
-function getPost()
-{
-    $arrayToReturn = array();
-
-    if(isset($_POST['submit']))
+    
+    function chargerClasse($classe)
     {
-        foreach($_POST as $key => $value)
+        require 'model/'.$classe.'.php'; // On inclut la classe correspondante au paramètre passé.
+    }
+    
+    // Get All Post Datas
+    function getPost()
+    {
+        $arrayToReturn = array();
+    
+        if(isset($_POST['submit']))
         {
-            if(is_array($_POST[$key]))
+            foreach($_POST as $key => $value)
             {
-                foreach($_POST[$key] as $k => $v)
+                if(is_array($_POST[$key]))
                 {
-                    $arrayToReturn[$key][$k] = htmlentities($v);
+                    foreach($_POST[$key] as $k => $v)
+                    {
+                        $arrayToReturn[$key][$k] = htmlentities($v);
+                    }
+                }
+                else
+                {
+                    $arrayToReturn[$key] = htmlentities($value);
                 }
             }
-            else
+        }
+        // Possibly add elements to the array
+    
+        return $arrayToReturn;
+    }
+    
+    //Check if a form has an empty field
+    function isEmpty($post)
+    {
+        $empty = false;
+    
+        foreach ($post as $k => $v)
+        {
+            if(empty($v))
             {
-                $arrayToReturn[$key] = htmlentities($value);
+                $empty = true;
+                break;
             }
         }
+    
+        return $empty;
     }
-    // Possibly add elements to the array
-
-    return $arrayToReturn;
-}
-
-//Check if a form has an empty field
-function isEmpty($post)
-{
-    $empty = false;
-
-    foreach ($post as $k => $v)
+    
+    //Create session's var from a post tab
+    function makeSession($rep)
     {
-        if(empty($v))
+        foreach ($rep as $k => $v)
         {
-            $empty = true;
-            break;
+            $_SESSION[$k] = $v;
         }
     }
-
-    return $empty;
-}
-
-//Create session's var from a post tab
-function makeSession($rep)
-{
-    foreach ($rep as $k => $v)
+    
+    function makeCookie($name, $val)
     {
-        $_SESSION[$k] = $v;
+        setcookie(
+            $name,
+            $val,
+            time() + 365*24*3600,
+            null,
+            null,
+            false,
+            true);
     }
-}
-
-function makeCookie($name, $val)
-{
-    setcookie(
-        $name,
-        $val,
-        time() + 365*24*3600,
-        null,
-        null,
-        false,
-        true);
-}
-
-function destroyCookie($name)
-{
-    setcookie($name, '', time());
-}
-
-//Crypt in sha1 all datas in a tab
-function makeTabSha1($post)
-{
-    foreach ($post as $k => $v)
+    
+    function destroyCookie($name)
     {
-        $post[$k] = sha1($v);
+        setcookie($name, '', time());
     }
-
-    return $post;
-}
+    
+    //Crypt in sha1 all datas in a tab
+    function makeTabSha1($post)
+    {
+        foreach ($post as $k => $v)
+        {
+            $post[$k] = sha1($v);
+        }
+    
+        return $post;
+    }

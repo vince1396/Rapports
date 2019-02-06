@@ -39,6 +39,3 @@
 
         return $req;
     }
-    //edit
-//event
-//insert_comment

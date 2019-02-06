@@ -28,3 +28,18 @@
     margin-top: 50px;
     margin-bottom: 100px;
 }
+
+.rowPieceAChanger {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black ;
+}
+
+.rowDisplayPiece {
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #2a62bc;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #2a62bc;
+}

@@ -39,6 +39,13 @@
               <!-- ================================================================================================= -->
               <div class="row">
                   <div class="col s10 offset-s1 l8 offset-l4">
+                      <input type="checkbox" name="remember" id="remember">
+                      <label for="remember">Se souvenir de moi</label>
+                  </div>
+              </div>
+              <!-- ================================================================================================= -->
+              <div class="row">
+                  <div class="col s10 offset-s1 l8 offset-l4">
                       <button
                               class="btn waves-effect waves-light"
                               type="submit"

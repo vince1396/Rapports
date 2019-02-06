@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="109c37f1-da5e-4950-ac85-ba2e584d2897" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/createCri.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/createCri.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/createCri.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/createCri.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/createCri.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/createCri.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,17 +52,337 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/createCri.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.1">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="378">
+                  <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/login.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="84">
+                  <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/functions.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="70">
+                  <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/view/header.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="266">
+                  <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/view/footer.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="112">
+                  <caret line="8" column="98" lean-forward="true" selection-start-line="8" selection-start-column="98" selection-end-line="8" selection-end-column="98" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <splitter split-orientation="horizontal" split-proportion="0.7371202">
+          <split-first>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/model/Tech.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="294">
+                      <caret line="34" column="59" lean-forward="true" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+                      <folding>
+                        <element signature="n#hydrate#0;n#Tech#0;n#!!top" />
+                        <element signature="n#setId#0;n#Tech#0;n#!!top" />
+                        <element signature="n#setNom#0;n#Tech#0;n#!!top" />
+                        <element signature="n#setprenom#0;n#Tech#0;n#!!top" />
+                        <element signature="n#setEmail#0;n#Tech#0;n#!!top" />
+                        <element signature="n#setMdp#0;n#Tech#0;n#!!top" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/model/TechManager.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="308">
+                      <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+                      <folding>
+                        <element signature="n#add#0;n#PersonnagesManager#0;n#!!top" />
+                        <element signature="n#delete#0;n#PersonnagesManager#0;n#!!top" />
+                        <element signature="n#get#0;n#PersonnagesManager#0;n#!!top" />
+                        <element signature="n#getList#0;n#TechManager#0;n#!!top" />
+                        <element signature="n#update#0;n#TechManager#0;n#!!top" />
+                        <element signature="n#setDb#0;n#TechManager#0;n#!!top" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/model/Rapport.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="448">
+                      <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+                      <folding>
+                        <element signature="n#hydrate#0;n#Rapport#0;n#!!top" />
+                        <element signature="n#setDate#0;n#Rapport#0;n#!!top" />
+                        <element signature="n#setClient#0;n#Rapport#0;n#!!top" />
+                        <element signature="n#setTitre#0;n#Rapport#0;n#!!top" />
+                        <element signature="n#setContact#0;n#Rapport#0;n#!!top" />
+                        <element signature="n#setAdresse#0;n#Rapport#0;n#!!top" />
+                        <element signature="n#setCp#0;n#Rapport#0;n#!!top" />
+                        <element signature="n#setVille#0;n#Rapport#0;n#!!top" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/model/RapportManager.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="154">
+                      <caret line="11" selection-start-line="11" selection-end-line="11" />
+                      <folding>
+                        <element signature="n#add#0;n#TechManager#0;n#!!top" />
+                        <element signature="n#delete#0;n#TechManager#0;n#!!top" />
+                        <element signature="n#get#0;n#TechManager#0;n#!!top" />
+                        <element signature="n#getList#0;n#TechManager#0;n#!!top" />
+                        <element signature="n#update#0;n#TechManager#0;n#!!top" />
+                        <element signature="n#setDb#0;n#TechManager#0;n#!!top" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/model/Cri.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="324">
+                      <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/model/CriManager.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="140">
+                      <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/model/Piece.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="294">
+                      <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+                      <folding>
+                        <element signature="n#hydrate#0;n#Piece#0;n#!!top" />
+                        <element signature="n#setRef#0;n#Piece#0;n#!!top" />
+                        <element signature="n#setDetails#0;n#Piece#0;n#!!top" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/model/PieceManager.php">
+                  <provider selected="true" editor-type-id="text-editor" />
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <splitter split-orientation="horizontal" split-proportion="0.5138539">
+              <split-first>
+                <leaf>
+                  <file pinned="false" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/view/createCri.php">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="84">
+                          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+                          <folding>
+                            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#2;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#4;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#5;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#6;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#7;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#span#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#span#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#0;n#span#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#a#1;n#div#0;n#div#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#9;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#select#0;n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="e#6882#6887#0#PHP" />
+                            <element signature="e#6920#7132#0#PHP" />
+                            <element signature="n#div#10;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#10;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#select#0;n#div#0;n#div#10;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="e#7789#7794#0#PHP" />
+                            <element signature="e#7827#8032#0#PHP" />
+                            <element signature="n#div#11;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#11;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#12;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#12;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#13;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#13;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#0;n#div#13;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="e#10011#10016#0#PHP" />
+                            <element signature="e#10045#10582#0#PHP" />
+                            <element signature="n#div#14;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#3;n#div#0;n#div#14;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#a#0;n#div#0;n#div#3;n#div#0;n#div#14;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#a#1;n#div#0;n#div#3;n#div#0;n#div#14;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#17;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#17;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#18;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#18;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="e#15395#15400#0#PHP" />
+                            <element signature="e#15429#15901#0#PHP" />
+                            <element signature="n#div#19;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#19;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#20;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#20;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#21;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#div#0;n#div#21;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                            <element signature="n#button#0;n#div#0;n#div#21;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+                          </folding>
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/view/login.php">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="560">
+                          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/view/myrapports.php">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="28">
+                          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/view/profil.php">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="294">
+                          <caret line="21" selection-start-line="21" selection-end-line="21" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/view/rapportType.php">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="42">
+                          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-first>
+              <split-second>
+                <leaf>
+                  <file pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/controller/createCri.php">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="252">
+                          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/controller/myrapports.php">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="42">
+                          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="35" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file pinned="false" current-in-tab="true">
+                    <entry file="file://$PROJECT_DIR$/controller/login.php">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="196">
+                          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/controller/profil.php">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="588">
+                          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="34" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                  <file pinned="false" current-in-tab="false">
+                    <entry file="file://$PROJECT_DIR$/controller/rapportType.php">
+                      <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="70">
+                          <caret line="5" selection-start-line="5" selection-end-line="5" />
+                        </state>
+                      </provider>
+                    </entry>
+                  </file>
+                </leaf>
+              </split-second>
+            </splitter>
+          </split-second>
+        </splitter>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -82,7 +408,6 @@
         <option value="$PROJECT_DIR$/controller/profil.php" />
         <option value="$PROJECT_DIR$/template.php" />
         <option value="$PROJECT_DIR$/model/bdd.php" />
-        <option value="$PROJECT_DIR$/core/functions.php" />
         <option value="$PROJECT_DIR$/controller/myrapports.php" />
         <option value="$PROJECT_DIR$/controller/rapportType.php" />
         <option value="$PROJECT_DIR$/controller/createCri.php" />
@@ -92,14 +417,24 @@
         <option value="$PROJECT_DIR$/controller/login.php" />
         <option value="$PROJECT_DIR$/assets/js/login.js" />
         <option value="$PROJECT_DIR$/assets/css/general.css" />
-        <option value="$PROJECT_DIR$/view/login.php" />
         <option value="$PROJECT_DIR$/view/footer.php" />
         <option value="$PROJECT_DIR$/view/header.php" />
         <option value="$PROJECT_DIR$/model/createCri.php" />
-        <option value="$PROJECT_DIR$/assets/css/login.css" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/view/login.php" />
         <option value="$PROJECT_DIR$/assets/js/createCri.js" />
+        <option value="$PROJECT_DIR$/assets/css/login.css" />
         <option value="$PROJECT_DIR$/view/createCri.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/model/Adresse.php" />
+        <option value="$PROJECT_DIR$/model/AdresseManager.php" />
+        <option value="$PROJECT_DIR$/core/functions.php" />
+        <option value="$PROJECT_DIR$/model/Tech.php" />
+        <option value="$PROJECT_DIR$/model/Rapport.php" />
+        <option value="$PROJECT_DIR$/model/Piece.php" />
+        <option value="$PROJECT_DIR$/model/TechManager.php" />
+        <option value="$PROJECT_DIR$/model/RapportManager.php" />
+        <option value="$PROJECT_DIR$/model/CriManager.php" />
+        <option value="$PROJECT_DIR$/model/Cri.php" />
       </list>
     </option>
   </component>
@@ -140,14 +475,7 @@
             <path>
               <item name="Rapports" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rapports" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rapports" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rapports" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -163,7 +491,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -223,14 +551,15 @@
       <workItem from="1549007690170" duration="117000" />
       <workItem from="1549007818113" duration="11937000" />
       <workItem from="1549266499432" duration="8535000" />
-      <workItem from="1549351556649" duration="22846000" />
+      <workItem from="1549351556649" duration="23521000" />
+      <workItem from="1549438340047" duration="21849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204555000" />
+    <option name="totallyTimeSpent" value="226704000" />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -243,7 +572,7 @@
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13767342" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.101387404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -252,7 +581,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32829374" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32822084" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
@@ -345,15 +674,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/login.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/createCri.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state relative-caret-position="615">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/myrapports.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/view/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="98" lean-forward="true" selection-start-line="8" selection-start-column="98" selection-end-line="8" selection-end-column="98" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/profil.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -365,10 +705,10 @@
     <entry file="file://$PROJECT_DIR$/model/rapportType.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/login.php">
+    <entry file="file://$PROJECT_DIR$/view/profil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        <state relative-caret-position="294">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -379,24 +719,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/profil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/rapportType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/login.php">
+    <entry file="file://$PROJECT_DIR$/model/createCri.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="574">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -404,6 +744,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/createCri.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -421,66 +768,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="98" lean-forward="true" selection-start-line="8" selection-start-column="98" selection-end-line="8" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/createCri.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/createCri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/createCri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/model/myrapports.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="84">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/createCri.php">
+    <entry file="file://$PROJECT_DIR$/model/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="188" column="26" lean-forward="true" selection-start-line="188" selection-start-column="26" selection-end-line="188" selection-end-column="26" />
+        <state relative-caret-position="182">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Adresse.php" />
+    <entry file="file://$PROJECT_DIR$/model/AdresseManager.php" />
+    <entry file="file://$PROJECT_DIR$/core/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        <state relative-caret-position="378">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/createCri.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#4;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#5;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#6;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#7;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#span#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#span#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#span#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#a#1;n#div#0;n#div#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#9;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="e#6882#6887#0#PHP" />
+            <element signature="e#6920#7132#0#PHP" />
+            <element signature="n#div#10;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#10;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#10;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="e#7789#7794#0#PHP" />
+            <element signature="e#7827#8032#0#PHP" />
+            <element signature="n#div#11;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#11;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#12;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#12;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#13;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#13;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#13;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="e#10011#10016#0#PHP" />
+            <element signature="e#10045#10582#0#PHP" />
+            <element signature="n#div#14;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#div#14;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#a#0;n#div#0;n#div#3;n#div#0;n#div#14;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#a#1;n#div#0;n#div#3;n#div#0;n#div#14;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#17;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#17;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#18;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#18;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="e#15395#15400#0#PHP" />
+            <element signature="e#15429#15901#0#PHP" />
+            <element signature="n#div#19;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#19;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#20;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#20;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#21;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#21;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#div#21;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/PieceManager.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Piece.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <element signature="n#hydrate#0;n#Piece#0;n#!!top" />
+            <element signature="n#setRef#0;n#Piece#0;n#!!top" />
+            <element signature="n#setDetails#0;n#Piece#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Tech.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="34" column="59" lean-forward="true" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+          <folding>
+            <element signature="n#hydrate#0;n#Tech#0;n#!!top" />
+            <element signature="n#setId#0;n#Tech#0;n#!!top" />
+            <element signature="n#setNom#0;n#Tech#0;n#!!top" />
+            <element signature="n#setprenom#0;n#Tech#0;n#!!top" />
+            <element signature="n#setEmail#0;n#Tech#0;n#!!top" />
+            <element signature="n#setMdp#0;n#Tech#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/TechManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="n#add#0;n#PersonnagesManager#0;n#!!top" />
+            <element signature="n#delete#0;n#PersonnagesManager#0;n#!!top" />
+            <element signature="n#get#0;n#PersonnagesManager#0;n#!!top" />
+            <element signature="n#getList#0;n#TechManager#0;n#!!top" />
+            <element signature="n#update#0;n#TechManager#0;n#!!top" />
+            <element signature="n#setDb#0;n#TechManager#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Rapport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="n#hydrate#0;n#Rapport#0;n#!!top" />
+            <element signature="n#setDate#0;n#Rapport#0;n#!!top" />
+            <element signature="n#setClient#0;n#Rapport#0;n#!!top" />
+            <element signature="n#setTitre#0;n#Rapport#0;n#!!top" />
+            <element signature="n#setContact#0;n#Rapport#0;n#!!top" />
+            <element signature="n#setAdresse#0;n#Rapport#0;n#!!top" />
+            <element signature="n#setCp#0;n#Rapport#0;n#!!top" />
+            <element signature="n#setVille#0;n#Rapport#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RapportManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="n#add#0;n#TechManager#0;n#!!top" />
+            <element signature="n#delete#0;n#TechManager#0;n#!!top" />
+            <element signature="n#get#0;n#TechManager#0;n#!!top" />
+            <element signature="n#getList#0;n#TechManager#0;n#!!top" />
+            <element signature="n#update#0;n#TechManager#0;n#!!top" />
+            <element signature="n#setDb#0;n#TechManager#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/CriManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Cri.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>

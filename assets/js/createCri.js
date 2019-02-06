@@ -12,9 +12,13 @@ $(function () {
     
     let rowDisplayPiece = $("#rowDisplayPiece");
     let pieceAChanger = $("#pieceAChanger");
+    let addPiece = $("#addPiece");
+    let removePiece = $("#removePiece");
     
     dateInterRemove.hide();
     rowDisplayPiece.hide();
+    removePiece.hide();
+    addPiece.hide();
     
     // =================================================================================================================
     // ========== Dates d'interventions ==========
@@ -45,10 +49,7 @@ $(function () {
         if(dateInterCounter === 0)
             dateInterRemove.hide("fade");
     });
-    
-    // =================================================================================================================
-    // TODO : JQuery Intervenants
-    
+
     // =================================================================================================================
     //========== Pièces à changer ==========
     
@@ -57,10 +58,12 @@ $(function () {
         if($(this).is(":checked"))
         {
             rowDisplayPiece.show("fade");
+            addPiece.show("fade");
         }
         else
         {
             rowDisplayPiece.hide("fade");
+            addPiece.hide("fade");
         }
     });
     
