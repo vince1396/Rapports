@@ -6,13 +6,13 @@
 
     <form action="#" method="post">
         <label for="oldmdp">Mot de passe actuel : </label>
-        <input type="password" name="oldmdp">
+        <input type="password" name="oldmdp" id="oldmdp">
         <br />
         <label for="newmdp">Nouveau mot de passe :  </label>
-        <input type="password" name="newmdp">
+        <input type="password" name="newmdp" id="newmdp">
         <br />
         <label for="confirm">Confirmez le mot de passe : </label>
-        <input type="password" name="confirm">
+        <input type="password" name="confirm" id="confirm">
         <br />
         <input type="submit" name="submit" value="submit">
     </form>

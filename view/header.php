@@ -6,7 +6,16 @@
         <title>Rapports</title>
         
         <!-- Required meta tags -->
-        <meta charset="utf-8">
+        <META NAME="TITLE" CONTENT="Décimale Rapports Auto">
+        <META NAME="DESCRIPTION" CONTENT="Outils d'automatisation de création des rapports de l'entreprise Décimale">
+        <META NAME="OWNER" CONTENT="vcotini@decimale.net">
+        <META NAME="AUTHOR" CONTENT="Vincent Cotini">
+        <META NAME="LANGUAGE" CONTENT="fr">
+        <META HTTP-EQUIV="VW96.OBJECT TYPE" CONTENT="Document">
+        <META NAME="robots" CONTENT="none">
+        <META NAME="Copyright" CONTENT="Décimale">
+        <META http-equiv="Content-Type"
+              content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- General CSS -->
@@ -18,7 +27,8 @@
               rel="stylesheet">
 
         <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
         
         <!-- Materialize CSS -->
         <link rel="stylesheet"

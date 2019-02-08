@@ -2,7 +2,7 @@
 <dataSource name="rapports@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
     <root id="1">
-      <ServerVersion>5.7.24</ServerVersion>
+      <ServerVersion>5.7.25</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <DefaultCasing>exact</DefaultCasing>
@@ -1224,7 +1224,6 @@ id_tech</ColNames>
     <column id="292" parent="236" name="titre">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="293" parent="236" name="contact">

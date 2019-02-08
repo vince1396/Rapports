@@ -1,5 +1,19 @@
 <body>
     <div class="container">
+        <?php if(isset($log))
+        { ?>
+            <div class="row">
+                <div class="col s12 l8 offset-l4 red">
+                    <p>
+                        <?php
+                            echo $log;
+                        ?>
+                    </p>
+                </div>
+            </div>
+        <?php
+        }
+        ?>
         <div class="row">
             <form action="#" method="POST" id="formCri" class="col s12 l8 offset-l4">
                 <!-- =============================================================================================== -->
@@ -14,17 +28,17 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix ">edit</i>
-                        <input type="text" name="ref" id="ref" class="validate">
+                        <input required type="text" name="ref" id="ref" class="validate">
                         <label for="ref">Ma référence</label>
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
                 <!-- ======================================= Date Rapport ========================================== -->
                 <div class="row">
-                    <div class=" input-field col s12 l6">
+                    <div class="input-field col s12 l6">
                         <i class="material-icons prefix">event</i>
                         <label for="date_rapport">Date</label>
-                        <input type="text" name="date_rapport" id="date_rapport" class="datepicker">
+                        <input required type="text" name="date_rapport" id="date_rapport" class="datepicker">
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
@@ -32,7 +46,7 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix">edit</i>
-                        <input type="text" name="nom_client" id="nom_client" class="validate">
+                        <input required type="text" name="nom_client" id="nom_client" class="validate">
                         <label for="nom_client">Client</label>
                     </div>
                 </div>
@@ -41,7 +55,7 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix">edit</i>
-                        <input type="text" name="contact" id="contact" class="validate">
+                        <input required type="text" name="contact" id="contact" class="validate">
                         <label for="contact">Nom du contact</label>
                     </div>
                 </div>
@@ -50,7 +64,7 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix">edit</i>
-                        <input type="text" name="adresse" id="adresse" class="validate">
+                        <input required type="text" name="adresse" id="adresse" class="validate">
                         <label for="adresse">Adresse Client</label>
                     </div>
                 </div>
@@ -59,7 +73,7 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix">edit</i>
-                        <input type="text" name="cp" id="cp" class="validate">
+                        <input required type="text" name="cp" id="cp" class="validate">
                         <label for="cp">Code Postal</label>
                     </div>
                 </div>
@@ -68,7 +82,7 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix">edit</i>
-                        <input type="text" name="ville" id="ville" class="validate">
+                        <input required type="text" name="ville" id="ville" class="validate">
                         <label for="ville">Ville</label>
                     </div>
                 </div>
@@ -81,7 +95,7 @@
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">event</i>
                                     <label for="dateInter">Date(s) d'intervention(s)</label>
-                                    <input type="text" name="dateInter[]" class="datepicker" id="dateInter">
+                                    <input required type="text" name="dateInter[]" class="datepicker" id="dateInter">
                                 </div>
                             </div>
                         </span>
@@ -104,14 +118,14 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix">people</i>
-                        <select name="tech[]" id="tech" multiple>
+                        <select required name="tech[]" id="tech" multiple>
                             <?php
                                 foreach ($techs as $k => $v)
                                 {
                                     echo "<option value=".$v['id_tech'].">".$v['prenom']." ".$v['nom']."</option>";
                                 } ?>
                         </select>
-                        <label> Sélectionnez un ou plusieurs intervenants </label>
+                        <label for="tech"> Sélectionnez un ou plusieurs intervenants </label>
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
@@ -119,7 +133,7 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix">wifi</i>
-                        <select name="reseau" id="reseau">
+                        <select required name="reseau" id="reseau">
                             <?php
                                 foreach ($reseau as $k => $v)
                                 {
@@ -135,7 +149,7 @@
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix">insert_comment</i>
                         <label for="detailPresta">Détails de la prestation</label>
-                        <textarea id="detailPresta" name="detailPresta" class="materialize-textarea"></textarea>
+                        <textarea required id="detailPresta" name="detailPresta" class="materialize-textarea"></textarea>
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
@@ -144,11 +158,14 @@
                     <div class=" input-field col s12 l6">
                         <i class="material-icons prefix">insert_comment</i>
                         <label for="probleme">Problèmes rencontrés</label>
-                        <textarea id="detailPresta" name="probleme" id="probleme" class="materialize-textarea"></textarea>
+                        <textarea name="probleme"
+                                  id="probleme"
+                                  class="materialize-textarea"></textarea>
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
                 <!-- =========================================== Actions =========================================== -->
+                <!-- TODO : Traitement actions -->
                 <div class="row">
                     <div class="col s12">
                         <div>
@@ -194,15 +211,15 @@
                         <!-- ======================================================================================= -->
                         <!-- ============================ Block to display if pieceAChanger ======================== -->
                         <div class="row" id="rowDisplayPiece">
-                            <div class="col s12">
+                            <div id="insertClonedPiece" class="col s12">
                                 <span id="clonePiece">
-                                    <div class="row rowDisplayPiece">
+                                    <div class="row borderPiece">
                                         <div class="col s12">
                                             <!-- =================================================================== -->
                                             <!-- ========================== Counter Pieces ========================= -->
                                             <div class="row">
                                                 <div class="col s12 l8 offset-l4">
-                                                    <h5>Pièce 1</h5>
+                                                    <h5 class="pieceH5">Pièce 1</h5>
                                                 </div>
                                             </div>
                                             <!-- =================================================================== -->
@@ -210,8 +227,11 @@
                                             <div class="row">
                                                 <div class="input-field col s12">
                                                     <i class="material-icons prefix">edit</i>
-                                                    <input class="validate" type="text" name="refPiece">
-                                                    <label class="labelCri">Référence : </label>
+                                                    <input id="refPiece"
+                                                           class="validate inputPiece"
+                                                           type="text"
+                                                           name="piece[0][refPiece]">
+                                                    <label for="refPiece" class="labelCri">Référence : </label>
                                                 </div>
                                             </div>
                                             <!-- =================================================================== -->
@@ -219,8 +239,12 @@
                                             <div class="row">
                                                 <div class="input-field col s12">
                                                     <i class="material-icons prefix">edit</i>
-                                                    <input class="validate" type="text" name="detailPiece">
-                                                    <label class="labelCri">Détails de l'article : </label>
+                                                    <input id="detailPiece"
+                                                           class="validate inputPiece"
+                                                           type="text"
+                                                           name="piece[0][detailPiece]">
+                                                    <label for="detailPiece"
+                                                           class="labelCri">Détails de l'article : </label>
                                                 </div>
                                             </div>
                                             <!-- =================================================================== -->
@@ -228,8 +252,12 @@
                                             <div class="row">
                                                 <div class="input-field col s12">
                                                     <i class="material-icons prefix">edit</i>
-                                                    <input class="validate" type="number" name="qtePiece" min="1">
-                                                    <label class="labelCri">Quantité : </label>
+                                                    <input id="qtePiece"
+                                                           class="validate inputPiece"
+                                                           type="number"
+                                                           name="piece[0][qtePiece]"
+                                                           min="1">
+                                                    <label for="qtePiece" class="labelCri">Quantité : </label>
                                                 </div>
                                             </div>
                                             <!-- =================================================================== -->
@@ -270,7 +298,6 @@
                             {
                                 echo "<input checked type='radio'
                                              name='etatReseau'
-                                             id=".$v['id_etat']."
                                              value=".$v['id_etat'].">
                                       <label class='labelCri' for=".$v['id_etat'].">".$v['desc_etat']."</label><br />";
                             } ?>
@@ -300,8 +327,12 @@
                 <!-- =============================================================================================== -->
                 <!-- ========================================= Submit ============================================== -->
                 <div class="row">
-                    <div class="col s12 l6 offset-l2 submit">
-                        <button class="btn waves-effect waves-light" type="submit" name="submit" id="submit" value="Valider">
+                    <div class="col s12 offset-s2 l6 offset-l2 submit">
+                        <button class="btn waves-effect waves-light"
+                                type="submit"
+                                name="submit"
+                                id="submit"
+                                value="Valider">
                             Valider
                             <i class="material-icons right">send</i>
                         </button>
@@ -309,5 +340,19 @@
                 </div>
             </form>
         </div>
+        <?php if(isset($log))
+        { ?>
+            <div class="row">
+                <div class="col s12 l8 offset-l4 red">
+                    <p>
+                        <?php
+                            echo $log;
+                        ?>
+                    </p>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
     </div>
 </body>

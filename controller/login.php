@@ -32,7 +32,6 @@
         $log = "";
         $_POST['mdp'] = sha1($_POST['mdp']);
         $post = getPost();
-        print_r($post);
 
         if(isEmpty($post))
         {

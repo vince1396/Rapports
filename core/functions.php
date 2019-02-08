@@ -12,18 +12,28 @@
     
         if(isset($_POST['submit']))
         {
-            foreach($_POST as $key => $value)
+            foreach($_POST as $keyD1 => $valueD1)
             {
-                if(is_array($_POST[$key]))
+                if(is_array($_POST[$keyD1]))
                 {
-                    foreach($_POST[$key] as $k => $v)
+                    foreach($_POST[$keyD1] as $keyD2 => $valueD2)
                     {
-                        $arrayToReturn[$key][$k] = htmlentities($v);
+                        if(is_array($_POST[$keyD1][$keyD2]))
+                        {
+                            foreach($_POST[$keyD1][$keyD2] as $keyD3 => $valueD3)
+                            {
+                                $arrayToReturn[$keyD1][$keyD2][$keyD3] = htmlentities($valueD3);
+                            }
+                        }
+                        else
+                        {
+                            $arrayToReturn[$keyD1][$keyD2] = htmlentities($valueD2);
+                        }
                     }
                 }
                 else
                 {
-                    $arrayToReturn[$key] = htmlentities($value);
+                    $arrayToReturn[$keyD1] = htmlentities($valueD1);
                 }
             }
         }
