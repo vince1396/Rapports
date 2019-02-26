@@ -1,13 +1,14 @@
 <?php
 require 'model/createCri.php';
 
-    if(isset($_SESSION['id_tech']))
+    if(isset($_SESSION['id_tech']) OR isset($_COOKIE['id_tech']))
     {
         $techs = getTech()->fetchAll();
         $reseau = getReseau()->fetchAll();
         $actions = getActions()->fetchAll();
         $etat = getEtatReseau()->fetchAll();
         // =============================================================================================================
+        // Form is sent
         if (isset($_POST['submit']))
         {
             $post = getPost();
@@ -74,10 +75,10 @@ require 'model/createCri.php';
                     if(isEmpty($post['dateInter'][$idDate]))
                     {
                         $nbError++;
+                        $log .= "/ ".$nbError." date(s) d'intervention non renseignée(s)";
+                        $error = true;
                     }
                 }
-                $log .= "/ ".$nbError." date(s) d'intervention non renseignée(s)";
-                $error = true;
             }
             // =========================================================================================================
             if(!isset($post['tech'][0]) OR isEmpty($post['tech'][0]))
@@ -122,8 +123,38 @@ require 'model/createCri.php';
             // =========================================================================================================
             if(!$error)
             {
-                echo "Todo";
-                //TODO : Traitement BDD
+                insertRapport();
+                insertCri();
+                
+                foreach($post["dateInter"] as $idDate => $date)
+                {
+                    insertDatesInter($date);
+    
+                    foreach($post["tech"] as $idTech => $tech)
+                    {
+                        insertEffectuer(lastDate(), $tech);
+                    }
+                }
+                
+                foreach($post["actions"] as $idAction => $action)
+                {
+                    insertRealiser($action);
+                }
+                
+                foreach($post["piece"] as $kD1 => $vD1)
+                {
+                    if(isset($tabPiece))
+                        unset($tabPiece);
+                    
+                    $i = 0;
+                    $tabPiece = [];
+                    foreach($post["piece"][$kd1] as $kD2 => $vD2)
+                    {
+                        $tabPiece[$i] = $vD2;
+                        $i++;
+                    }
+                    insertPiece($tabPiece[0], $tabPiece[1], $tabPiece[2]);
+                }
             }
             // =========================================================================================================
         }

@@ -1,6 +1,6 @@
 <body>
     <div class="container">
-        <?php if(isset($log))
+        <?php if($error)
         { ?>
             <div class="row">
                 <div class="col s12 l8 offset-l4 red">
@@ -165,7 +165,6 @@
                 </div>
                 <!-- =============================================================================================== -->
                 <!-- =========================================== Actions =========================================== -->
-                <!-- TODO : Traitement actions -->
                 <div class="row">
                     <div class="col s12">
                         <div>
@@ -175,8 +174,9 @@
                             foreach ($actions as $k => $v)
                             {
                                 echo "<input type='checkbox'
-                                             name=".$v['libelle']."
-                                             id=".$v['libelle']." />
+                                             name='actions[]'
+                                             id=".$v['libelle']."
+                                             value=".$v['id_action']." />
                                       <label class='labelActions inputAction'
                                              for=".$v['libelle'].">".$v['libelle']." : ".$v['desc_action']."</label>
                                              <br />";
@@ -340,7 +340,7 @@
                 </div>
             </form>
         </div>
-        <?php if(isset($log))
+        <?php if($error)
         { ?>
             <div class="row">
                 <div class="col s12 l8 offset-l4 red">

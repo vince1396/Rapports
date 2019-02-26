@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="rapports@localhost">
+<dataSource name="rapportsDecimale@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
     <root id="1">
       <ServerVersion>5.7.25</ServerVersion>
@@ -19,7 +19,7 @@
     <schema id="5" parent="1" name="phpmyadmin">
       <Collation>latin1_swedish_ci</Collation>
     </schema>
-    <schema id="6" parent="1" name="rapports">
+    <schema id="6" parent="1" name="rapportsDecimale">
       <Current>1</Current>
       <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
@@ -971,390 +971,363 @@
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="231" name="changer_piece">
+    <column id="248" parent="231" name="new_inter">
       <Position>5</Position>
       <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="231" name="new_inter">
+    <column id="249" parent="231" name="commentaire">
       <Position>6</Position>
-      <DataType>tinyint(1)|0s</DataType>
+      <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="231" name="date_rapport">
+    <column id="250" parent="231" name="id_reseau">
       <Position>7</Position>
-      <DataType>date|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="251" parent="231" name="nom_client">
+    <column id="251" parent="231" name="id_etat">
       <Position>8</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="252" parent="231" name="titre">
+    <column id="252" parent="231" name="id_tech">
       <Position>9</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="253" parent="231" name="contact">
-      <Position>10</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="254" parent="231" name="adresse">
-      <Position>11</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="255" parent="231" name="cp">
-      <Position>12</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="256" parent="231" name="ville">
-      <Position>13</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="257" parent="231" name="id_reseau">
-      <Position>14</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="258" parent="231" name="id_etat">
-      <Position>15</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="259" parent="231" name="id_tech">
-      <Position>16</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="260" parent="231" name="cri_reseau0_FK">
+    <index id="253" parent="231" name="cri_reseau0_FK">
       <ColNames>id_reseau</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="261" parent="231" name="cri_etat_reseau1_FK">
+    <index id="254" parent="231" name="cri_etat_reseau1_FK">
       <ColNames>id_etat</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="262" parent="231" name="cri_tech2_FK">
+    <index id="255" parent="231" name="cri_tech2_FK">
       <ColNames>id_tech</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="263" parent="231" name="PRIMARY">
+    <key id="256" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_rapport</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="264" parent="231" name="cri_rapport_FK">
+    <foreign-key id="257" parent="231" name="cri_rapport_FK">
       <ColNames>id_rapport</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>rapport</RefTableName>
       <RefColNames>id_rapport</RefColNames>
     </foreign-key>
-    <foreign-key id="265" parent="231" name="cri_reseau0_FK">
+    <foreign-key id="258" parent="231" name="cri_reseau0_FK">
       <ColNames>id_reseau</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>reseau</RefTableName>
       <RefColNames>id_reseau</RefColNames>
     </foreign-key>
-    <foreign-key id="266" parent="231" name="cri_etat_reseau1_FK">
+    <foreign-key id="259" parent="231" name="cri_etat_reseau1_FK">
       <ColNames>id_etat</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>etat_reseau</RefTableName>
       <RefColNames>id_etat</RefColNames>
     </foreign-key>
-    <foreign-key id="267" parent="231" name="cri_tech2_FK">
+    <foreign-key id="260" parent="231" name="cri_tech2_FK">
       <ColNames>id_tech</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>tech</RefTableName>
       <RefColNames>id_tech</RefColNames>
     </foreign-key>
-    <column id="268" parent="232" name="date">
-      <Position>1</Position>
-      <DataType>date|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="269" parent="232" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>date</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="270" parent="233" name="id_rapport">
+    <column id="261" parent="232" name="id_date_inter">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="233" name="date">
+    <column id="262" parent="232" name="date_inter">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="233" name="id_tech">
+    <key id="263" parent="232" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_date_inter</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="264" parent="233" name="id_rapport">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="233" name="id_date_inter">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="266" parent="233" name="id_tech">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="273" parent="233" name="effectuer_date_cri0_FK">
-      <ColNames>date</ColNames>
+    <index id="267" parent="233" name="effectuer_date_cri0_FK">
+      <ColNames>id_date_inter</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="274" parent="233" name="effectuer_tech1_FK">
+    <index id="268" parent="233" name="effectuer_tech1_FK">
       <ColNames>id_tech</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="275" parent="233" name="PRIMARY">
+    <key id="269" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_rapport
-date
+id_date_inter
 id_tech</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="276" parent="233" name="effectuer_cri_FK">
+    <foreign-key id="270" parent="233" name="effectuer_cri_FK">
       <ColNames>id_rapport</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>cri</RefTableName>
       <RefColNames>id_rapport</RefColNames>
     </foreign-key>
-    <foreign-key id="277" parent="233" name="effectuer_date_cri0_FK">
-      <ColNames>date</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+    <foreign-key id="271" parent="233" name="effectuer_date_cri0_FK">
+      <ColNames>id_date_inter</ColNames>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>date_cri</RefTableName>
-      <RefColNames>date</RefColNames>
+      <RefColNames>id_date_inter</RefColNames>
     </foreign-key>
-    <foreign-key id="278" parent="233" name="effectuer_tech1_FK">
+    <foreign-key id="272" parent="233" name="effectuer_tech1_FK">
       <ColNames>id_tech</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>tech</RefTableName>
       <RefColNames>id_tech</RefColNames>
     </foreign-key>
-    <column id="279" parent="234" name="id_etat">
+    <column id="273" parent="234" name="id_etat">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="234" name="desc_etat">
+    <column id="274" parent="234" name="desc_etat">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="281" parent="234" name="PRIMARY">
+    <key id="275" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_etat</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="282" parent="235" name="ref_piece">
+    <column id="276" parent="235" name="id_piece">
       <Position>1</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="235" name="details_piece">
+    <column id="277" parent="235" name="ref_piece">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="235" name="qte">
+    <column id="278" parent="235" name="details_piece">
       <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="235" name="id_rapport">
+    <column id="279" parent="235" name="qte">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="286" parent="235" name="piece_cri_FK">
+    <column id="280" parent="235" name="id_rapport">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="281" parent="235" name="piece_cri_FK">
       <ColNames>id_rapport</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="287" parent="235" name="PRIMARY">
+    <key id="282" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>ref_piece</ColNames>
+      <ColNames>id_piece</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="288" parent="235" name="piece_cri_FK">
+    <foreign-key id="283" parent="235" name="piece_cri_FK">
       <ColNames>id_rapport</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>cri</RefTableName>
       <RefColNames>id_rapport</RefColNames>
     </foreign-key>
-    <column id="289" parent="236" name="id_rapport">
+    <column id="284" parent="236" name="id_rapport">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="236" name="date_rapport">
+    <column id="285" parent="236" name="date_rapport">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="236" name="nom_client">
+    <column id="286" parent="236" name="nom_client">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="236" name="titre">
+    <column id="287" parent="236" name="titre">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="236" name="contact">
+    <column id="288" parent="236" name="contact">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="236" name="adresse">
+    <column id="289" parent="236" name="adresse">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="236" name="cp">
+    <column id="290" parent="236" name="cp">
       <Position>7</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="296" parent="236" name="ville">
+    <column id="291" parent="236" name="ville">
       <Position>8</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="236" name="id_tech">
+    <column id="292" parent="236" name="id_tech">
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="298" parent="236" name="rapport_tech_FK">
+    <index id="293" parent="236" name="rapport_tech_FK">
       <ColNames>id_tech</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="299" parent="236" name="PRIMARY">
+    <key id="294" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_rapport</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="300" parent="236" name="rapport_tech_FK">
+    <foreign-key id="295" parent="236" name="rapport_tech_FK">
       <ColNames>id_tech</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>tech</RefTableName>
       <RefColNames>id_tech</RefColNames>
     </foreign-key>
-    <column id="301" parent="237" name="id_action">
+    <column id="296" parent="237" name="id_action">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="237" name="id_rapport">
+    <column id="297" parent="237" name="id_rapport">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="303" parent="237" name="realiser_cri0_FK">
+    <index id="298" parent="237" name="realiser_cri0_FK">
       <ColNames>id_rapport</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="304" parent="237" name="PRIMARY">
+    <key id="299" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_action
 id_rapport</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="305" parent="237" name="realiser_action_FK">
+    <foreign-key id="300" parent="237" name="realiser_action_FK">
       <ColNames>id_action</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>action</RefTableName>
       <RefColNames>id_action</RefColNames>
     </foreign-key>
-    <foreign-key id="306" parent="237" name="realiser_cri0_FK">
+    <foreign-key id="301" parent="237" name="realiser_cri0_FK">
       <ColNames>id_rapport</ColNames>
-      <RefSchemaName>rapports</RefSchemaName>
+      <RefSchemaName>rapportsDecimale</RefSchemaName>
       <RefTableName>cri</RefTableName>
       <RefColNames>id_rapport</RefColNames>
     </foreign-key>
-    <column id="307" parent="238" name="id_reseau">
+    <column id="302" parent="238" name="id_reseau">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="238" name="nom_reseau">
+    <column id="303" parent="238" name="nom_reseau">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="309" parent="238" name="PRIMARY">
+    <key id="304" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_reseau</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="310" parent="239" name="id_tech">
+    <column id="305" parent="239" name="id_tech">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="239" name="nom">
+    <column id="306" parent="239" name="nom">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="312" parent="239" name="prenom">
+    <column id="307" parent="239" name="prenom">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="239" name="email">
+    <column id="308" parent="239" name="email">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="239" name="mdp">
+    <column id="309" parent="239" name="mdp">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="315" parent="239" name="PRIMARY">
+    <key id="310" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_tech</ColNames>
       <Primary>1</Primary>
