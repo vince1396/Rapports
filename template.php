@@ -1,6 +1,6 @@
 <?php
-    require "view/header.php"; //Appel de l'en-tête de la page
+    require "view/header.php"; // Call header
 
-        echo $content; //Affichage de la page stockée dans $content
+        echo $content; // Display requested page
 
-    require "view/footer.php"; //Appel du pied de page
+    require "view/footer.php"; // Call footer

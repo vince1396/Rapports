@@ -1,7 +1,7 @@
 <?php
 require 'model/createCri.php';
 
-    if(isset($_SESSION['id_tech']) OR isset($_COOKIE['id_tech']))
+    if(isset($_SESSION['id_tech']) OR isset($_COOKIE['email']))
     {
         $techs = getTech()->fetchAll();
         $reseau = getReseau()->fetchAll();
@@ -12,58 +12,55 @@ require 'model/createCri.php';
         if (isset($_POST['submit']))
         {
             $post = getPost();
-            $log = [];
+            $log = "";
             $error = false;
-            
-            print_r($post);
-            echo "<br />";
             
             // =========================================================================================================
             if(isEmpty($post['ref']))
             {
-                $log[] = "Référence manquante";
+                $log .= " / Référence manquante";
                 $error = true;
             }
             // =========================================================================================================
             if(isEmpty($post['date_rapport']))
             {
-                $log[] = "Date Rapport manquante";
+                $log .= " / Date Rapport manquante";
                 $error = true;
             }
             // =========================================================================================================
             if(isEmpty($post['nom_client']))
             {
-                $log[] = "Nom client manquant";
+                $log .= " / Nom client manquant";
                 $error = true;
             }
             // =========================================================================================================
             if(isEmpty($post['contact']))
             {
-                $log[] = "Nom contact manquant";
+                $log .= " / Nom contact manquant";
                 $error = true;
             }
             // =========================================================================================================
             if(isEmpty($post['adresse']))
             {
-                $log[] = "Adresse manquante";
+                $log .= " / Adresse manquante";
                 $error = true;
             }
             // =========================================================================================================
             if(isEmpty($post['cp']))
             {
-                $log[] = "Code postal manquant";
+                $log .= " / Code postal manquant";
                 $error = true;
             }
             // =========================================================================================================
             if(isEmpty($post['ville']))
             {
-                $log[] = "Ville manquante";
+                $log .= " / Ville manquante";
                 $error = true;
             }
             // =========================================================================================================
             if(isEmpty($post['detailPresta']))
             {
-                $log[] = "Détails de prestation manquants";
+                $log .= " / Détails de prestation manquants";
                 $error = true;
             }
             // =========================================================================================================
@@ -103,6 +100,7 @@ require 'model/createCri.php';
                         if(isEmpty($vD2))
                         {
                             $nbError++;
+                            $error = true;
                         }
                     }
                 }
@@ -123,37 +121,31 @@ require 'model/createCri.php';
             // =========================================================================================================
             if(!$error)
             {
-                insertRapport();
-                insertCri();
+                insertRapport($post);
+                $lastRapport = getLastId();
+                insertCri($post, $lastRapport[0]);
                 
                 foreach($post["dateInter"] as $idDate => $date)
                 {
                     insertDatesInter($date);
+                    $lastIdDate = getLastId();
     
                     foreach($post["tech"] as $idTech => $tech)
                     {
-                        insertEffectuer(lastDate(), $tech);
+                        insertEffectuer($lastIdDate[0], $tech, $lastRapport[0]);
                     }
                 }
                 
                 foreach($post["actions"] as $idAction => $action)
                 {
-                    insertRealiser($action);
+                    insertRealiser($action, $lastRapport[0]);
                 }
                 
                 foreach($post["piece"] as $kD1 => $vD1)
                 {
-                    if(isset($tabPiece))
-                        unset($tabPiece);
+                    //TODO : Fix insert pieces
                     
-                    $i = 0;
-                    $tabPiece = [];
-                    foreach($post["piece"][$kd1] as $kD2 => $vD2)
-                    {
-                        $tabPiece[$i] = $vD2;
-                        $i++;
-                    }
-                    insertPiece($tabPiece[0], $tabPiece[1], $tabPiece[2]);
+                    insertPiece($post["piece"][$kD1]["refPiece"], $post["piece"][$kD1]["detailPiece"], $post["piece"][$kD1]["qtePiece"], $lastRapport[0]);
                 }
             }
             // =========================================================================================================

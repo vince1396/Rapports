@@ -2,16 +2,183 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="109c37f1-da5e-4950-ac85-ba2e584d2897" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Rapports.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Rapports.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a80d5541-b12c-4f3b-8aba-14e3bef91cf3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea931d00-189a-4d57-bec6-6ac1afe5b9a4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/icheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/arrow-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/arrow-top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/header-line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/icon-fork.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/icon-github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/icon-lab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/icon-options.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/icon-star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-bold.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/js/custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/js/zepto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/icheck.jquery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/icheck.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/icheck.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/aero@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/blue@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/flat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/flat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/flat@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/grey@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/orange@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/pink@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/purple@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/red@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/yellow@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/futurico/futurico.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/futurico/futurico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/futurico/futurico@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/line.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/line@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/aero@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/blue@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/grey@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/minimal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/minimal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/minimal@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/orange@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/pink@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/purple@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/red@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/yellow@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/polaris/polaris.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/polaris/polaris.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/polaris/polaris@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/aero@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/blue@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/grey@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/orange@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/pink@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/purple@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/red@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/square.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/square@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/yellow@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/chosen.jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/createCri.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/createCri.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/createCri.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/createCri.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/bdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/bdd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/myrapports.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/myrapports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/rapportType.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/rapportType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Cri.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/CriManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Piece.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/PieceManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Rapport.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RapportManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Tech.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/TechManager.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/model/createCri.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/createCri.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelBDD.mcd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapports.sql" beforeDir="false" afterPath="$PROJECT_DIR$/rapports.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/myrapports.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/myrapports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/createCri.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/createCri.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/myrapports.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/myrapports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/rapportType.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/rapportType.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,302 +203,24 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="rapportsDecimale@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="rapports@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="rapportsDecimale@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="rapports@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="rapportsDecimale@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="rapports@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="rapportsDecimale: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="rapportsDecimale@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="rapportsDecimale: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="cri: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="rapports: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.1">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/core/functions.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="70">
-                  <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-                  <folding>
-                    <element signature="n#chargerClasse#0;n#!!top" />
-                    <element signature="n#getPost#0;n#!!top" />
-                    <element signature="n#isEmpty#0;n#!!top" />
-                    <element signature="n#makeSession#0;n#!!top" />
-                    <element signature="n#makeCookie#0;n#!!top" />
-                    <element signature="n#destroyCookie#0;n#!!top" />
-                    <element signature="n#makeTabSha1#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/view/header.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/view/footer.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="8" column="98" selection-start-line="8" selection-start-column="98" selection-end-line="8" selection-end-column="98" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/css/login.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="30" selection-start-line="30" selection-end-line="30" />
-                  <folding>
-                    <element signature="e#10#36#0" />
-                    <element signature="e#55#133#0" />
-                    <element signature="e#147#172#0" />
-                    <element signature="e#188#209#0" />
-                    <element signature="e#224#252#0" />
-                    <element signature="e#264#285#0" />
-                    <element signature="e#295#346#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.20521945">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/model/createCri.php">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="168">
-                      <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-                      <folding>
-                        <element signature="n#getTech#0;n#!!top" />
-                        <element signature="n#getReseau#0;n#!!top" />
-                        <element signature="n#getActions#0;n#!!top" />
-                        <element signature="n#getEtatReseau#0;n#!!top" />
-                        <element signature="n#insertRapport#0;n#!!top" />
-                        <element signature="n#insertCri#0;n#!!top" />
-                        <element signature="n#insertDatesInter#0;n#!!top" />
-                        <element signature="n#insertEffectuer#0;n#!!top" />
-                        <element signature="n#insertRealiser#0;n#!!top" />
-                        <element signature="n#insertPiece#0;n#!!top" />
-                        <element signature="n#lastDate#0;n#!!top" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/model/login.php">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="70">
-                      <caret line="5" selection-start-line="5" selection-end-line="5" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/model/myrapports.php">
-                  <provider selected="true" editor-type-id="text-editor" />
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/model/profil.php">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="98">
-                      <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/model/rapportType.php">
-                  <provider selected="true" editor-type-id="text-editor" />
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <splitter split-orientation="horizontal" split-proportion="0.59850746">
-              <split-first>
-                <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-                  <file pinned="false" current-in-tab="true">
-                    <entry file="file://$PROJECT_DIR$/view/createCri.php">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="476">
-                          <caret line="116" column="52" selection-start-line="116" selection-start-column="52" selection-end-line="116" selection-end-column="52" />
-                          <folding>
-                            <element signature="e#49#368#0#PHP" />
-                            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#3;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#4;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#5;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#6;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#7;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#8;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#9;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#10;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#11;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#12;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#13;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#14;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#15;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#16;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#17;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#18;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="n#div#19;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-                            <element signature="e#22309#22632#0#PHP" />
-                          </folding>
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/view/login.php">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="560">
-                          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/view/myrapports.php">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="28">
-                          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/view/profil.php">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="224">
-                          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/view/rapportType.php">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="42">
-                          <caret line="3" selection-start-line="3" selection-end-line="3" />
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                </leaf>
-              </split-first>
-              <split-second>
-                <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-                  <file pinned="false" current-in-tab="true">
-                    <entry file="file://$PROJECT_DIR$/controller/createCri.php">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="72">
-                          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-                          <folding>
-                            <element signature="e#741#873#0#PHP" />
-                            <element signature="e#1007#1151#0#PHP" />
-                            <element signature="e#1285#1424#0#PHP" />
-                            <element signature="e#1558#1695#0#PHP" />
-                            <element signature="e#1829#1963#0#PHP" />
-                            <element signature="e#2097#2229#0#PHP" />
-                            <element signature="e#2363#2493#0#PHP" />
-                            <element signature="e#2627#2780#0#PHP" />
-                            <element signature="e#2914#3372#0#PHP" />
-                            <element signature="e#3506#3682#0#PHP" />
-                            <element signature="e#3816#3985#0#PHP" />
-                            <element signature="e#4119#4643#0#PHP" />
-                            <element signature="e#4777#4954#0#PHP" />
-                            <element signature="e#5088#5280#0#PHP" />
-                            <element signature="e#5535#5835#0#PHP" />
-                            <element signature="e#5869#5999#0#PHP" />
-                            <element signature="e#6033#6537#0#PHP" />
-                          </folding>
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/controller/myrapports.php">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="140">
-                          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/controller/login.php">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="462">
-                          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/controller/profil.php">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="588">
-                          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="34" />
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                  <file pinned="false" current-in-tab="false">
-                    <entry file="file://$PROJECT_DIR$/controller/rapportType.php">
-                      <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="70">
-                          <caret line="5" selection-start-line="5" selection-end-line="5" />
-                        </state>
-                      </provider>
-                    </entry>
-                  </file>
-                </leaf>
-              </split-second>
-            </splitter>
-          </split-second>
-        </splitter>
-      </split-second>
-    </splitter>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -351,18 +240,11 @@
         <option value="$USER_HOME$/Documents/gestion/view/panel/userListView.php" />
         <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/controller/logout.php" />
-        <option value="$PROJECT_DIR$/view/rapportType.php" />
         <option value="$PROJECT_DIR$/model/profil.php" />
         <option value="$PROJECT_DIR$/controller/profil.php" />
-        <option value="$PROJECT_DIR$/template.php" />
-        <option value="$PROJECT_DIR$/controller/myrapports.php" />
-        <option value="$PROJECT_DIR$/controller/rapportType.php" />
         <option value="$PROJECT_DIR$/assets/css/chosen.css" />
-        <option value="$PROJECT_DIR$/model/login.php" />
-        <option value="$PROJECT_DIR$/view/navbar.php" />
         <option value="$PROJECT_DIR$/assets/js/login.js" />
         <option value="$PROJECT_DIR$/assets/css/general.css" />
-        <option value="$PROJECT_DIR$/view/footer.php" />
         <option value="$PROJECT_DIR$/view/login.php" />
         <option value="$PROJECT_DIR$/model/Adresse.php" />
         <option value="$PROJECT_DIR$/model/AdresseManager.php" />
@@ -373,20 +255,35 @@
         <option value="$PROJECT_DIR$/model/RapportManager.php" />
         <option value="$PROJECT_DIR$/model/CriManager.php" />
         <option value="$PROJECT_DIR$/model/Cri.php" />
-        <option value="$PROJECT_DIR$/core/functions.php" />
         <option value="$PROJECT_DIR$/assets/css/login.css" />
         <option value="$PROJECT_DIR$/controller/login.php" />
         <option value="$PROJECT_DIR$/controller/404.php" />
         <option value="$PROJECT_DIR$/view/404.php" />
         <option value="$PROJECT_DIR$/assets/css/404.css" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/assets/js/createCri.js" />
         <option value="$PROJECT_DIR$/view/profil.php" />
-        <option value="$PROJECT_DIR$/view/header.php" />
         <option value="$PROJECT_DIR$/model/bdd.php" />
-        <option value="$PROJECT_DIR$/view/createCri.php" />
-        <option value="$PROJECT_DIR$/controller/createCri.php" />
+        <option value="$PROJECT_DIR$/assets/js/createCri.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_1.sql" />
+        <option value="$PROJECT_DIR$/model/login.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_2.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_3.sql" />
         <option value="$PROJECT_DIR$/model/createCri.php" />
+        <option value="$PROJECT_DIR$/template.php" />
+        <option value="$PROJECT_DIR$/core/functions.php" />
+        <option value="$PROJECT_DIR$/view/header.php" />
+        <option value="$PROJECT_DIR$/view/createCri.php" />
+        <option value="$PROJECT_DIR$/view/footer.php" />
+        <option value="$PROJECT_DIR$/assets/js/navbar.js" />
+        <option value="$PROJECT_DIR$/controller/rapportType.php" />
+        <option value="$PROJECT_DIR$/view/navbar.php" />
+        <option value="$PROJECT_DIR$/controller/createCri.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/view/rapportType.php" />
+        <option value="$PROJECT_DIR$/model/myrapports.php" />
+        <option value="$PROJECT_DIR$/view/myrapports.php" />
+        <option value="$PROJECT_DIR$/initBDD.sql" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/controller/myrapports.php" />
       </list>
     </option>
   </component>
@@ -408,48 +305,35 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="Rapports" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rapports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rapports" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rapports" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rapports" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rapports" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rapports" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rapports" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="Rapports" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DBE.Init.BalloonShown" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Bureau/newWebProject" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -514,12 +398,19 @@
       <workItem from="1549524774429" duration="20493000" />
       <workItem from="1549613217964" duration="21759000" />
       <workItem from="1551081743278" duration="21221000" />
-      <workItem from="1551166433052" duration="243000" />
+      <workItem from="1551166433052" duration="1751000" />
+      <workItem from="1551170488499" duration="1827000" />
+      <workItem from="1551252691233" duration="191000" />
+      <workItem from="1551252894150" duration="24498000" />
+      <workItem from="1551339120608" duration="2238000" />
+      <workItem from="1551341360640" duration="220000" />
+      <workItem from="1551341749021" duration="86000" />
+      <workItem from="1551341839021" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292681000" />
+    <option name="totallyTimeSpent" value="332727000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -532,27 +423,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.078975454" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12059765" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32924336" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32721382" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32822084" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32924336" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053364" side_tool="true" weight="0.32924336" />
+      <window_info anchor="bottom" id="Database Console" order="12" sideWeight="0.4994664" weight="0.3297414" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32977587" />
+      <window_info anchor="right" id="Database" order="3" weight="0.19210246" />
       <window_info anchor="right" id="PinNote" order="4" />
     </layout>
   </component>
@@ -560,203 +451,53 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/gestion/view/panel/userListView.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a80d5541-b12c-4f3b-8aba-14e3bef91cf3/console.sql" />
-    <entry file="file://$PROJECT_DIR$/logout.php" />
-    <entry file="file://$USER_HOME$/Documents/indexController.php" />
-    <entry file="file://$PROJECT_DIR$/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dompdf/lib/php-font-lib/src/FontLib/EOT/File.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chosen.jquery.min.js" />
-    <entry file="file://$PROJECT_DIR$/assets/js/chosen.jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/chosen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="92" column="20" lean-forward="true" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/login.js" />
-    <entry file="file://$PROJECT_DIR$/assets/css/general.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/createCri.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Adresse.php" />
-    <entry file="file://$PROJECT_DIR$/model/AdresseManager.php" />
-    <entry file="file://$PROJECT_DIR$/model/Tech.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-          <folding>
-            <element signature="n#hydrate#0;n#Tech#0;n#!!top" />
-            <element signature="n#setId#0;n#Tech#0;n#!!top" />
-            <element signature="n#setNom#0;n#Tech#0;n#!!top" />
-            <element signature="n#setEmail#0;n#Tech#0;n#!!top" />
-            <element signature="n#setMdp#0;n#Tech#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/TechManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-          <folding>
-            <element signature="n#getList#0;n#TechManager#0;n#!!top" />
-            <element signature="n#update#0;n#TechManager#0;n#!!top" />
-            <element signature="n#setDb#0;n#TechManager#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Rapport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding>
-            <element signature="n#hydrate#0;n#Rapport#0;n#!!top" />
-            <element signature="n#setDate#0;n#Rapport#0;n#!!top" />
-            <element signature="n#setClient#0;n#Rapport#0;n#!!top" />
-            <element signature="n#setTitre#0;n#Rapport#0;n#!!top" />
-            <element signature="n#setContact#0;n#Rapport#0;n#!!top" />
-            <element signature="n#setAdresse#0;n#Rapport#0;n#!!top" />
-            <element signature="n#setCp#0;n#Rapport#0;n#!!top" />
-            <element signature="n#setVille#0;n#Rapport#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/RapportManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="n#add#0;n#TechManager#0;n#!!top" />
-            <element signature="n#delete#0;n#TechManager#0;n#!!top" />
-            <element signature="n#get#0;n#TechManager#0;n#!!top" />
-            <element signature="n#getList#0;n#TechManager#0;n#!!top" />
-            <element signature="n#update#0;n#TechManager#0;n#!!top" />
-            <element signature="n#setDb#0;n#TechManager#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Cri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/CriManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Piece.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding>
-            <element signature="n#hydrate#0;n#Piece#0;n#!!top" />
-            <element signature="n#setRef#0;n#Piece#0;n#!!top" />
-            <element signature="n#setDetails#0;n#Piece#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/PieceManager.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/model/PieceManager.php" />
     <entry file="file://$PROJECT_DIR$/controller/404.php" />
     <entry file="file://$PROJECT_DIR$/assets/js/404.js" />
     <entry file="file://$PROJECT_DIR$/view/404.php" />
     <entry file="file://$PROJECT_DIR$/assets/css/404.css" />
-    <entry file="file://$PROJECT_DIR$/model/bdd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ea931d00-189a-4d57-bec6-6ac1afe5b9a4/console.sql" />
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_1.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_2.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_3.sql" />
+    <entry file="file://$PROJECT_DIR$/template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="70">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/header.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/general.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="84">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/footer.php">
+    <entry file="file://$PROJECT_DIR$/core/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="98" selection-start-line="8" selection-start-column="98" selection-end-line="8" selection-end-column="98" />
+        <state relative-caret-position="364">
+          <caret line="150" column="6" selection-start-line="150" selection-start-column="6" selection-end-line="150" selection-end-column="6" />
+          <folding>
+            <element signature="n#chargerClasse#0;n#!!top" />
+            <element signature="n#destroyCookie#0;n#!!top" />
+            <element signature="n#displaySuperglobals#0;n#!!top" />
+            <element signature="n#getPost#0;n#!!top" />
+            <element signature="n#isEmpty#0;n#!!top" />
+            <element signature="n#login#0;n#!!top" />
+            <element signature="n#makeCookie#0;n#!!top" />
+            <element signature="n#makeSession#0;n#!!top" />
+            <element signature="n#makeTabSha1#0;n#!!top" />
+            <element signature="n#refreshSession#0;n#!!top" />
+            <element signature="n#routing#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="196">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding>
             <element signature="e#10#36#0" />
             <element signature="e#55#133#0" />
@@ -769,26 +510,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/functions.php">
+    <entry file="file://$PROJECT_DIR$/view/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="n#chargerClasse#0;n#!!top" />
-            <element signature="n#getPost#0;n#!!top" />
-            <element signature="n#isEmpty#0;n#!!top" />
-            <element signature="n#makeSession#0;n#!!top" />
-            <element signature="n#makeCookie#0;n#!!top" />
-            <element signature="n#destroyCookie#0;n#!!top" />
-            <element signature="n#makeTabSha1#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="463">
+          <caret line="33" column="78" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/createCri.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="119" column="57" selection-start-line="119" selection-start-column="57" selection-end-line="119" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/action" />
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/effectuer" />
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/realiser" />
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/reseau" />
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/tech" />
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/etat_reseau" />
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/date_cri" />
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/piece">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/86b9befc-8f28-482c-a00c-2648c99db3b4">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID />
+          <OriginalElement>86b9befc-8f28-482c-a00c-2648c99db3b4</OriginalElement>
+          <nodes>
+            <node x="" y="">86b9befc-8f28-482c-a00c-2648c99db3b4.TABLE:rapports.etat_reseau</node>
+            <node x="" y="">86b9befc-8f28-482c-a00c-2648c99db3b4.TABLE:rapports.realiser</node>
+            <node x="" y="">86b9befc-8f28-482c-a00c-2648c99db3b4.TABLE:rapports.date_cri</node>
+            <node x="" y="">86b9befc-8f28-482c-a00c-2648c99db3b4.TABLE:rapports.tech</node>
+            <node x="" y="">86b9befc-8f28-482c-a00c-2648c99db3b4.TABLE:rapports.cri</node>
+            <node x="" y="">86b9befc-8f28-482c-a00c-2648c99db3b4.TABLE:rapports.reseau</node>
+            <node x="" y="">86b9befc-8f28-482c-a00c-2648c99db3b4.TABLE:rapports.piece</node>
+            <node x="" y="">86b9befc-8f28-482c-a00c-2648c99db3b4.TABLE:rapports.effectuer</node>
+            <node x="" y="">86b9befc-8f28-482c-a00c-2648c99db3b4.TABLE:rapports.rapport</node>
+            <node x="" y="">86b9befc-8f28-482c-a00c-2648c99db3b4.TABLE:rapports.action</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7249471458773785" x="648.0" y="494.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/rapport" />
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/cri" />
+    <entry file="file://$PROJECT_DIR$/assets/js/navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rapports.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initBDD.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chosen.jquery.js" />
+    <entry file="file://$PROJECT_DIR$/model/CriManager.php" />
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/createCri.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        <state relative-caret-position="308">
+          <caret line="142" column="5" selection-start-line="142" selection-start-column="5" selection-end-line="142" selection-end-column="5" />
           <folding>
             <element signature="n#getTech#0;n#!!top" />
             <element signature="n#getReseau#0;n#!!top" />
@@ -796,24 +621,76 @@
             <element signature="n#getEtatReseau#0;n#!!top" />
             <element signature="n#insertRapport#0;n#!!top" />
             <element signature="n#insertCri#0;n#!!top" />
-            <element signature="n#insertDatesInter#0;n#!!top" />
             <element signature="n#insertEffectuer#0;n#!!top" />
+            <element signature="n#insertDatesInter#0;n#!!top" />
             <element signature="n#insertRealiser#0;n#!!top" />
             <element signature="n#insertPiece#0;n#!!top" />
-            <element signature="n#lastDate#0;n#!!top" />
+            <element signature="n#getLastId#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/login.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/myrapports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="56">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/myrapports.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/view/createCri.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="148" column="10" selection-start-line="148" selection-start-column="10" selection-end-line="148" selection-end-column="10" />
+          <folding>
+            <element signature="e#49#368#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/createCri.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/profil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/rapportType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/bdd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/profil.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -827,114 +704,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+        <state relative-caret-position="896">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#3066#3130#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/myrapports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="434">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/profil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/rapportType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="182">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/myrapports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/profil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/rapportType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/createCri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="116" column="52" selection-start-line="116" selection-start-column="52" selection-end-line="116" selection-end-column="52" />
-          <folding>
-            <element signature="e#49#368#0#PHP" />
-            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#3;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#4;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#5;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#6;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#7;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#8;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#9;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#10;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#11;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#12;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#13;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#14;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#15;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#16;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#17;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#18;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#19;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="e#22309#22632#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/createCri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding>
-            <element signature="e#741#873#0#PHP" />
-            <element signature="e#1007#1151#0#PHP" />
-            <element signature="e#1285#1424#0#PHP" />
-            <element signature="e#1558#1695#0#PHP" />
-            <element signature="e#1829#1963#0#PHP" />
-            <element signature="e#2097#2229#0#PHP" />
-            <element signature="e#2363#2493#0#PHP" />
-            <element signature="e#2627#2780#0#PHP" />
-            <element signature="e#2914#3372#0#PHP" />
-            <element signature="e#3506#3682#0#PHP" />
-            <element signature="e#3816#3985#0#PHP" />
-            <element signature="e#4119#4643#0#PHP" />
-            <element signature="e#4777#4954#0#PHP" />
-            <element signature="e#5088#5280#0#PHP" />
-            <element signature="e#5535#5835#0#PHP" />
-            <element signature="e#5869#5999#0#PHP" />
-            <element signature="e#6033#6537#0#PHP" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
         </state>
       </provider>
     </entry>

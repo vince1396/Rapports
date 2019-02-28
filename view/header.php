@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <!-- Titre -->
+        <!-- Title -->
         <title>Rapports</title>
         
         <!-- Required meta tags -->
@@ -11,7 +11,6 @@
         <META NAME="OWNER" CONTENT="vcotini@decimale.net">
         <META NAME="AUTHOR" CONTENT="Vincent Cotini">
         <META NAME="LANGUAGE" CONTENT="fr">
-        <META HTTP-EQUIV="VW96.OBJECT TYPE" CONTENT="Document">
         <META NAME="robots" CONTENT="none">
         <META NAME="Copyright" CONTENT="Décimale">
         <META http-equiv="Content-Type"
@@ -41,5 +40,5 @@
     </head>
 
     <header>
-        <?php require "navbar.php"; ?> <!-- Appel de la barre de menu -->
+        <?php require "navbar.php"; ?> <!-- Call Navbar -->
     </header>

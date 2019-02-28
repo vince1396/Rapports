@@ -5,25 +5,11 @@
     {
         header("Location: rapportType");
     }
-
-    if(isset($_COOKIE['email']) AND isset($_COOKIE['mdp']))
+    else
     {
-        $cookies["email"] = $_COOKIE['email'];
-        $cookies["mdp"] = $_COOKIE['mdp'];
-
-        $req = login($cookies);
-
-        if($rep = $req->fetch())
+        if(isset($_COOKIE['email']) AND isset($_COOKIE['mdp']))
         {
-            makeSession($rep);
-            header("Refresh:0; url=rapportType");
-        }
-        else
-        {
-            destroyCookie("email");
-            destroyCookie("mdp");
-
-            header("Refresh:0; url=login");
+            refreshSession($_COOKIE["email"], $_COOKIE['mdp']);
         }
     }
 // ====================================================================================
@@ -47,8 +33,9 @@
 
                 if(isset($_POST['remember']))
                 {
-                    makeCookie("email", $rep['email']);
-                    makeCookie("mdp",   $post['mdp']);
+                    makeCookie("id_tech", $rep['id_tech']);
+                    makeCookie("email",   $rep['email']);
+                    makeCookie("mdp",     $rep['mdp']);
                 }
 
                 header("Location: rapportType");

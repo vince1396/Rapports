@@ -171,6 +171,7 @@
                             <h5><i class="material-icons prefix">done</i> Actions réalisées </h5><br />
                         </div>
                         <?php
+                            $detect = new Mobile_Detect;
                             foreach ($actions as $k => $v)
                             {
                                 echo "<input type='checkbox'
@@ -180,6 +181,10 @@
                                       <label class='labelActions inputAction'
                                              for=".$v['libelle'].">".$v['libelle']." : ".$v['desc_action']."</label>
                                              <br />";
+                                
+                                if ($detect->isMobile())
+                                    echo "<br />";
+                                
                             } ?>
                     </div>
                 </div><br /><br />
@@ -189,7 +194,7 @@
                     <div class="col s12 l6 rowPieceAChanger">
                         <!-- ======================================================================================= -->
                         <!-- =============================== Titre Pièce à changer ================================= -->
-                        <div class="row pieceTitle">
+                        <div class="row">
                             <div class="col s12">
                                 <h3>Pièce(s) à changer ?</h3>
                             </div>
@@ -197,7 +202,7 @@
                         <!-- ======================================================================================= -->
                         <!-- =============================== Switch Pièce à changer ================================ -->
                         <div class="row">
-                            <div class="col s12 offset-l4">
+                            <div class="col s12 offset-l4 offset-s3">
                                 <div class="switch">
                                     <label for="pieceAChanger" class="labelCri">
                                         Non
@@ -218,7 +223,7 @@
                                             <!-- =================================================================== -->
                                             <!-- ========================== Counter Pieces ========================= -->
                                             <div class="row">
-                                                <div class="col s12 l8 offset-l4">
+                                                <div class="col s12 l8 offset-l4 offset-s4">
                                                     <h5 class="pieceH5">Pièce 1</h5>
                                                 </div>
                                             </div>
@@ -296,7 +301,9 @@
                         <?php
                             foreach ($etat as $k => $v)
                             {
-                                echo "<input checked type='radio'
+                                echo "<input checked
+                                             id=".$v['id_etat']."
+                                             type='radio'
                                              name='etatReseau'
                                              value=".$v['id_etat'].">
                                       <label class='labelCri' for=".$v['id_etat'].">".$v['desc_etat']."</label><br />";
@@ -327,7 +334,7 @@
                 <!-- =============================================================================================== -->
                 <!-- ========================================= Submit ============================================== -->
                 <div class="row">
-                    <div class="col s12 offset-s2 l6 offset-l2 submit">
+                    <div class="col s12 offset-s3 l6 offset-l2 submit">
                         <button class="btn waves-effect waves-light"
                                 type="submit"
                                 name="submit"

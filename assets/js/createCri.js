@@ -47,7 +47,7 @@ $(function () {
                 close: 'Ok',
                 closeOnSelect: false, // Close upon selecting a date,
                 container: undefined, // ex. 'body' will append picker to body
-                format: 'dd/mm/yyyy'
+                format: 'yyyy-mm-dd'
             });
         }
         
@@ -155,7 +155,7 @@ $(function () {
         close: 'Ok',
         closeOnSelect: false, // Close upon selecting a date,
         container: undefined, // ex. 'body' will append picker to body
-        format: 'dd/mm/yyyy'
+        format: 'yyyy-mm-dd'
     });
     
 });
