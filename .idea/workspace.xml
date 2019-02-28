@@ -2,183 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="109c37f1-da5e-4950-ac85-ba2e584d2897" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Rapports.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Rapports.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea931d00-189a-4d57-bec6-6ac1afe5b9a4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/icheck.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/arrow-bottom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/arrow-top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/header-line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/icon-fork.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/icon-github.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/icon-lab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/icon-options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/ie/icon-star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-bold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/montserrat-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/js/custom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/demo/js/zepto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/icheck.jquery.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/icheck.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/icheck.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/_all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/aero.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/aero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/aero@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/blue.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/blue@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/flat.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/flat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/flat@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/green@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/grey.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/grey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/grey@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/orange.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/orange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/orange@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/pink.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/pink@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/purple.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/purple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/purple@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/red.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/red@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/yellow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/flat/yellow@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/futurico/futurico.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/futurico/futurico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/futurico/futurico@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/_all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/aero.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/blue.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/grey.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/line.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/line@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/orange.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/pink.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/purple.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/red.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/line/yellow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/_all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/aero.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/aero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/aero@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/blue.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/blue@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/green@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/grey.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/grey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/grey@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/minimal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/minimal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/minimal@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/orange.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/orange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/orange@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/pink.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/pink@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/purple.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/purple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/purple@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/red.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/red@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/yellow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/minimal/yellow@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/polaris/polaris.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/polaris/polaris.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/polaris/polaris@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/_all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/aero.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/aero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/aero@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/blue.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/blue@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/green@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/grey.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/grey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/grey@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/orange.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/orange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/orange@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/pink.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/pink@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/purple.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/purple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/purple@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/red.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/red@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/square.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/square.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/square@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/yellow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icheck/skins/square/yellow@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/chosen.jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/createCri.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/createCri.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/createCri.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/createCri.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/myrapports.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/myrapports.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/rapportType.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/rapportType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Cri.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/CriManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Piece.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/PieceManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Rapport.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/RapportManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Tech.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/TechManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/createCri.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/createCri.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/myrapports.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/myrapports.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/createCri.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/createCri.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/myrapports.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/myrapports.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/rapportType.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/rapportType.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -333,7 +158,8 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -406,11 +232,12 @@
       <workItem from="1551341360640" duration="220000" />
       <workItem from="1551341749021" duration="86000" />
       <workItem from="1551341839021" duration="22000" />
+      <workItem from="1551343364977" duration="281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332727000" />
+    <option name="totallyTimeSpent" value="333008000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -424,7 +251,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12059765" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12166489" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -449,6 +276,15 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/dompdf" />
+      <path value="$PROJECT_DIR$/dompdf/lib/php-font-lib" />
+      <path value="$PROJECT_DIR$/dompdf/lib/php-svg-lib" />
+      <path value="$PROJECT_DIR$/lib/php-font-lib" />
+      <path value="$PROJECT_DIR$/lib/php-svg-lib" />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/model/PieceManager.php" />
