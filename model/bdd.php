@@ -1,8 +1,8 @@
 <?php
   /* Connexion à une base MySQL avec l'invocation de pilote */
-  $dbname = 'mysql:dbname=rapports;host=127.0.0.1';
-  $user = 'root';
-  $mdp = '6283';
+  $dbname = 'mysql:dbname=db775293923;host=db775293923.hosting-data.io';
+  $user = 'dbo775293923';
+  $mdp = 'B6311963a!';
 
   try
   {
