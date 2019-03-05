@@ -1104,6 +1104,7 @@ id_tech</ColNames>
       <RefSchemaName>rapports</RefSchemaName>
       <RefTableName>date_cri</RefTableName>
       <RefColNames>id_date_inter</RefColNames>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <foreign-key id="272" parent="233" name="effectuer_tech1_FK">
       <ColNames>id_tech</ColNames>

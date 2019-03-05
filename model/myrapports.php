@@ -20,43 +20,79 @@
         global $bdd;
         
         $req = $bdd->prepare("DELETE FROM piece
-                                       WHERE piece.id_rapport = :id_rapport");
+                                       WHERE id_rapport = :id_rapport");
         
         $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
         $req->execute();
     }
     
-    function deleteRealiser()
+    function deleteRealiser($id_rapport)
     {
-    
+        global $bdd;
+        
+        $req = $bdd->prepare("DELETE FROM realiser
+                                       WHERE id_rapport = :id_rapport");
+        
+        $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
+        $req->execute();
     }
     
-    function deleteEffectuer()
+    function deleteDate($id_date)
     {
+        global $bdd;
     
+        $req = $bdd->prepare("DELETE FROM date_cri
+                                       WHERE id_date_inter = :id_date");
+    
+        $req->bindValue(":id_date", $id_date, PDO::PARAM_INT);
+        $req->execute();
     }
     
-    function deleteDate()
+    function deleteCri($id_rapport)
     {
+        global $bdd;
     
+        $req = $bdd->prepare("DELETE FROM cri
+                                       WHERE id_rapport = :id_rapport");
+    
+        $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
+        $req->execute();
     }
     
-    function deleteCri()
+    function deleteRapport($id_rapport)
     {
+        global $bdd;
     
+        $req = $bdd->prepare("DELETE FROM rapport
+                                       WHERE id_rapport = :id_rapport");
+    
+        $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
+        $req->execute();
     }
     
-    function deleteRapport()
+    function selectDateToDelete($id_rapport)
     {
-    
+        global $bdd;
+        
+        $req = $bdd->prepare("SELECT DISTINCT d.id_date_inter FROM date_cri d, effectuer e
+                                       WHERE e.id_rapport = :id_rapport
+                                       AND e.id_date_inter = d.id_date_inter");
+        
+        $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
+        $req->execute();
+        
+        return $req;
     }
     
-    /* DELETION
-    
-        1 - Pièce
-        2 - Réaliser
-        3 - Effectuer
-        4 - Dates
-        5 - Cri
-        6 - Rapport
-    */
+    function checkPieces($id_rapport)
+    {
+        global $bdd;
+        
+        $req = $bdd->prepare("SELECT * FROM piece
+                                       WHERE id_rapport = :id_rapport");
+        
+        $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
+        $req->execute();
+        
+        return $req;
+    }

@@ -26,7 +26,10 @@
     spl_autoload_register('chargerClasse');
     
     // Remake session if cookies exist
-    refreshSession();
+    if(!isset($_SESSION["id_tech"]) AND isset($_COOKIE["email"]) AND isset($_COOKIE["mdp"]))
+    {
+        refreshSession();
+    }
     
     $page = routing();
     

@@ -124,27 +124,24 @@
     
     function refreshSession()
     {
-        if(!isset($_SESSION["id_tech"]) && isset($_COOKIE["email"]) && isset($_SESSION["mdp"]))
+        $cookies = [];
+        $cookies["email"] = $_COOKIE["email"];
+        $cookies["mdp"] = $_COOKIE["mdp"];
+    
+        $req = login($cookies);
+    
+        if ($rep = $req->fetch())
         {
-            $cookies["email"] = $_COOKIE["email"];
-            $cookies["mdp"] = $_COOKIE["mdp"];
-    
-            $req = login($cookies);
-    
-            if ($rep = $req->fetch()) {
-                makeSession($rep);
+            $cookies["id_tech"] = $rep["id_tech"];
+            makeSession($cookies);
+            $_GET['p'] = "rapportType";
+        }
+        else
+        {
+            destroyCookie("email");
+            destroyCookie("mdp");
         
-                if (isset($_GET["p"]) && !empty($_GET["p"])) {
-                    header("Refresh:0; url=" . $_GET["p"] . "");
-                } else {
-                    header("Location: rapportType");
-                }
-            } else {
-                destroyCookie("email");
-                destroyCookie("mdp");
-        
-                header("Refresh:0; url=login");
-            }
+            header("Refresh:0; url=login");
         }
     }
     

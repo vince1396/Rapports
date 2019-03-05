@@ -16,52 +16,55 @@ require 'model/createCri.php';
             $error = false;
             
             // =========================================================================================================
-            if(isEmpty($post['ref']))
+            if(!isset($post["ref"]) OR empty($post['ref']))
             {
                 $log .= " / Référence manquante";
                 $error = true;
             }
             // =========================================================================================================
-            if(isEmpty($post['date_rapport']))
+            if(!isset($post["date_rapport"]) OR empty($post['date_rapport']))
             {
                 $log .= " / Date Rapport manquante";
                 $error = true;
             }
             // =========================================================================================================
-            if(isEmpty($post['nom_client']))
+            if(!isset($post["nom_client"]) OR empty($post['nom_client']))
             {
                 $log .= " / Nom client manquant";
                 $error = true;
             }
             // =========================================================================================================
-            if(isEmpty($post['contact']))
+            if(!isset($post["contact"]) OR empty($post['contact']))
             {
                 $log .= " / Nom contact manquant";
                 $error = true;
             }
             // =========================================================================================================
-            if(isEmpty($post['adresse']))
+            if(!isset($post["adresse"]) OR empty($post['adresse']))
             {
                 $log .= " / Adresse manquante";
                 $error = true;
             }
             // =========================================================================================================
-            if(isEmpty($post['cp']))
+            if(!isset($post["cp"]) OR empty($post['cp']))
             {
                 $log .= " / Code postal manquant";
                 $error = true;
             }
             // =========================================================================================================
-            if(isEmpty($post['ville']))
+            if(!isset($post["ville"]) OR empty($post['ville']))
             {
                 $log .= " / Ville manquante";
                 $error = true;
             }
             // =========================================================================================================
-            if(isEmpty($post['detailPresta']))
+            if(isset($post["detailPresta"]))
             {
-                $log .= " / Détails de prestation manquants";
-                $error = true;
+                if(isEmpty($post['detailPresta']))
+                {
+                    $log .= " / Détails de prestation manquants";
+                    $error = true;
+                }
             }
             // =========================================================================================================
             if(isset($post['dateInter']))
@@ -69,7 +72,7 @@ require 'model/createCri.php';
                 $nbError = 0;
                 foreach($post['dateInter'] as $idDate => $date)
                 {
-                    if(isEmpty($post['dateInter'][$idDate]))
+                    if(empty($post['dateInter'][$idDate]))
                     {
                         $nbError++;
                         $log .= "/ ".$nbError." date(s) d'intervention non renseignée(s)";
@@ -77,16 +80,27 @@ require 'model/createCri.php';
                     }
                 }
             }
+            else
+            {
+                $log = "Aucune date d'intervention renseignée";
+                $error = true;
+            }
             // =========================================================================================================
-            if(!isset($post['tech'][0]) OR isEmpty($post['tech'][0]))
+            if(!isset($post['tech'][0]) OR empty($post['tech'][0]))
             {
                 $log .= " / Aucun intervenant séléctionné";
                 $error = true;
             }
             // =========================================================================================================
-            if(!isset($post['reseau']) OR isEmpty($post['reseau']))
+            if(!isset($post['reseau']) OR empty($post['reseau']))
             {
                 $log .= " / Aucun réseau séléctionné";
+                $error = true;
+            }
+            // =========================================================================================================
+            if(!isset($_POST["actions"][0]) OR empty($_POST["actions"][0]))
+            {
+                $log .= " / Aucune action séléctionné";
                 $error = true;
             }
             // =========================================================================================================
@@ -143,8 +157,6 @@ require 'model/createCri.php';
                 
                 foreach($post["piece"] as $kD1 => $vD1)
                 {
-                    //TODO : Fix insert pieces
-                    
                     insertPiece($post["piece"][$kD1]["refPiece"], $post["piece"][$kD1]["detailPiece"], $post["piece"][$kD1]["qtePiece"], $lastRapport[0]);
                 }
             }
