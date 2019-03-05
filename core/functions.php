@@ -1,5 +1,7 @@
 <?php
     
+    use Dompdf\Dompdf;
+    
     function chargerClasse($classe)
     {
         require 'model/'.$classe.'.php'; // On inclut la classe correspondante au paramètre passé.
@@ -165,4 +167,52 @@
         
         return $page;
     
+    }
+    
+    function createPDF($rapport, $cri, $dates, $actions, $reseau, $etat, $inter, $pieces)
+    {
+        //Return $pdfView
+        require "view/pdfView.php";
+        
+        // instantiate and use the dompdf class
+        $dompdf = new Dompdf();
+        $dompdf->loadHtml($pdfView);
+        
+        // (Optional) Setup the paper size and orientation
+        $dompdf->setPaper('A4', 'portrait');
+        $fileName = "CRI_" . $cri["ref_cri"] . ".pdf";
+        
+        // Render the HTML as PDF
+        $dompdf->render();
+        file_put_contents("pdf/". $fileName, $dompdf->output());
+        $dompdf->stream($fileName);
+    
+    }
+    
+    function sendMail()
+    {
+        // ***** SEND MAIL *****
+    
+        // This require return $mailTemplate var
+        require("./view/template/mailView.php");
+    
+        $mail = new PHPMailer();
+    
+        //Recipients
+        $mail->setFrom('demandeachat@decimale.net', 'Decimale');
+        $mail->addAddress(TO_EMAIL_1);
+        $mail->addAddress(TO_EMAIL_2);
+        $mail->addReplyTo('demandeachat@decimale.net', 'Decimale');
+    
+        //Attachment
+        $mail->addAttachment('./public/orders/' . $fileName, 'demandeAchat.pdf');
+        $mail->addAttachment($extraFile, $extraFileName);
+    
+        //Content
+        $mail->isHTML(true);
+        $mail->Subject = 'Demande d\'achat';
+        $mail->Body    = $mailTemplate; // HTML content
+        $mail->AltBody = 'Bonjour,Une nouvelle demande d\'achat a été faite. Vous la trouverez en pièce jointe.'; // Plain text
+    
+        $mail->send();
     }
