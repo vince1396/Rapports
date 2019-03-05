@@ -1,0 +1,2 @@
+# Rapports
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bfbd1d6d787d431383fb9fc361972aab)](https://app.codacy.com/app/vincent.cotini96/Rapports?utm_source=github.com&utm_medium=referral&utm_content=vince1396/Rapports&utm_campaign=Badge_Grade_Settings)
