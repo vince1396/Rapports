@@ -1,6 +1,6 @@
 <?php
     
-    use Dompdf\Dompdf;
+    //use Dompdf\Dompdf;
     
     function chargerClasse($classe)
     {
@@ -173,23 +173,38 @@
     {
         //Return $pdfView
         require "view/pdfView.php";
+        $curl = curl_init();
+        
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.pdfshift.io/v2/convert/",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => json_encode(array("source" => "https://www.pdfshift.io/documentation", "landscape" => false, "use_print" => false)),
+            CURLOPT_HTTPHEADER => array('Content-Type:application/json'),
+            CURLOPT_USERPWD => 'd6c8017c793848c58b75362a060830b2:'
+        ));
+        
+        $response = curl_exec($curl);
+        file_put_contents('pdfhsift-documentation.pdf', $response);
+
+// We also have a package to simplify your work:
+// https://packagist.org/packages/pdfshift/pdfshift-php
         
         // instantiate and use the dompdf class
-        $dompdf = new Dompdf();
-        $dompdf->loadHtml($pdfView);
-        
+        //$dompdf = new Dompdf();
+        //$dompdf->loadHtml($pdfView);
         // (Optional) Setup the paper size and orientation
-        $dompdf->setPaper('A4', 'portrait');
-        $fileName = "CRI_" . $cri["ref_cri"] . ".pdf";
-        
+        //$dompdf->setPaper('A4', 'portrait');
+        //$fileName = "CRI_".$cri["ref_cri"].".pdf";
+        //$pdfContent = $dompdf->output();
         // Render the HTML as PDF
-        $dompdf->render();
-        file_put_contents("pdf/". $fileName, $dompdf->output());
-        $dompdf->stream($fileName);
+        //$dompdf->render();
+        //$dompdf->stream();
+        //file_put_contents("pdf/".$fileName, $pdfContent);
     
     }
     
-    function sendMail()
+    /*function sendMail()
     {
         // ***** SEND MAIL *****
     
@@ -215,4 +230,4 @@
         $mail->AltBody = 'Bonjour,Une nouvelle demande d\'achat a été faite. Vous la trouverez en pièce jointe.'; // Plain text
     
         $mail->send();
-    }
+    }*/

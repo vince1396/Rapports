@@ -2,4 +2,4 @@ $(function () {
     
     $(".button-collapse").sideNav();
     
-})
+});
