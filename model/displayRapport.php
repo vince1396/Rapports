@@ -80,7 +80,7 @@
     {
         global $bdd;
         
-        $req = $bdd->prepare("SELECT nom, prenom FROM effectuer e, tech t
+        $req = $bdd->prepare("SELECT DISTINCT nom, prenom FROM effectuer e, tech t
                                        WHERE e.id_rapport = :id_rapport
                                        AND e.id_tech = t.id_tech");
         $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);

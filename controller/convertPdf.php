@@ -25,9 +25,6 @@
                     $pieces = "NULL";
                 
                 createPDF($rapport, $cri, $dates, $actions, $reseau, $etat, $inter, $pieces);
-                
-                //header("Location: myRapports");
-    
             }
             else
             {

@@ -1,6 +1,5 @@
 <?php
-    
-    //use Dompdf\Dompdf;
+    use \PDFShift\PDFShift;
     
     function chargerClasse($classe)
     {
@@ -171,37 +170,20 @@
     
     function createPDF($rapport, $cri, $dates, $actions, $reseau, $etat, $inter, $pieces)
     {
-        //Return $pdfView
+        //Return $pdfView / $footer
         require "view/pdfView.php";
-        $curl = curl_init();
+        require "view/footerPdf.php";
         
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://api.pdfshift.io/v2/convert/",
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_POST => true,
-            CURLOPT_POSTFIELDS => json_encode(array("source" => "https://www.pdfshift.io/documentation", "landscape" => false, "use_print" => false)),
-            CURLOPT_HTTPHEADER => array('Content-Type:application/json'),
-            CURLOPT_USERPWD => 'd6c8017c793848c58b75362a060830b2:'
-        ));
+        $api_key = 'd6c8017c793848c58b75362a060830b2:';
+        $options = array("sandbox" => true);
         
-        $response = curl_exec($curl);
-        file_put_contents('pdfhsift-documentation.pdf', $response);
-
-// We also have a package to simplify your work:
-// https://packagist.org/packages/pdfshift/pdfshift-php
+        PDFShift::setApiKey($api_key);
+        $pdfshift = new PDFShift($options);
+        $pdfshift->setFooter($footer, '50px');
+        $pdfshift->convert($pdfView);
+        $pdfshift->save('pdf/CRI_'.$cri["ref_cri"].'.pdf');
         
-        // instantiate and use the dompdf class
-        //$dompdf = new Dompdf();
-        //$dompdf->loadHtml($pdfView);
-        // (Optional) Setup the paper size and orientation
-        //$dompdf->setPaper('A4', 'portrait');
-        //$fileName = "CRI_".$cri["ref_cri"].".pdf";
-        //$pdfContent = $dompdf->output();
-        // Render the HTML as PDF
-        //$dompdf->render();
-        //$dompdf->stream();
-        //file_put_contents("pdf/".$fileName, $pdfContent);
-    
+        header("Location: myrapports");
     }
     
     /*function sendMail()

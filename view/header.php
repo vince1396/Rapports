@@ -13,10 +13,9 @@
         <META NAME="LANGUAGE" CONTENT="fr">
         <META NAME="robots" CONTENT="none">
         <META NAME="Copyright" CONTENT="Décimale">
-        <META http-equiv="Content-Type"
-              content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        <meta charset="utf-8" />
+        
         <!-- General CSS -->
         <link href="assets/css/general.css"
               rel="stylesheet">

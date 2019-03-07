@@ -13,7 +13,7 @@
     
     <?php
         // Call page dedicated JS file
-        if (isset($page)) {
+        if (file_exists("assets/js/".$page.".js")) {
             echo "<script src='assets/js/".$page.".js'></script>";
         }
     ?>
