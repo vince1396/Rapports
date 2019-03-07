@@ -92,6 +92,9 @@
                     <div class="row">
                         <div class="col s12">
                             <p>
+                                <?= $rapport["nom_client"]; ?>
+                            </p>
+                            <p>
                                 <?= $rapport["adresse"]; ?>
                             </p>
                         </div>
