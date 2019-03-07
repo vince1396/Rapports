@@ -1,5 +1,7 @@
 <?php
     use \PDFShift\PDFShift;
+    use \PHPMailer\PHPMailer\PHPMailer;
+    use \PHPMailer\PHPMailer\Exception;
     
     function chargerClasse($classe)
     {
@@ -172,44 +174,44 @@
     {
         //Return $pdfView / $footer
         require "view/pdfView.php";
-        require "view/footerPdf.php";
         
         $api_key = 'd6c8017c793848c58b75362a060830b2:';
         $options = array("sandbox" => true);
         
         PDFShift::setApiKey($api_key);
         $pdfshift = new PDFShift($options);
-        $pdfshift->setFooter($footer, '50px');
         $pdfshift->convert($pdfView);
         $pdfshift->save('pdf/CRI_'.$cri["ref_cri"].'.pdf');
         
-        header("Location: myrapports");
+        header('Location: pdf/CRI_'.$cri["ref_cri"].'.pdf');
     }
     
-    /*function sendMail()
+    function sendMail()
     {
         // ***** SEND MAIL *****
     
         // This require return $mailTemplate var
-        require("./view/template/mailView.php");
+        //require("./view/template/mailView.php");
     
-        $mail = new PHPMailer();
+        $mail = new PHPMailer(true);
+        
+        try{
+            //Recipients
+            $mail->setFrom('vcotini@decimale.net', 'Vincent Cotini', 0);
+            $mail->addAddress('vincent.cotini96@gmail.com');
+            $mail->addReplyTo('vcotini@decimale.net', 'Vincent Cotini');
     
-        //Recipients
-        $mail->setFrom('demandeachat@decimale.net', 'Decimale');
-        $mail->addAddress(TO_EMAIL_1);
-        $mail->addAddress(TO_EMAIL_2);
-        $mail->addReplyTo('demandeachat@decimale.net', 'Decimale');
+            //Attachment
+            $mail->addAttachment('pdf/CRI_REF001.pdf');
     
-        //Attachment
-        $mail->addAttachment('./public/orders/' . $fileName, 'demandeAchat.pdf');
-        $mail->addAttachment($extraFile, $extraFileName);
+            //Content
+            $mail->isHTML(true);
+            $mail->Subject = 'CRI';
+            $mail->Body    = '<p>Votre Compte rendu d\'intervention</p>'; // HTML content
+            $mail->AltBody = 'Altbody'; // Plain text
     
-        //Content
-        $mail->isHTML(true);
-        $mail->Subject = 'Demande d\'achat';
-        $mail->Body    = $mailTemplate; // HTML content
-        $mail->AltBody = 'Bonjour,Une nouvelle demande d\'achat a été faite. Vous la trouverez en pièce jointe.'; // Plain text
-    
-        $mail->send();
-    }*/
+            $mail->send();
+        } catch (Exception $e) {
+            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+        }
+    }

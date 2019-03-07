@@ -15,7 +15,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
         <!-- Materialize CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
         <style>
             .mainTitle {
@@ -31,16 +32,17 @@
                 border-left: solid 1px dodgerblue;
             }
 
-            .blue-border-right {
-                border-right: solid 1px dodgerblue;
-            }
-
             .blue-border-top {
                 border-top: solid 1px dodgerblue;
             }
 
             .blue-border-bottom {
                 border-bottom: solid 1px dodgerblue;
+            }
+            
+            .jump {
+                break-before: page;
+                margin-top: 20px;
             }
         </style>
     </head>
@@ -49,14 +51,14 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col s12">
                     <h3 class="center-align blue-text mainTitle">Compte Rendu d'Intervention de Maintenance (CRI)</h3>
                 </div>
             </div>
         </div>
     </header>
     <!-- =========================================================================================================== -->
-        <div class="container pb">
+        <div class="container">
             <!-- =================================================================================================== -->
             <div class="row">
                 <div class="col s12">
@@ -166,9 +168,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- =============================================================================================== -->
-                <!-- =============================================================================================== -->
-                <div class="col s12 blue-border-top">
+            </div>
+            <!-- =============================================================================================== -->
+            <!-- =============================================================================================== -->
+            <div class="row blue-border jump">
+                <div class="col s12">
                     <div class="row">
                         <div class="col s12">
                             <h5>Intervention(s) réalisée(s) par Décimale dans ce contexte :</h5>
@@ -179,7 +183,8 @@
                             <?php
                                 foreach ($actions as $kAction => $vAction)
                                 {
-                                    echo "<p>".$actions[$kAction]["libelle"] ." : ". $actions[$kAction]["desc_action"]. "</p>";
+                                    echo "<p>".$actions[$kAction]["libelle"] ." : ". $actions[$kAction]["desc_action"].
+                                         "</p>";
                                 } ?>
                         </div>
                     </div>
@@ -286,6 +291,7 @@
                     </div>
                 </div>
             </div>
+        </div>
             <!-- =================================================================================================== -->
     </body>
     </html>
