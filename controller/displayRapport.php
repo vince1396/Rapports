@@ -18,6 +18,12 @@
                 $etat = getTargetEtat($id_rapport)->fetch();
                 $inter = getTargetIntervenants($id_rapport)->fetchAll();
                 $pieces = getTargetPieces($id_rapport)->fetchAll();
+    
+                setlocale(LC_TIME, "fr_FR");
+                foreach ($dates as $k)
+                {
+                    strftime("%d %m %Y", $dates[$k]["date_inter"]);
+                }
             }
             else
             {

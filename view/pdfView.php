@@ -112,7 +112,7 @@
                             <?php
                                 foreach ($dates as $kDate => $vDate)
                                 {
-                                    echo "<p>".$dates[$kDate]["date_inter"]."</p>";
+                                    echo "<p>".strftime("%d/%m/%Y",strtotime($dates[$kDate]["date_inter"]))."</p>";
                                 } ?>
                         </div>
                     </div>
