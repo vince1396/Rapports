@@ -33,7 +33,8 @@
                                   <td><?= $rapports[$k]["ref_cri"]      ?></td>
                                   <td><?= $rapports[$k]["nom_client"]   ?></td>
                                   <td><?= $rapports[$k]["date_rapport"] ?></td>
-                                  <td><a href="displayRapport-display-<?= $rapports[$k]["id_rapport"] ?>"><i class="material-icons">remove_red_eye</i></a></td>
+                                  <td><i class="material-icons">remove_red_eye</i></td>
+                                  <!-- <a href="displayRapport-display- $rapports[$k]["id_rapport"]"></a> -->
                                   
                                   <td><i class="material-icons">edit</i></td>
                                   
