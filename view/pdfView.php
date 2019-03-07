@@ -172,6 +172,21 @@
             <!-- =============================================================================================== -->
             <!-- =============================================================================================== -->
             <div class="row blue-border jump">
+                <div class="col s12 blue-border-bottom">
+                    <div class="row">
+                        <div class="col s12">
+                            <h5>Détails de la prestation : </h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <p>
+                                <?= $cri["details_presta"]; ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="col s12">
                     <div class="row">
                         <div class="col s12">

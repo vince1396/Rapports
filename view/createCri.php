@@ -144,15 +144,6 @@
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
-                <!-- ======================================== Détails Presta ======================================= -->
-                <div class="row">
-                    <div class="input-field col s12 l6">
-                        <i class="material-icons prefix">insert_comment</i>
-                        <label for="detailPresta">Détails de la prestation</label>
-                        <textarea required id="detailPresta" name="detailPresta" class="materialize-textarea"></textarea>
-                    </div>
-                </div>
-                <!-- =============================================================================================== -->
                 <!-- ===================================== Problèmes rencontrés ==================================== -->
                 <div class="row">
                     <div class=" input-field col s12 l6">
@@ -161,6 +152,15 @@
                         <textarea name="probleme"
                                   id="probleme"
                                   class="materialize-textarea"></textarea>
+                    </div>
+                </div>
+                <!-- =============================================================================================== -->
+                <!-- ======================================== Détails Presta ======================================= -->
+                <div class="row">
+                    <div class="input-field col s12 l6">
+                        <i class="material-icons prefix">insert_comment</i>
+                        <label for="detailPresta">Détails de la prestation</label>
+                        <textarea required id="detailPresta" name="detailPresta" class="materialize-textarea"></textarea>
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
