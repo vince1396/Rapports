@@ -15,9 +15,6 @@
     
     // =================================================================================================================
     require('pdfshift/init.php');
-    require 'phpmailer/src/Exception.php';
-    require 'phpmailer/src/PHPMailer.php';
-    
     // =================================================================================================================
     require "core/functions.php"; // Call general functions
     require "model/bdd.php"; // DB connection
