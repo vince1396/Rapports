@@ -2,7 +2,6 @@
     session_start();
     
     //TODO : Logo PDF
-    //TODO : Conversion dates pdf
     //TODO : Footer PDF
     
     // ========================== Call DOMPDF library ==================================================================
