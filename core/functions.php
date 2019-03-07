@@ -1,7 +1,5 @@
 <?php
     use \PDFShift\PDFShift;
-    use \PHPMailer\PHPMailer\PHPMailer;
-    use \PHPMailer\PHPMailer\Exception;
     
     function chargerClasse($classe)
     {
