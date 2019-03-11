@@ -24,7 +24,7 @@
     
     // =================================================================================================================
     // Affichages des superglobales (A supprimer en production)
-    // displaySuperglobals();
+     displaySuperglobals();
     // =================================================================================================================
     
     // On enregistre la fonction en autoload pour qu'elle soit appelée dès qu'on instanciera une classe non déclarée.
@@ -32,7 +32,12 @@
     // Remake session if cookies exist
     if(!isset($_SESSION["id_tech"]) AND isset($_COOKIE["email"]) AND isset($_COOKIE["mdp"]))
     {
-        refreshSession();
+        refreshSession($_COOKIE["id_tech"],
+                       $_COOKIE["email"],
+                       $_COOKIE["mdp"],
+                       $_COOKIE["prenom"],
+                       $_COOKIE["nom"],
+                       $_COOKIE["lvl"]);
     }
     
     $page = routing();

@@ -937,12 +937,14 @@
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_bin</Collation>
     </column>
     <column id="242" parent="230" name="desc_action">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_bin</Collation>
     </column>
     <key id="243" parent="230" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -1323,7 +1325,14 @@ id_rapport</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="309" parent="239" name="PRIMARY">
+    <column id="309" parent="239" name="lvl">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="310" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_tech</ColNames>
       <Primary>1</Primary>

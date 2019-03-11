@@ -123,13 +123,21 @@
         return $post;
     }
     
-    function refreshSession($email, $mdp)
+    function refreshSession($id_tech, $email, $mdp, $prenom, $nom, $lvl)
     {
         $cookies = [];
-        $cookies["email"] = $email;
-        $cookies["mdp"] = $mdp;
+        $cookies["id_tech"] = $id_tech;
+        $cookies["email"]   = $email;
+        $cookies["mdp"]     = $mdp;
+        $cookies["prenom"]  = $prenom;
+        $cookies["nom"]     = $nom;
+        $cookies["lvl"]     = $lvl;
+        
+        $login = [];
+        $login["email"] = $email;
+        $login["mdp"] = $mdp;
     
-        $req = login($cookies);
+        $req = login($login);
     
         if ($rep = $req->fetch())
         {
@@ -139,8 +147,12 @@
         }
         else
         {
+            destroyCookie("id_tech");
             destroyCookie("email");
             destroyCookie("mdp");
+            destroyCookie("prenom");
+            destroyCookie("nom");
+            destroyCookie("lvl");
         
             header("Refresh:0; url=login");
         }
@@ -184,7 +196,7 @@
         header('Location: pdf/CRI_'.$cri["ref_cri"].'.pdf');
     }
     
-    function sendMail()
+    /*function sendMail()
     {
         // ***** SEND MAIL *****
     
@@ -212,4 +224,4 @@
         } catch (Exception $e) {
             echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
         }
-    }
+    }*/

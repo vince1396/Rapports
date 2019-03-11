@@ -37,6 +37,9 @@
                     makeCookie("id_tech", $rep['id_tech']);
                     makeCookie("email",   $rep['email']);
                     makeCookie("mdp",     $rep['mdp']);
+                    makeCookie("prenom",  $rep['prenom']);
+                    makeCookie("nom",     $rep['nom']);
+                    makeCookie("lvl",     $rep['lvl']);
                 }
 
                 header("Location: rapportType");
