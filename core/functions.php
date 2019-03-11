@@ -196,6 +196,16 @@
         header('Location: pdf/CRI_'.$cri["ref_cri"].'.pdf');
     }
     
+    function confirmPsw($mdp1, $mdp2)
+    {
+        if($mdp1 == $mdp2)
+            $confirm = true;
+        else
+            $confirm = false;
+        
+        return $confirm;
+    }
+    
     /*function sendMail()
     {
         // ***** SEND MAIL *****

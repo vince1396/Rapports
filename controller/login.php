@@ -5,13 +5,6 @@
     {
         header("Location: rapportType");
     }
-    else
-    {
-        if(isset($_COOKIE['email']) AND isset($_COOKIE['mdp']))
-        {
-            refreshSession($_COOKIE["email"], $_COOKIE['mdp']);
-        }
-    }
 // ====================================================================================
     if(isset($_POST['submit']))
     {

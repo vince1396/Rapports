@@ -3,6 +3,7 @@
     <!DOCTYPE html>
     <html lang="fr">
         <head>
+            <title></title>
             <style>
                 .center {
                     margin-left: 30%;

@@ -347,6 +347,7 @@
                 </div>
             </form>
         </div>
+        
         <?php if($error)
         { ?>
             <div class="row">

@@ -5,3 +5,7 @@ body {
 input::placeholder {
     color: black;
 }
+
+.blue-border {
+    border: solid 3px #1da3ff;
+}

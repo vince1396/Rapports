@@ -10,6 +10,12 @@
               </a>
               <a href="rapportType" class="brand-logo">Rapports</a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <?php
+                    if($_SESSION["lvl"] == 1)
+                    { ?>
+                        <li><a href="admin">Admin</a></li> <?php
+                    }
+                  ?>
                   <li><a href="rapportType">Créer Rapport</a></li>
                   <li><a href="myrapports">Mes Rapports</a></li>
                   <li><a href="profil"><?= $_SESSION["prenom"]." ".$_SESSION["nom"]; ?></a></li>

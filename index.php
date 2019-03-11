@@ -24,7 +24,7 @@
     
     // =================================================================================================================
     // Affichages des superglobales (A supprimer en production)
-     displaySuperglobals();
+    // displaySuperglobals();
     // =================================================================================================================
     
     // On enregistre la fonction en autoload pour qu'elle soit appelée dès qu'on instanciera une classe non déclarée.

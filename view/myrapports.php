@@ -44,7 +44,8 @@
                                         <td><a href="convertPdf-pdf-<?= $rapports[$k]["id_rapport"] ?>"><i class="material-icons">picture_as_pdf</i></td>
 
                                         <td>
-                                            <a href="myrapports-delete-<?= $rapports[$k]["id_rapport"] ?>">
+                                            <a href="myrapports-delete-<?= $rapports[$k]["id_rapport"] ?>"
+                                               onclick="return(confirm('Etes-vous sûr de vouloir supprimer cette entrée ?'));">
                                                 <i class="material-icons">delete</i>
                                             </a>
                                         </td>
