@@ -3,13 +3,16 @@
 
     if(isset($_SESSION['id_tech']))
     {
+        $hasRapport = false;
+        $checkHasRapport = techHasRapport($_SESSION["id_tech"]);
+    
+        if($rep1 = $checkHasRapport->fetch())
+            $hasRapport = true;
+        
         if(isset($_GET["opt"]) AND isset($_GET["id"]))
         {
             $opt = $_GET["opt"];
             $id_rapport = $_GET["id"];
-            echo $opt;
-            echo "<br />";
-            echo $id_rapport;
             
             if($opt == "delete")
             {
