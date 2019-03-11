@@ -20,6 +20,7 @@
                 }
                 
                 deleteRealiser($id_rapport);
+                deleteEffectuer($id_rapport);
                 
                 $req = selectDateToDelete($id_rapport)->fetchAll();
                 print_r($req);

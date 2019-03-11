@@ -37,6 +37,16 @@
         $req->execute();
     }
     
+    function deleteEffectuer($id_rapport)
+    {
+        global $bdd;
+        
+        $req = $bdd->prepare("DELETE FROM effectuer
+                                       WHERE id_rapport = :id_rapport");
+        $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
+        $req->execute();
+    }
+    
     function deleteDate($id_date)
     {
         global $bdd;
