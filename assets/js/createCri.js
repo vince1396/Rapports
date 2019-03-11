@@ -2,14 +2,15 @@ $(function () {
     
     // =================================================================================================================
     // =========== Initialization ==========
-    let dateInterCounter = 0;
-    let pieceCounter = 1;
+    let dateInterCounter  = 0;
+    let pieceCounter      = 1;
     
-    let dateInterRow    = $("#spanDateInter > *");
-    let dateInterRemove = $("#dateInterRemove");
-    let dateInterAdd    = $("#dateInterAdd");
-    let lastDateInter   = $(".dateInterRow:last");
-    let datepicker      = $(".datepicker");
+    let formCri           = $("#formCri");
+    let dateInterRow      = $("#spanDateInter > *");
+    let dateInterRemove   = $("#dateInterRemove");
+    let dateInterAdd      = $("#dateInterAdd");
+    let lastDateInter     = $(".dateInterRow:last");
+    let datepicker        = $(".datepicker");
     
     let rowDisplayPiece   = $("#rowDisplayPiece");
     let pieceAChanger     = $("#pieceAChanger");
@@ -18,6 +19,7 @@ $(function () {
     let clonePiece        = $("#clonePiece > *");
     let insertClonedPiece = $("#insertClonedPiece");
     let inputPiece        = $(".inputPiece");
+    let tech              = $("#tech");
     
     dateInterRemove.hide();
     rowDisplayPiece.hide();
@@ -132,13 +134,21 @@ $(function () {
     // =================================================================================================================
     // Submit
     
-    $("#formCri").on("submit", function () {
+    formCri.on("submit", function () {
     
         if($("#pieceAChanger").is(":checked"))
         {}
         else
             $("#rowDisplayPiece > *").remove();
         
+    });
+    
+    $("#submit").on("click", function () {
+       
+        if (tech[0].value === "")
+        {
+            alert("Veuillez sélectionnez au moins 1 intervenant");
+        }
     });
     
     // =================================================================================================================

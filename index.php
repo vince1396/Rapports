@@ -3,6 +3,7 @@
     
     //TODO : Logo PDF
     //TODO : Footer PDF
+    //TODO : Suppression Rapport
     
     // ========================== Call DOMPDF library ==================================================================
     require_once 'dompdf/lib/html5lib/Parser.php';
