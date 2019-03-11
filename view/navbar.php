@@ -12,7 +12,7 @@
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                   <li><a href="rapportType">Créer Rapport</a></li>
                   <li><a href="myrapports">Mes Rapports</a></li>
-                  <li><a href="profil">Profil</a></li>
+                  <li><a href="profil"><?= $_SESSION["prenom"]." ".$_SESSION["nom"]; ?></a></li>
                   <li class="red darken-2"><a href="logout">Déconnexion</a></li>
               </ul>
           </div>
