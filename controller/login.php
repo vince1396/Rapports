@@ -16,7 +16,8 @@
     if(isset($_POST['submit']))
     {
         $log = "";
-        $_POST['mdp'] = sha1($_POST['mdp']);
+        $mdp = $_POST["mdp"];
+        $_POST['mdp'] = sha1($mdp);
         $post = getPost();
 
         if(isEmpty($post))

@@ -35,7 +35,7 @@ $(function () {
         e.preventDefault();
         if(dateInterCounter < 9)
         {
-            $("#dateInterRemove").show('fade');
+            $("#dateInterRemove").show("fade");
             dateInterRow.clone().removeAttr("id").hide().insertAfter(dateInterRow).fadeIn(1000);
             dateInterCounter++;
     
@@ -44,12 +44,12 @@ $(function () {
         
                 selectMonths: true, // Creates a dropdown to control month
                 selectYears: 15, // Creates a dropdown of 15 years to control year,
-                today: 'Date du jour',
-                clear: 'Réinitialiser',
-                close: 'Ok',
+                today: "Date du jour",
+                clear: "Réinitialiser",
+                close: "Ok",
                 closeOnSelect: false, // Close upon selecting a date,
                 container: undefined, // ex. 'body' will append picker to body
-                format: 'yyyy-mm-dd'
+                format: "yyyy-mm-dd"
             });
         }
         
@@ -66,14 +66,16 @@ $(function () {
             lastDateInter = $(".dateInterRow:last");
             lastDateInter.remove();
     
-            if(dateInterCounter >= 9)
+            if(dateInterCounter >= 9) {
                 dateInterAdd.removeClass("disabled");
+            }
             
             dateInterCounter--;
         }
         
-        if(dateInterCounter === 0)
+        if(dateInterCounter === 0) {
             dateInterRemove.hide("fade");
+        }
     });
 
     // =================================================================================================================
@@ -136,10 +138,9 @@ $(function () {
     
     formCri.on("submit", function () {
     
-        if($("#pieceAChanger").is(":checked"))
-        {}
-        else
+        if(!$("#pieceAChanger").is(":checked")) {
             $("#rowDisplayPiece > *").remove();
+        }
         
     });
     

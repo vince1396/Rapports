@@ -123,11 +123,11 @@
         return $post;
     }
     
-    function refreshSession()
+    function refreshSession($email, $mdp)
     {
         $cookies = [];
-        $cookies["email"] = $_COOKIE["email"];
-        $cookies["mdp"] = $_COOKIE["mdp"];
+        $cookies["email"] = $email;
+        $cookies["mdp"] = $mdp;
     
         $req = login($cookies);
     
