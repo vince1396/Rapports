@@ -4,16 +4,8 @@
     //TODO : Logo PDF
     //TODO : Footer PDF
     
-    // ========================== Call DOMPDF library ==================================================================
-    require_once 'dompdf/lib/html5lib/Parser.php';
-    require_once 'dompdf/lib/php-font-lib/src/FontLib/Autoloader.php';
-    require_once 'dompdf/lib/php-svg-lib/src/autoload.php';
-    require_once 'dompdf/src/Autoloader.php';
-    Dompdf\Autoloader::register();
     // =================================================================================================================
-    
-    // =================================================================================================================
-    require('pdfshift/init.php');
+    require('pdfshift/init.php'); // Call PDFShift library
     // =================================================================================================================
     require "core/functions.php"; // Call general functions
     require "model/bdd.php"; // DB connection
@@ -27,8 +19,11 @@
     // displaySuperglobals();
     // =================================================================================================================
     
+    // =================================================================================================================
     // On enregistre la fonction en autoload pour qu'elle soit appelée dès qu'on instanciera une classe non déclarée.
     spl_autoload_register('chargerClasse');
+    // =================================================================================================================
+    
     // Remake session if cookies exist
     if(!isset($_SESSION["id_tech"]) AND isset($_COOKIE["email"]) AND isset($_COOKIE["mdp"]))
     {
@@ -40,7 +35,7 @@
                        $_COOKIE["lvl"]);
     }
     
-    $page = routing();
+    $page = routing(); // Defines which page to call
     
     ob_start(); // Suspend HTML display
         require "controller/" . $page . ".php"; // Call requested page

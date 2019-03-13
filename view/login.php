@@ -61,14 +61,15 @@
   </div>
   
   <?php
-    if(isset($log))
-    { ?>
-        <div class="row ">
-            <div class="col s12 l3 offset-l4 red">
-                <p class="center-align"><?= $log; ?></p>
-            </div>
-        </div> <?php
-    }
-  ?>
+      // Display logs if there's any
+      if(isset($log))
+      { ?>
+          <div class="row ">
+              <div class="col s12 l3 offset-l4 red">
+                  <p class="center-align"><?= $log; ?></p>
+              </div>
+          </div> <?php
+      }
+      ?>
 
 </body>

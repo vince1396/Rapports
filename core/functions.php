@@ -3,7 +3,8 @@
     
     function chargerClasse($classe)
     {
-        require 'model/'.$classe.'.php'; // On inclut la classe correspondante au paramètre passé.
+        $fileName = "model/".$classe.".php";
+        require $fileName; // On inclut la classe correspondante au paramètre passé.
     }
     
     function destroyCookie($name)
@@ -182,7 +183,7 @@
     
     function createPDF($rapport, $cri, $dates, $actions, $reseau, $etat, $inter, $pieces)
     {
-        //Return $pdfView / $footer
+        //Return $pdfView
         require "view/pdfView.php";
         
         $api_key = 'd6c8017c793848c58b75362a060830b2:';
