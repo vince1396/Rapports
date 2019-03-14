@@ -21,15 +21,15 @@
     spl_autoload_register('chargerClasse');
     // =================================================================================================================
     
+    $session = $_SESSION;
     $cookies = sanitizeCookies();
     
-    if(!isset($_SESSION["id_tech"]) AND !empty($cookies["email"]) AND !empty($cookies["mdp"]))
+    if(empty($session['id_tech']) AND !empty($cookies["email"]) AND !empty($cookies["mdp"]))
     {
         refreshSession($cookies);
     }
     
     $page = routing(); // Defines which page to call
-    print_r($page);
     
     ob_start(); // Suspend HTML display
         require "controller/" . $page . ".php"; // Call requested page

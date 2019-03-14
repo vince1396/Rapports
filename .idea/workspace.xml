@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/core/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dompdf" beforeDir="false" afterPath="$PROJECT_DIR$/dompdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
     </list>
     <ignored path="pdf/" />
@@ -53,14 +52,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48399147">
+    <splitter split-orientation="horizontal" split-proportion="0.42636073">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="574">
-                  <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+                <state relative-caret-position="327">
+                  <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -83,11 +82,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/functions.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="473">
-                  <caret line="168" column="36" selection-start-line="168" selection-start-column="36" selection-end-line="168" selection-end-column="36" />
+                <state relative-caret-position="776">
+                  <caret line="241" column="24" lean-forward="true" selection-start-line="241" selection-start-column="24" selection-end-line="241" selection-end-column="24" />
                   <folding>
                     <element signature="e#43#216#0#PHP" />
                     <element signature="e#226#305#0#PHP" />
@@ -99,6 +98,7 @@
                     <element signature="e#2770#2895#0#PHP" />
                     <element signature="e#2944#3100#0#PHP" />
                     <element signature="e#3110#4051#0#PHP" />
+                    <element signature="e#3740#4331#0#PHP" />
                     <element signature="e#4756#5285#0#PHP" />
                     <element signature="e#5295#5473#0#PHP" />
                     <element signature="e#5652#5854#0#PHP" />
@@ -111,7 +111,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.18245614">
+        <splitter split-orientation="horizontal" split-proportion="0.34790698">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="false">
@@ -157,8 +157,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/model/myrapports.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="280">
-                      <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+                    <state relative-caret-position="266">
+                      <caret line="108" column="4" lean-forward="true" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
                       <folding>
                         <element signature="n#getRapports#0;n#!!top" />
                         <element signature="n#deletePiece#0;n#!!top" />
@@ -187,7 +187,7 @@
             </leaf>
           </split-first>
           <split-second>
-            <splitter split-orientation="horizontal" split-proportion="0.41101277">
+            <splitter split-orientation="horizontal" split-proportion="0.4155028">
               <split-first>
                 <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
                   <file pinned="false" current-in-tab="false">
@@ -223,8 +223,8 @@
                   <file pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/view/login.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="406">
-                          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+                        <state relative-caret-position="734">
+                          <caret line="71" column="70" selection-start-line="71" selection-start-column="70" selection-end-line="71" selection-end-column="70" />
                         </state>
                       </provider>
                     </entry>
@@ -299,8 +299,8 @@
                   <file pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/controller/login.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="350">
-                          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+                        <state relative-caret-position="70">
+                          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
                         </state>
                       </provider>
                     </entry>
@@ -398,12 +398,12 @@
         <option value="$PROJECT_DIR$/view/navbar.php" />
         <option value="$PROJECT_DIR$/model/admin.php" />
         <option value="$PROJECT_DIR$/view/pdfView.php" />
-        <option value="$PROJECT_DIR$/view/login.php" />
         <option value="$PROJECT_DIR$/model/login.php" />
-        <option value="$PROJECT_DIR$/controller/login.php" />
         <option value="$PROJECT_DIR$/controller/logout.php" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/view/login.php" />
+        <option value="$PROJECT_DIR$/controller/login.php" />
         <option value="$PROJECT_DIR$/core/functions.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -560,12 +560,12 @@
       <workItem from="1552462358241" duration="1339000" />
       <workItem from="1552463766503" duration="2186000" />
       <workItem from="1552468761326" duration="119000" />
-      <workItem from="1552551243485" duration="10611000" />
+      <workItem from="1552551243485" duration="12678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="453448000" />
+    <option name="totallyTimeSpent" value="455515000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -593,7 +593,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.19077568" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2798742" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010672" side_tool="true" weight="0.3275862" />
       <window_info anchor="bottom" id="Database Console" order="12" sideWeight="0.49893278" weight="0.3297414" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -907,20 +907,6 @@
     <entry file="file://$PROJECT_DIR$/model/login.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -928,10 +914,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/view/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="71" column="70" selection-start-line="71" selection-start-column="70" selection-end-line="71" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/myrapports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+        <state relative-caret-position="266">
+          <caret line="108" column="4" lean-forward="true" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
           <folding>
             <element signature="n#getRapports#0;n#!!top" />
             <element signature="n#deletePiece#0;n#!!top" />
@@ -947,17 +947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="168" column="36" selection-start-line="168" selection-start-column="36" selection-end-line="168" selection-end-column="36" />
+        <state relative-caret-position="776">
+          <caret line="241" column="24" lean-forward="true" selection-start-line="241" selection-start-column="24" selection-end-line="241" selection-end-column="24" />
           <folding>
             <element signature="e#43#216#0#PHP" />
             <element signature="e#226#305#0#PHP" />
@@ -969,11 +962,19 @@
             <element signature="e#2770#2895#0#PHP" />
             <element signature="e#2944#3100#0#PHP" />
             <element signature="e#3110#4051#0#PHP" />
+            <element signature="e#3740#4331#0#PHP" />
             <element signature="e#4756#5285#0#PHP" />
             <element signature="e#5295#5473#0#PHP" />
             <element signature="e#5652#5854#0#PHP" />
             <element signature="e#5483#6433#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
         </state>
       </provider>
     </entry>

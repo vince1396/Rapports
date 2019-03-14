@@ -3,7 +3,7 @@
 
     // =================================================================================================================
     // If user is already connected -> Send him to main menu
-    if(isset($_SESSION['id_tech']))
+    if(!empty($session['id_tech']))
     {
         header("Location: rapportType");
     }
@@ -25,7 +25,7 @@
         
         foreach($options as $k => $v)
         {
-            if(empty($_POST[$k]))
+            if(empty($post[$k]))
             {
                 $log = "Veuillez remplir le champ ".$k;
                 $nbErrors++;

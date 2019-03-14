@@ -226,6 +226,22 @@
         return $page;
     }
     
+    function sanitizeSession()
+    {
+        $opt = array(
+            'id_tech' => FILTER_VALIDATE_INT,
+            'email'   => FILTER_SANITIZE_EMAIL,
+            'mdp'     => FILTER_SANITIZE_STRING,
+            'prenom'  => FILTER_SANITIZE_STRING,
+            'nom'     => FILTER_SANITIZE_STRING,
+            'lvl'     => FILTER_VALIDATE_INT
+        );
+        
+        $session = filter_input_array(INPUT_SESSION, $opt);
+        
+        return $session;
+    }
+    
     /*function sendMail()
     {
         // ***** SEND MAIL *****

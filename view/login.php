@@ -69,7 +69,7 @@
       { ?>
           <div class="row ">
               <div class="col s12 l3 offset-l4 red">
-                  <p class="center-align"><?= $log; ?></p>
+                  <p class="center-align"><?= addslashes($log); ?></p>
               </div>
           </div> <?php
       }
