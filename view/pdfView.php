@@ -44,6 +44,12 @@
                 break-before: page;
                 margin-top: 20px;
             }
+            
+            .logo {
+                width: 200px;
+                height: 100px;
+                margin-top: 50px;
+            }
         </style>
     </head>
     <body>
@@ -51,7 +57,10 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col s12">
+                <div class="col s4">
+                    <img src="https://i.ibb.co/nkmFRDy/logo.jpg" alt="Logo" class="logo">
+                </div>
+                <div class="col s8">
                     <h3 class="center-align blue-text mainTitle">Compte Rendu d'Intervention de Maintenance (CRI)</h3>
                 </div>
             </div>

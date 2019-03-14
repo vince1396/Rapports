@@ -54,7 +54,9 @@ $(function () {
         }
         
         if(dateInterCounter >= 9)
+        {
             dateInterAdd.addClass("disabled");
+        }
     });
     
     //Remove the last dateInter field
@@ -87,13 +89,13 @@ $(function () {
         {
             rowDisplayPiece.show("fade");
             addPiece.show("fade");
-            inputPiece.prop('required',true);
+            inputPiece.prop("required",true);
         }
         else
         {
             rowDisplayPiece.hide("fade");
             addPiece.hide("fade");
-            inputPiece.prop('required',false);
+            inputPiece.prop("required",false);
         }
     });
     
@@ -113,7 +115,9 @@ $(function () {
         pieceCounter++;
         
         if(pieceCounter >= 10)
+        {
             addPiece.addClass("disabled");
+        }
     });
     
     removePiece.on("click", function(e) {
@@ -124,13 +128,17 @@ $(function () {
             $(".borderPiece:last").hide("fade").remove();
     
             if(pieceCounter >= 10)
+            {
                 addPiece.removeClass("disabled");
-            
+            }
+
             pieceCounter--;
         }
         
         if(pieceCounter < 2)
+        {
             removePiece.hide("fade");
+        }
     });
     
     // =================================================================================================================
