@@ -1,9 +1,6 @@
 <?php
     session_start();
     
-    //TODO : Logo PDF
-    //TODO : Footer PDF
-    
     // =================================================================================================================
     require('pdfshift/init.php'); // Call PDFShift library
     // =================================================================================================================
@@ -16,7 +13,7 @@
     
     // =================================================================================================================
     // Affichages des superglobales (A supprimer en production)
-    // displaySuperglobals();
+     displaySuperglobals();
     // =================================================================================================================
     
     // =================================================================================================================
@@ -24,18 +21,15 @@
     spl_autoload_register('chargerClasse');
     // =================================================================================================================
     
-    // Remake session if cookies exist
-    if(!isset($_SESSION["id_tech"]) AND isset($_COOKIE["email"]) AND isset($_COOKIE["mdp"]))
+    $cookies = sanitizeCookies();
+    
+    if(!isset($_SESSION["id_tech"]) AND !empty($cookies["email"]) AND !empty($cookies["mdp"]))
     {
-        refreshSession($_COOKIE["id_tech"],
-                       $_COOKIE["email"],
-                       $_COOKIE["mdp"],
-                       $_COOKIE["prenom"],
-                       $_COOKIE["nom"],
-                       $_COOKIE["lvl"]);
+        refreshSession($cookies);
     }
     
     $page = routing(); // Defines which page to call
+    print_r($page);
     
     ob_start(); // Suspend HTML display
         require "controller/" . $page . ".php"; // Call requested page

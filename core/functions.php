@@ -124,25 +124,16 @@
         return $post;
     }
     
-    function refreshSession($id_tech, $email, $mdp, $prenom, $nom, $lvl)
+    function refreshSession($cookies)
     {
-        $cookies = [];
-        $cookies["id_tech"] = $id_tech;
-        $cookies["email"]   = $email;
-        $cookies["mdp"]     = $mdp;
-        $cookies["prenom"]  = $prenom;
-        $cookies["nom"]     = $nom;
-        $cookies["lvl"]     = $lvl;
-        
         $login = [];
-        $login["email"] = $email;
-        $login["mdp"] = $mdp;
+        $login["email"] = $cookies["email"];
+        $login["mdp"] = $cookies["mdp"];
     
         $req = login($login);
     
         if ($rep = $req->fetch())
         {
-            $cookies["id_tech"] = $rep["id_tech"];
             makeSession($cookies);
             $_GET['p'] = "rapportType";
         }
@@ -161,24 +152,25 @@
     
     function routing()
     {
-        if (!isset($_GET['p']) || $_GET['p'] == "") //Si l'utilisateur vient d'arriver sur le site
+        $sPage = sanitizeGet();
+        
+        if (empty($sPage['p']) || empty($sPage['p'])) //Si l'utilisateur vient d'arriver sur le site
         {
             $page = "login"; //On le dirige vers la page de connexion
         }
         else //Si l'utilisateur est déja sur le site et se déplace avec les liens
         {
-            if (!file_exists("controller/" . $_GET['p'] . ".php")) //On vérifie que la page demandée existe
+            if (!file_exists("controller/" . $sPage['p'] . ".php")) //On vérifie que la page demandée existe
             {
                 $page = "404"; //Si non : On dirige vers 404
             }
-            else //Si oui
+            else
             {
-                $page = $_GET['p']; //On récupère le nom de la page demandée
+                $page = $sPage['p'];
             }
         }
         
         return $page;
-    
     }
     
     function createPDF($rapport, $cri, $dates, $actions, $reseau, $etat, $inter, $pieces)
@@ -205,6 +197,33 @@
             $confirm = false;
         
         return $confirm;
+    }
+    
+    function sanitizeCookies()
+    {
+        $opt = array(
+            'id_tech' => FILTER_VALIDATE_INT,
+            'email'   => FILTER_SANITIZE_EMAIL,
+            'mdp'     => FILTER_SANITIZE_STRING,
+            'prenom'  => FILTER_SANITIZE_STRING,
+            'nom'     => FILTER_SANITIZE_STRING,
+            'lvl'     => FILTER_VALIDATE_INT
+        );
+    
+        $cookies = filter_input_array(INPUT_COOKIE, $opt);
+        
+        return $cookies;
+    }
+    
+    function sanitizeGet()
+    {
+        $opt = array(
+            'p' => FILTER_SANITIZE_STRING
+        );
+        
+        $page = filter_input_array(INPUT_GET, $opt);
+        
+        return $page;
     }
     
     /*function sendMail()

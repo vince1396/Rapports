@@ -1,31 +1,52 @@
 <?php
   require 'model/login.php';
 
+    // =================================================================================================================
+    // If user is already connected -> Send him to main menu
     if(isset($_SESSION['id_tech']))
     {
         header("Location: rapportType");
     }
-// ====================================================================================
-    if(isset($_POST['submit']))
+    // =================================================================================================================
+    $options = array(
+        'email' => FILTER_VALIDATE_EMAIL,
+        'mdp'   => FILTER_SANITIZE_STRING,
+    );
+    
+    $post = filter_input_array(INPUT_POST, $options);
+    
+    if($post != null)
     {
-        $log = "";
-        $mdp = $_POST["mdp"];
-        $_POST['mdp'] = sha1($mdp);
-        $post = getPost();
-
-        if(isEmpty($post))
+        $errorMsg = array(
+          'email' => 'Adresse email invalide'
+        );
+        
+        $nbErrors = 0;
+        
+        foreach($options as $k => $v)
         {
-            $log = "Veuillez remplir tous les champs du formulaire.";
+            if(empty($_POST[$k]))
+            {
+                $log = "Veuillez remplir le champ ".$k;
+                $nbErrors++;
+            }
+            elseif($post[$k] === false)
+            {
+                $log = $errorMsg[$k];
+                $nbErrors++;
+            }
         }
-        else
+        
+        if($nbErrors == 0)
         {
+            $post["mdp"] = sha1($post["mdp"]);
             $req = login($post);
-
+    
             if($rep = $req->fetch())
             {
                 makeSession($rep);
-
-                if(isset($_POST['remember']))
+        
+                if(filter_has_var(INPUT_POST, 'remember'))
                 {
                     makeCookie("id_tech", $rep['id_tech']);
                     makeCookie("email",   $rep['email']);
@@ -34,14 +55,14 @@
                     makeCookie("nom",     $rep['nom']);
                     makeCookie("lvl",     $rep['lvl']);
                 }
-
+        
                 header("Location: rapportType");
             }
-          else
-          {
-              $log = "Mauvais identifiants !";
-          }
+            else
+            {
+                $log = "Mauvais identifiants !";
+            }
         }
-      }
+    }
 
   require 'view/login.php';

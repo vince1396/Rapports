@@ -10,6 +10,7 @@
       <div class="row">
           <form action="#" method="post" class="col s12 l6 offset-l3">
               <!-- ================================================================================================= -->
+              <!-- ========== Email Field ========== -->
               <div class="row">
                   <div class="input-field col s12">
                       <i class="material-icons prefix">account_circle</i>
@@ -25,11 +26,11 @@
                   </div>
               </div>
               <!-- ================================================================================================= -->
+              <!-- ========== Password Field ========== -->
               <div class="row">
                   <div class="input-field col s12">
                       <i class="material-icons prefix">lock</i>
-                      <input
-                              id="icon_lock"
+                      <input  id="icon_lock"
                               type="password"
                               class="validate"
                               name="mdp"
@@ -37,6 +38,7 @@
                   </div>
               </div>
               <!-- ================================================================================================= -->
+              <!-- ========== Remember me option ========== -->
               <div class="row">
                   <div class="col s10 offset-s1 l8 offset-l4">
                       <input type="checkbox" name="remember" id="remember">
@@ -44,6 +46,7 @@
                   </div>
               </div>
               <!-- ================================================================================================= -->
+              <!-- ========== Submit Button ========== -->
               <div class="row">
                   <div class="col s10 offset-s1 l8 offset-l4">
                       <button
