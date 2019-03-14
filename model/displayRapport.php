@@ -28,7 +28,7 @@
     {
         global $bdd;
         
-        $req = $bdd->prepare("SELECT date_inter FROM effectuer e, date_cri d
+        $req = $bdd->prepare("SELECT DISTINCT date_inter FROM effectuer e, date_cri d
                                        WHERE e.id_rapport = :id_rapport
                                        AND e.id_date_inter = d.id_date_inter");
         $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
