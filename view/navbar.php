@@ -30,6 +30,12 @@
                   <h2 class="white-text">Menu</h2>
               </div>
           </div>
+          <?php
+              if($session["lvl"] == 1)
+              { ?>
+                  <li><a href="admin" class="waves-effect"><i class="material-icons">build</i>Admin</a></li><?php
+              }
+          ?>
           <li><a href="rapportType" class="waves-effect"><i class="material-icons">add_circle</i>Créer Rapport</a></li>
           <li><div class="divider"></div></li>
           <li><a href="myrapports" class="waves-effect"><i class="material-icons">collections_bookmark</i>Mes Rapports </a></li>
