@@ -42,7 +42,7 @@
           <li><div class="divider"></div></li>
           <li><a href="profil" class="waves-effect"><i class="material-icons">account_circle</i> Profil </a></li>
           <li><div class="divider"></div></li>
-          <li class="red darken-1"><a href="logout" class="waves-effect white-text"><i class="material-icons">cloud</i> Déconnexion</a></li>
+          <li class="red darken-1"><a href="logout" class="waves-effect white-text"><i class="material-icons">close</i> Déconnexion</a></li>
       </ul>
     
       <?php
