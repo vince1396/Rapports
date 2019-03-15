@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="109c37f1-da5e-4950-ac85-ba2e584d2897" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dompdf" beforeDir="false" afterPath="$PROJECT_DIR$/dompdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/navbar.php" afterDir="false" />
     </list>
     <ignored path="pdf/" />
     <ignored path="model/bdd.php" />
@@ -49,7 +47,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55496264">
+    <splitter split-orientation="horizontal" split-proportion="0.1">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -64,7 +62,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/view/navbar.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
+                <state relative-caret-position="350">
                   <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
                 </state>
               </provider>
@@ -102,7 +100,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.3996076">
+        <splitter split-orientation="horizontal" split-proportion="0.109792285">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="true">
@@ -179,7 +177,7 @@
             </leaf>
           </split-first>
           <split-second>
-            <splitter split-orientation="horizontal" split-proportion="0.55327344">
+            <splitter split-orientation="horizontal" split-proportion="0.8552368">
               <split-first>
                 <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
                   <file pinned="false" current-in-tab="false">
@@ -221,7 +219,7 @@
                       </provider>
                     </entry>
                   </file>
-                  <file pinned="false" current-in-tab="true">
+                  <file pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/view/myrapports.php">
                       <provider selected="true" editor-type-id="text-editor">
                         <state relative-caret-position="658">
@@ -230,11 +228,11 @@
                       </provider>
                     </entry>
                   </file>
-                  <file pinned="false" current-in-tab="false">
+                  <file pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/view/pdfView.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="1330">
-                          <caret line="95" column="45" selection-start-line="95" selection-start-column="45" selection-end-line="95" selection-end-column="45" />
+                        <state relative-caret-position="322">
+                          <caret line="125" column="30" lean-forward="true" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
                         </state>
                       </provider>
                     </entry>
@@ -383,7 +381,6 @@
         <option value="$PROJECT_DIR$/controller/admin.php" />
         <option value="$PROJECT_DIR$/view/admin.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_13.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_14.sql" />
         <option value="$PROJECT_DIR$/model/admin.php" />
         <option value="$PROJECT_DIR$/model/login.php" />
@@ -392,10 +389,11 @@
         <option value="$PROJECT_DIR$/controller/login.php" />
         <option value="$PROJECT_DIR$/core/functions.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/view/pdfView.php" />
         <option value="$PROJECT_DIR$/assets/js/createCri.js" />
         <option value="$PROJECT_DIR$/model/displayRapport.php" />
         <option value="$PROJECT_DIR$/view/navbar.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/view/pdfView.php" />
       </list>
     </option>
   </component>
@@ -548,12 +546,12 @@
       <workItem from="1552463766503" duration="2186000" />
       <workItem from="1552468761326" duration="119000" />
       <workItem from="1552551243485" duration="16092000" />
-      <workItem from="1552635852038" duration="245000" />
+      <workItem from="1552635852038" duration="1775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="459174000" />
+    <option name="totallyTimeSpent" value="460704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,7 +585,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.1782284" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.1782284" />
       <window_info anchor="right" id="PinNote" order="4" />
     </layout>
   </component>
@@ -726,7 +724,13 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_13.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_14.sql" />
-    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/tech" />
+    <entry file="das://86b9befc-8f28-482c-a00c-2648c99db3b4/schema/rapports/table/tech">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -850,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/pdfView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="95" column="45" selection-start-line="95" selection-start-column="45" selection-end-line="95" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/profil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -868,13 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/myrapports.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="47" column="120" selection-start-line="47" selection-start-column="120" selection-end-line="47" selection-end-column="120" />
         </state>
       </provider>
     </entry>
@@ -956,8 +946,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="350">
           <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/myrapports.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="47" column="120" selection-start-line="47" selection-start-column="120" selection-end-line="47" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/pdfView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="125" column="30" lean-forward="true" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
         </state>
       </provider>
     </entry>

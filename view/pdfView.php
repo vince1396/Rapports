@@ -50,6 +50,10 @@
                 height: 100px;
                 margin-top: 50px;
             }
+            
+            .alignment {
+                margin-bottom: 100px;
+            }
         </style>
     </head>
     <body>
@@ -116,7 +120,7 @@
                             <h5 class="text-align">Date(s) d'Intervention</h5>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row alignment">
                         <div class="col s12">
                             <?php
                                 foreach ($dates as $kDate => $vDate)
