@@ -47,10 +47,10 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.1">
+    <splitter split-orientation="horizontal" split-proportion="0.29348987">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="532">
@@ -59,7 +59,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/view/navbar.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="350">
@@ -231,8 +231,8 @@
                   <file pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/view/pdfView.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="322">
-                          <caret line="125" column="30" lean-forward="true" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
+                        <state relative-caret-position="546">
+                          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
                         </state>
                       </provider>
                     </entry>
@@ -546,12 +546,12 @@
       <workItem from="1552463766503" duration="2186000" />
       <workItem from="1552468761326" duration="119000" />
       <workItem from="1552551243485" duration="16092000" />
-      <workItem from="1552635852038" duration="1775000" />
+      <workItem from="1552635852038" duration="2045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="460704000" />
+    <option name="totallyTimeSpent" value="460974000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -579,13 +579,13 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2442348" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2442348" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010672" side_tool="true" weight="0.3275862" />
       <window_info anchor="bottom" id="Database Console" order="12" sideWeight="0.49893278" weight="0.3297414" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.1782284" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1782284" />
       <window_info anchor="right" id="PinNote" order="4" />
     </layout>
   </component>
@@ -937,13 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -960,8 +953,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/pdfView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="125" column="30" lean-forward="true" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
+        <state relative-caret-position="546">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
         </state>
       </provider>
     </entry>

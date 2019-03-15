@@ -33,9 +33,7 @@
                     $post = getPost();
                     $post["mdp"] = sha1($post["mdp"]);
                     $post["confrim"] = sha1($post["confirm"]);
-                    print_r($post);
                     echo "<br />";
-                    print_r($_POST);
                     
                     if(!isEmpty($post))
                     {
