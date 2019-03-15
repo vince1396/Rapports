@@ -11,7 +11,7 @@
               <a href="rapportType" class="brand-logo">Rapports</a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                   <?php
-                    if($_SESSION["lvl"] == 1)
+                    if($session["lvl"] == 1)
                     { ?>
                         <li><a href="admin">Admin</a></li> <?php
                     }
