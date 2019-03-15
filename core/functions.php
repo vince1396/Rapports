@@ -179,7 +179,7 @@
         require "view/pdfView.php";
         
         $api_key = 'd6c8017c793848c58b75362a060830b2:';
-        $options = array("sandbox" => true);
+        $options = array();
         
         PDFShift::setApiKey($api_key);
         $pdfshift = new PDFShift($options);
