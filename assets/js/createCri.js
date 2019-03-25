@@ -20,11 +20,16 @@ $(function () {
     let insertClonedPiece = $("#insertClonedPiece");
     let inputPiece        = $(".inputPiece");
     let tech              = $("#tech");
+    let ref               = $("#ref");
+    let checkRef          = $("#regex");
     
     dateInterRemove.hide();
     rowDisplayPiece.hide();
     removePiece.hide();
     addPiece.hide();
+    
+    //REGEX
+    let regex = /^MA\d{5}(-0\d)?$/;
     
     // =================================================================================================================
     // ========== Dates d'interventions ==========
@@ -157,6 +162,28 @@ $(function () {
         if (tech[0].value === "")
         {
             alert("Veuillez sélectionnez au moins 1 intervenant");
+        }
+        
+        if(!regex.test(ref.val()))
+        {
+            alert("La référence est invalide !");
+        }
+    });
+    
+    // =================================================================================================================
+    // REGEX
+    
+    ref.on("change", function () {
+        
+        console.log("Test");
+        
+        if (regex.test(ref.val()))
+        {
+            checkRef.html("OK").css("color", "Green");
+        }
+        else
+        {
+            checkRef.html("Référence Invalide").css("color", "red");
         }
     });
     

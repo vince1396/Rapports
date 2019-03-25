@@ -14,6 +14,7 @@ require 'model/createCri.php';
             $post = getPost();
             $log = "";
             $error = false;
+            $regex = "#^MA\d{5}(-0\d)?$#";
             
             // =========================================================================================================
             if(!isset($post["ref"]) OR empty($post['ref']))
@@ -124,6 +125,12 @@ require 'model/createCri.php';
             if(!isset($post['needInter']) OR isEmpty($post['needInter']))
             {
                 $log .= "Besoin nouvelle intervention non séléctionné";
+                $error = true;
+            }
+            
+            if(preg_match($regex, $post["ref"]))
+            {
+                $log .= "Référence invalide";
                 $error = true;
             }
             // =========================================================================================================

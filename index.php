@@ -1,10 +1,7 @@
 <?php
     session_start();
     
-    // TODO : Envoie par mail
-    // TODO : Regex Ma Référence
-    // TODO : Détails de la presta => facultatif
-    // TODO : Détails presta devient => Détails de l'opération de maintenance
+    // TODO : Envoi par mail
     
     // =================================================================================================================
     require('pdfshift/init.php'); // Call PDFShift library

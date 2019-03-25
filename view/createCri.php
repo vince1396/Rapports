@@ -28,8 +28,9 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix ">edit</i>
-                        <input required type="text" name="ref" id="ref" class="validate">
+                        <input required type="text" name="ref" id="ref">
                         <label for="ref">Ma référence</label>
+                        <span class="helper-text regex" id="regex">MA12345</span>
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
