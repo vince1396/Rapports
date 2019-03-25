@@ -63,14 +63,13 @@
         global $bdd;
         
         $req = $bdd->prepare("INSERT INTO cri
-                                       VALUES (:id_rapport, :ref_cri, :probleme, :details_presta, :new_inter, :commentaire, :id_reseau, :id_etat, :id_tech)");
+                                       VALUES (:id_rapport, :ref_cri, :probleme, :details_presta, :new_inter, :id_reseau, :id_etat, :id_tech)");
         
         $req->bindValue(":id_rapport",     $lastRapport,           PDO::PARAM_INT);
         $req->bindValue(":ref_cri",        $post["ref"],           PDO::PARAM_STR);
         $req->bindValue(":probleme",       $post["probleme"],      PDO::PARAM_STR);
         $req->bindValue(":details_presta", $post["detailPresta"],  PDO::PARAM_STR);
         $req->bindValue(":new_inter",      $post["needInter"],     PDO::PARAM_STR);
-        $req->bindValue(":commentaire",    $post["commentaire"],   PDO::PARAM_STR);
         $req->bindValue(":id_reseau",      $post["reseau"],        PDO::PARAM_INT);
         $req->bindValue(":id_etat",        $post["etatReseau"],    PDO::PARAM_INT);
         $req->bindValue(":id_tech",        $_SESSION["id_tech"],   PDO::PARAM_INT);

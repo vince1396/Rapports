@@ -307,21 +307,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row blue-border">
-                <div class="col s12">
-                    <div class="row">
-                        <div class="col s12">
-                            <h5>Autre(s) commentaire(s) éventuel(s) : </h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <p><?= $cri["commentaire"] ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
             <!-- =================================================================================================== -->
     </body>

@@ -323,15 +323,6 @@
                     </div>
                 </div><br /><br />
                 <!-- =============================================================================================== -->
-                <!-- ================================== Autres Commentaires ======================================== -->
-                <div class="row">
-                    <div class="input-field col s12 l6">
-                        <i class="material-icons prefix">insert_comment</i>
-                        <label for="commentaire">Autres commentaires éventuels : </label>
-                        <textarea name="commentaire" id="commentaire" class="materialize-textarea"></textarea>
-                    </div>
-                </div>
-                <!-- =============================================================================================== -->
                 <!-- ========================================= Submit ============================================== -->
                 <div class="row">
                     <div class="col s12 offset-s3 l6 offset-l2 submit">

@@ -16,7 +16,7 @@
     {
         global $bdd;
         
-        $req = $bdd->prepare("SELECT ref_cri, probleme, details_presta, new_inter, commentaire FROM cri
+        $req = $bdd->prepare("SELECT ref_cri, probleme, details_presta, new_inter FROM cri
                                        WHERE id_rapport = :id_rapport");
         $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
         $req->execute();
