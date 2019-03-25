@@ -19,6 +19,7 @@
                                 <th>Référence</th>
                                 <th>Client</th>
                                 <th>Date</th>
+                                <th>Technicien</th>
                                 <th>Afficher</th>
                                 <th>Modifier</th>
                                 <th>PDF</th>
@@ -28,14 +29,13 @@
 
                         <tbody>
                             <?php
-                                $rapports = getRapports()->fetchAll();
-                          
                                 foreach ($rapports as $k => $v)
                                 { ?>
                                     <tr>
                                         <td><?= $rapports[$k]["ref_cri"]      ?></td>
                                         <td><?= $rapports[$k]["nom_client"]   ?></td>
                                         <td><?= $rapports[$k]["date_rapport"] ?></td>
+                                        <td><?= $rapports[$k]["prenom"]." ". $rapports[$k]["nom"] ?></td>
                                         <td><i class="material-icons">remove_red_eye</i></td>
                                         <!-- <a href="displayRapport-display- $rapports[$k]["id_rapport"]"></a> -->
 

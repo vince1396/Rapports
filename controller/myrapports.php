@@ -4,11 +4,29 @@
     if(isset($_SESSION['id_tech']))
     {
         $hasRapport = false;
-        $checkHasRapport = techHasRapport($_SESSION["id_tech"]);
     
+        if ($_SESSION["lvl"] == 1)
+        {
+            $checkHasRapport = adminHasRapport();
+        }
+        else
+        {
+            $checkHasRapport = techHasRapport($_SESSION["id_tech"]);
+        }
+        
         if($rep1 = $checkHasRapport->fetch())
             $hasRapport = true;
-        
+    
+        if ($_SESSION["lvl"] == 1)
+        {
+            $rapports = getAllRapports()->fetchAll();
+        }
+        else
+        {
+            $rapports = getRapports()->fetchAll();
+        }
+    
+    
         if(isset($_GET["opt"]) AND isset($_GET["id"]))
         {
             $opt = $_GET["opt"];
