@@ -1,10 +1,8 @@
 <?php
     session_start();
     
-    // TODO : Champs date inter : enlevés les S
     // TODO : Envoie par mail
     // TODO : Regex Ma Référence
-    // TODO : Problèmes rencontrés devient => Rappel du contexte
     // TODO : Détails de la presta => facultatif
     // TODO : Détails presta devient => Détails de l'opération de maintenance
     

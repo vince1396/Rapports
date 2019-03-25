@@ -94,8 +94,8 @@
                             <div class="row dateInterRow" id="dateInterRow">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">event</i>
-                                    <label for="dateInter">Date(s) d'intervention(s)</label>
-                                    <input required type="text" name="dateInter[]" class="datepicker" id="dateInter">
+                                    <label for="dateInter">Date d'intervention</label>
+                                    <input type="text" name="dateInter[]" class="datepicker" id="dateInter">
                                 </div>
                             </div>
                         </span>
@@ -148,7 +148,7 @@
                 <div class="row">
                     <div class=" input-field col s12 l6">
                         <i class="material-icons prefix">insert_comment</i>
-                        <label for="probleme">Problèmes rencontrés</label>
+                        <label for="probleme">Rappel du contexte</label>
                         <textarea name="probleme"
                                   id="probleme"
                                   class="materialize-textarea"></textarea>
@@ -159,8 +159,8 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix">insert_comment</i>
-                        <label for="detailPresta">Détails de la prestation</label>
-                        <textarea required id="detailPresta" name="detailPresta" class="materialize-textarea"></textarea>
+                        <label for="detailPresta">Détails de l'opération de maintenace</label>
+                        <textarea id="detailPresta" name="detailPresta" class="materialize-textarea"></textarea>
                     </div>
                 </div>
                 <!-- =============================================================================================== -->
