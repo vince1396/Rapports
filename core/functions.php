@@ -179,10 +179,10 @@
         require "view/pdfView.php";
         
         $api_key = 'd6c8017c793848c58b75362a060830b2:';
-        $options = array("sandbox" => true);
+        //$options = array("sandbox" => true);
         
         PDFShift::setApiKey($api_key);
-        $pdfshift = new PDFShift($options);
+        $pdfshift = new PDFShift();
         $pdfshift->convert($pdfView);
         $pdfshift->save('pdf/CRI_'.$cri["ref_cri"].'.pdf');
         
