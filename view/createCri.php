@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <i class="material-icons prefix">edit</i>
-                        <input required type="text" name="adresse" id="adresse" class="validate">
+                        <input type="text" name="adresse" id="adresse" class="validate">
                         <label for="adresse">Adresse Client</label>
                     </div>
                 </div>

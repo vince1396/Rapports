@@ -40,12 +40,6 @@ require 'model/createCri.php';
                 $error = true;
             }
             // =========================================================================================================
-            if(!isset($post["adresse"]) OR empty($post['adresse']))
-            {
-                $log .= " / Adresse manquante";
-                $error = true;
-            }
-            // =========================================================================================================
             if(!isset($post["cp"]) OR empty($post['cp']))
             {
                 $log .= " / Code postal manquant";

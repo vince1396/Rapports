@@ -1,15 +1,12 @@
 <?php
     session_start();
     
-    // TODO : Adresse non obligatoire
     // TODO : Champs date inter : enlevés les S
-    // TODO : Admin voit tous les rapports
     // TODO : Envoie par mail
     // TODO : Regex Ma Référence
     // TODO : Problèmes rencontrés devient => Rappel du contexte
     // TODO : Détails de la presta => facultatif
     // TODO : Détails presta devient => Détails de l'opération de maintenance
-    // TODO : Supprimer champ commentaires éventuels
     
     // =================================================================================================================
     require('pdfshift/init.php'); // Call PDFShift library

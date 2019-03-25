@@ -108,7 +108,16 @@
                                 <?= $rapport["nom_client"]; ?>
                             </p>
                             <p>
-                                <?= $rapport["adresse"]; ?>
+                                <?php
+                                    if (empty($rapport["adresse"]))
+                                    {
+                                        echo "Adresse non renseignée";
+                                    }
+                                    else
+                                    {
+                                        echo $rapport["adresse"];
+                                    }
+                                ?>
                             </p>
                         </div>
                     </div>
