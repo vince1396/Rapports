@@ -8,14 +8,16 @@
         header("Location: rapportType");
     }
     // =================================================================================================================
+    
+    //Setting sanitizing options
     $options = array(
         'email' => FILTER_VALIDATE_EMAIL,
         'mdp'   => FILTER_SANITIZE_STRING,
     );
     
-    $post = filter_input_array(INPUT_POST, $options);
+    $post = filter_input_array(INPUT_POST, $options); //Sanitize POST values
     
-    if($post != null)
+    if($post != null) // If form has been sent
     {
         $errorMsg = array(
           'email' => 'Adresse email invalide'
@@ -25,19 +27,19 @@
         
         foreach($options as $k => $v)
         {
-            if(empty($post[$k]))
+            if(empty($post[$k])) // If a field is empty
             {
                 $log = "Veuillez remplir le champ ".$k;
                 $nbErrors++;
             }
-            elseif($post[$k] === false)
+            elseif($post[$k] === false) // If email adress format is wrong
             {
                 $log = $errorMsg[$k];
                 $nbErrors++;
             }
         }
         
-        if($nbErrors == 0)
+        if($nbErrors == 0) // If no error
         {
             $post["mdp"] = sha1($post["mdp"]);
             $req = login($post);

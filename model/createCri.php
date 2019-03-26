@@ -1,5 +1,10 @@
 <?php
-
+    
+    /**
+     * Return all techs to display in "Intervenants"
+     *
+     * @return bool|PDOStatement
+     */
     function getTech()
     {
         global $bdd;
@@ -9,7 +14,13 @@
 
         return $req;
     }
-
+    
+    // =================================================================================================================
+    /**
+     * Return all Reseau to display in "Réseau"
+     *
+     * @return bool|PDOStatement
+     */
     function getReseau()
     {
         global $bdd;
@@ -19,7 +30,13 @@
 
         return $req;
     }
-
+    
+    // =================================================================================================================
+    /**
+     * Return all Actions to display in "Actions réalisées"
+     *
+     * @return bool|PDOStatement
+     */
     function getActions()
     {
         global $bdd;
@@ -29,7 +46,13 @@
 
         return $req;
     }
-
+    
+    // =================================================================================================================
+    /**
+     * Return all EtatReseau to display in "Etat du réseau à l'issue de l'inter"
+     *
+     * @return bool|PDOStatement
+     */
     function getEtatReseau()
     {
         global $bdd;
@@ -40,6 +63,12 @@
         return $req;
     }
     
+    // =================================================================================================================
+    /**
+     * Insert datas into table rapport
+     *
+     * @param $post
+     */
     function insertRapport($post)
     {
         global $bdd;
@@ -58,6 +87,13 @@
         $req->execute();
     }
     
+    // =================================================================================================================
+    /**
+     * Insert datas into table cri
+     *
+     * @param $post
+     * @param $lastRapport
+     */
     function insertCri($post, $lastRapport)
     {
         global $bdd;
@@ -77,6 +113,14 @@
         $req->execute();
     }
     
+    // =================================================================================================================
+    /**
+     * Insert datas into table effectuer
+     *
+     * @param $date
+     * @param $tech
+     * @param $lastRapport
+     */
     function insertEffectuer($date, $tech, $lastRapport)
     {
         global $bdd;
@@ -91,6 +135,12 @@
         $req->execute();
     }
     
+    // =================================================================================================================
+    /**
+     * Insert datas into table date_inter
+     *
+     * @param $date_inter
+     */
     function insertDatesInter($date_inter)
     {
         global $bdd;
@@ -103,6 +153,13 @@
         $req->execute();
     }
     
+    // =================================================================================================================
+    /**
+     * Insert datas into table realiser
+     *
+     * @param $action
+     * @param $lastRapport
+     */
     function insertRealiser($action, $lastRapport)
     {
         global $bdd;
@@ -116,6 +173,15 @@
         $req->execute();
     }
     
+    // =================================================================================================================
+    /**
+     * Insert datas into table piece
+     *
+     * @param $ref_piece
+     * @param $details_piece
+     * @param $qte
+     * @param $lastRapport
+     */
     function insertPiece($ref_piece, $details_piece, $qte, $lastRapport)
     {
         global $bdd;
@@ -131,6 +197,12 @@
         $req->execute();
     }
     
+    // =================================================================================================================
+    /**
+     * Return last insert ID
+     *
+     * @return mixed
+     */
     function getLastId()
     {
         global $bdd;

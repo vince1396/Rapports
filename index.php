@@ -2,6 +2,9 @@
     session_start();
     
     // TODO : Envoi par mail
+    // TODO : Modif rapports
+    // TODO : Changer MDP
+    // TODO : Mot de passe oublié
     
     // =================================================================================================================
     require('pdfshift/init.php'); // Call PDFShift library

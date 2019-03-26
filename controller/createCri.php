@@ -11,50 +11,58 @@ require 'model/createCri.php';
         // Form is sent
         if (isset($_POST['submit']))
         {
-            $post = getPost();
+            $post = getPost(); // Sanitize POST
             $log = "";
             $error = false;
             $regex = "#^MA\d{5}(-0\d)?$#";
             
             // =========================================================================================================
+            // ref missing or empty
             if(!isset($post["ref"]) OR empty($post['ref']))
             {
                 $log .= " / Référence manquante";
                 $error = true;
             }
             // =========================================================================================================
+            // date_raport missing or empty
             if(!isset($post["date_rapport"]) OR empty($post['date_rapport']))
             {
                 $log .= " / Date Rapport manquante";
                 $error = true;
             }
             // =========================================================================================================
+            // nom_client missing or empty
             if(!isset($post["nom_client"]) OR empty($post['nom_client']))
             {
                 $log .= " / Nom client manquant";
                 $error = true;
             }
             // =========================================================================================================
+            // contact missing or empty
             if(!isset($post["contact"]) OR empty($post['contact']))
             {
                 $log .= " / Nom contact manquant";
                 $error = true;
             }
             // =========================================================================================================
+            // cp missing or empty
             if(!isset($post["cp"]) OR empty($post['cp']))
             {
                 $log .= " / Code postal manquant";
                 $error = true;
             }
             // =========================================================================================================
+            // ville missing or empty
             if(!isset($post["ville"]) OR empty($post['ville']))
             {
                 $log .= " / Ville manquante";
                 $error = true;
             }
             // =========================================================================================================
+            // if detailPresta exists
             if(isset($post["detailPresta"]))
             {
+                // if detailPresta is empty
                 if(isEmpty($post['detailPresta']))
                 {
                     $log .= " / Détails de prestation manquants";
@@ -62,11 +70,13 @@ require 'model/createCri.php';
                 }
             }
             // =========================================================================================================
+            // if dateInter exists
             if(isset($post['dateInter']))
             {
                 $nbError = 0;
                 foreach($post['dateInter'] as $idDate => $date)
                 {
+                    // if a dateInter field exists but is empty
                     if(empty($post['dateInter'][$idDate]))
                     {
                         $nbError++;
@@ -81,24 +91,28 @@ require 'model/createCri.php';
                 $error = true;
             }
             // =========================================================================================================
+            // if tech missing or empty
             if(!isset($post['tech'][0]) OR empty($post['tech'][0]))
             {
                 $log .= " / Aucun intervenant séléctionné";
                 $error = true;
             }
             // =========================================================================================================
+            // reseau missing or empty
             if(!isset($post['reseau']) OR empty($post['reseau']))
             {
                 $log .= " / Aucun réseau séléctionné";
                 $error = true;
             }
             // =========================================================================================================
+            // actions missing or empty
             if(!isset($_POST["actions"][0]) OR empty($_POST["actions"][0]))
             {
                 $log .= " / Aucune action séléctionné";
                 $error = true;
             }
             // =========================================================================================================
+            // if pieceAChanger and piece exists
             if(isset($post['pieceAChanger']) AND isset($post['piece']))
             {
                 $nbError = 0;
@@ -106,6 +120,7 @@ require 'model/createCri.php';
                 {
                     foreach($post['piece'][$kD1] as $kD2 => $vD2)
                     {
+                        // if a piece has an empty field
                         if(isEmpty($vD2))
                         {
                             $nbError++;
@@ -116,26 +131,32 @@ require 'model/createCri.php';
                 $log .= "/ ".$nbError." champ(s) de pièce(s) vide(s)";
             }
             // =========================================================================================================
+            // etatReseau missing or empty
             if(!isset($post['etatReseau']) OR isEmpty($post['etatReseau']))
             {
                 $log .= "Etat Réseau non séléctionné";
                 $error = true;
             }
             // =========================================================================================================
+            // needInter missing or empty
             if(!isset($post['needInter']) OR isEmpty($post['needInter']))
             {
                 $log .= "Besoin nouvelle intervention non séléctionné";
                 $error = true;
             }
-            
+            // =========================================================================================================
+            // Check reference format
             if(preg_match($regex, $post["ref"]))
             {
                 $log .= "Référence invalide";
                 $error = true;
             }
             // =========================================================================================================
+            // If there is no error
             if(!$error)
             {
+                // Inserting all data
+                
                 insertRapport($post);
                 $lastRapport = getLastId();
                 insertCri($post, $lastRapport[0]);

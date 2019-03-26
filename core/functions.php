@@ -1,17 +1,82 @@
 <?php
     use \PDFShift\PDFShift;
     
+    // =================================================================================================================
+    /**
+     * Call used class
+     *
+     * @param $classe
+     */
     function chargerClasse($classe)
     {
         $fileName = "model/".$classe.".php";
         require $fileName; // On inclut la classe correspondante au paramètre passé.
     }
     
+    // =================================================================================================================
+    /**
+     * Compare $mdp1 with $mdp2
+     * and returns true if they correspond else returns false
+     * @param $mdp1
+     * @param $mdp2
+     * @return bool
+     */
+    function confirmPsw($mdp1, $mdp2)
+    {
+        if($mdp1 == $mdp2)
+            $confirm = true;
+        else
+            $confirm = false;
+        
+        return $confirm;
+    }
+    
+    // =================================================================================================================
+    /**
+     * Convert a rapport into ad PDF File with the PDFShift API
+     * An API Key is required in $api_key
+     * PDF files are stored into "pdf" directory
+     *
+     * @param $rapport
+     * @param $cri
+     * @param $dates
+     * @param $actions
+     * @param $reseau
+     * @param $etat
+     * @param $inter
+     * @param $pieces
+     */
+    function createPDF($rapport, $cri, $dates, $actions, $reseau, $etat, $inter, $pieces)
+    {
+        //Return $pdfView
+        require "view/pdfView.php";
+        
+        $api_key = 'd6c8017c793848c58b75362a060830b2:';
+        //$options = array("sandbox" => true);
+        
+        PDFShift::setApiKey($api_key);
+        $pdfshift = new PDFShift();
+        $pdfshift->convert($pdfView);
+        $pdfshift->save('pdf/CRI_'.$cri["ref_cri"].'.pdf');
+        
+        header('Location: pdf/CRI_'.$cri["ref_cri"].'.pdf');
+    }
+    
+    // =================================================================================================================
+    /**
+     * Destroys cookie with name "$name"
+     *
+     * @param $name
+     */
     function destroyCookie($name)
     {
         setcookie($name, '', time());
     }
     
+    // =================================================================================================================
+    /**
+     * Displays superglobals to help devs during development
+     */
     function displaySuperglobals()
     {
         echo "POST : ";
@@ -24,7 +89,13 @@
         print_r($_GET); echo "<br />";
     }
     
-    // Get All Post Datas
+    // =================================================================================================================
+    /**
+     * Sanitize all $_POST variables with htmlentities and store them into $post as an array
+     * Doesn't work with more than 3D arrays
+     *
+     * @return array
+     */
     function getPost()
     {
         $arrayToReturn = array();
@@ -61,12 +132,19 @@
         return $arrayToReturn;
     }
     
-    //Check if a form has an empty field
-    function isEmpty($post)
+    // =================================================================================================================
+    /**
+     * Loop over an array and return true if a field is empty
+     * Only 1D array
+     *
+     * @param $array
+     * @return bool
+     */
+    function isEmpty($array)
     {
         $empty = false;
     
-        foreach ($post as $k => $v)
+        foreach ($array as $k => $v)
         {
             if(empty($v))
             {
@@ -77,11 +155,17 @@
     
         return $empty;
     }
+    // =================================================================================================================
     
+    /**
+     * Log in with "email" and "mdp"
+     * Email must be $post[0] and mdp must be $post[1]
+     *
+     * @param $post
+     * @return bool|PDOStatement
+     */
     function login($post)
     {
-        //Email must be $post[0] and mdp must be $post[1]
-        
         global $bdd;
         $req = $bdd->prepare("SELECT * FROM tech WHERE :email = email AND :mdp = mdp");
         $req->bindValue(":email", $post["email"], PDO::PARAM_STR);
@@ -91,7 +175,14 @@
         
         return $req;
     }
+    // =================================================================================================================
     
+    /**
+     * Create a cookie with preconfigured options
+     *
+     * @param $name
+     * @param $val
+     */
     function makeCookie($name, $val)
     {
         setcookie(
@@ -103,27 +194,43 @@
             false,
             true);
     }
-    
+    // =================================================================================================================
     //Create session's var from a post tab
-    function makeSession($rep)
+    /**
+     * Create SESSION variables from the keys and values of an array
+     *
+     * @param $array
+     */
+    function makeSession($array)
     {
-        foreach ($rep as $k => $v)
+        foreach ($array as $k => $v)
         {
             $_SESSION[$k] = $v;
         }
     }
-    
+    // =================================================================================================================
     //Crypt in sha1 all datas in a tab
-    function makeTabSha1($post)
+    /**
+     * Hash all values in an array
+     *
+     * @param $array
+     * @return mixed
+     */
+    function makeTabSha1($array)
     {
-        foreach ($post as $k => $v)
+        foreach ($array as $k => $v)
         {
-            $post[$k] = sha1($v);
+            $array[$k] = sha1($v);
         }
     
-        return $post;
+        return $array;
     }
-    
+    // =================================================================================================================
+    /**
+     * Recreate SESSION from COOKIES values
+     *
+     * @param $cookies
+     */
     function refreshSession($cookies)
     {
         $login = [];
@@ -149,7 +256,12 @@
             header("Refresh:0; url=login");
         }
     }
-    
+    // =================================================================================================================
+    /**
+     * Send user to the right page
+     *
+     * @return string
+     */
     function routing()
     {
         $sPage = sanitizeGet();
@@ -172,33 +284,7 @@
         
         return $page;
     }
-    
-    function createPDF($rapport, $cri, $dates, $actions, $reseau, $etat, $inter, $pieces)
-    {
-        //Return $pdfView
-        require "view/pdfView.php";
-        
-        $api_key = 'd6c8017c793848c58b75362a060830b2:';
-        //$options = array("sandbox" => true);
-        
-        PDFShift::setApiKey($api_key);
-        $pdfshift = new PDFShift();
-        $pdfshift->convert($pdfView);
-        $pdfshift->save('pdf/CRI_'.$cri["ref_cri"].'.pdf');
-        
-        header('Location: pdf/CRI_'.$cri["ref_cri"].'.pdf');
-    }
-    
-    function confirmPsw($mdp1, $mdp2)
-    {
-        if($mdp1 == $mdp2)
-            $confirm = true;
-        else
-            $confirm = false;
-        
-        return $confirm;
-    }
-    
+    // =================================================================================================================
     function sanitizeCookies()
     {
         $opt = array(
@@ -214,7 +300,7 @@
         
         return $cookies;
     }
-    
+    // =================================================================================================================
     function sanitizeGet()
     {
         $opt = array(
@@ -225,7 +311,7 @@
         
         return $page;
     }
-    
+    // =================================================================================================================
     function sanitizeSession()
     {
         $opt = array(
