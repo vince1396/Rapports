@@ -39,9 +39,16 @@
                                         <td><i class="material-icons">remove_red_eye</i></td>
                                         <!-- <a href="displayRapport-display- $rapports[$k]["id_rapport"]"></a> -->
 
-                                        <td><i class="material-icons">edit</i></td>
-
-                                        <td><a href="convertPdf-pdf-<?= $rapports[$k]["id_rapport"] ?>"><i class="material-icons">picture_as_pdf</i></td>
+                                        <td>
+                                            <!--<a href="editRapport-edit-<?= $rapports[$k]["id_rapport"] ?>"> -->
+                                                <i class="material-icons">edit</i>
+                                        </td>
+                                        </td>
+                                        <td>
+                                            <a href="convertPdf-pdf-<?= $rapports[$k]["id_rapport"] ?>">
+                                                <i class="material-icons">picture_as_pdf</i>
+                                            </a>
+                                        </td>
 
                                         <td>
                                             <a href="myrapports-delete-<?= $rapports[$k]["id_rapport"] ?>"

@@ -94,37 +94,33 @@
      * Sanitize all $_POST variables with htmlentities and store them into $post as an array
      * Doesn't work with more than 3D arrays
      *
+     * @param $post
      * @return array
      */
     function getPost()
     {
         $arrayToReturn = array();
-    
-        if(isset($_POST['submit']))
+        
+        foreach($_POST as $keyD1 => $valueD1)
         {
-            foreach($_POST as $keyD1 => $valueD1)
+            if(is_array($_POST[$keyD1]))
             {
-                if(is_array($_POST[$keyD1]))
+                foreach($_POST[$keyD1] as $keyD2 => $valueD2)
                 {
-                    foreach($_POST[$keyD1] as $keyD2 => $valueD2)
+                    if(is_array($_POST[$keyD1][$keyD2]))
                     {
-                        if(is_array($_POST[$keyD1][$keyD2]))
+                        foreach($_POST[$keyD1][$keyD2] as $keyD3 => $valueD3)
                         {
-                            foreach($_POST[$keyD1][$keyD2] as $keyD3 => $valueD3)
-                            {
-                                $arrayToReturn[$keyD1][$keyD2][$keyD3] = htmlentities($valueD3);
-                            }
-                        }
-                        else
-                        {
-                            $arrayToReturn[$keyD1][$keyD2] = htmlentities($valueD2);
+                            $arrayToReturn[$keyD1][$keyD2][$keyD3] = htmlentities($valueD3);
                         }
                     }
+                    else {
+                        $arrayToReturn[$keyD1][$keyD2] = htmlentities($valueD2);
+                    }
                 }
-                else
-                {
-                    $arrayToReturn[$keyD1] = htmlentities($valueD1);
-                }
+            }
+            else {
+                $arrayToReturn[$keyD1] = htmlentities($valueD1);
             }
         }
         // Possibly add elements to the array
