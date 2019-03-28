@@ -1,32 +1,37 @@
 <?php
   require 'model/myrapports.php';
 
+    // If connected
     if(isset($_SESSION['id_tech']))
     {
         $hasRapport = false;
     
+        // If admin has at least 1 rapport to see
         if ($_SESSION["lvl"] == 1)
         {
             $checkHasRapport = adminHasRapport();
         }
+        // Else if user has at least 1 rapport to see
         else
         {
             $checkHasRapport = techHasRapport($_SESSION["id_tech"]);
         }
         
+        
         if($rep1 = $checkHasRapport->fetch())
             $hasRapport = true;
     
+        // Display all rapports if admin
         if ($_SESSION["lvl"] == 1)
         {
             $rapports = getAllRapports()->fetchAll();
         }
+        // Else only user's rapports
         else
         {
             $rapports = getRapports()->fetchAll();
         }
-    
-    
+        
         if(isset($_GET["opt"]) AND isset($_GET["id"]))
         {
             $opt = $_GET["opt"];

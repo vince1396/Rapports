@@ -43,7 +43,6 @@
                                             <!--<a href="editRapport-edit-<?= $rapports[$k]["id_rapport"] ?>"> -->
                                                 <i class="material-icons">edit</i>
                                         </td>
-                                        </td>
                                         <td>
                                             <a href="convertPdf-pdf-<?= $rapports[$k]["id_rapport"] ?>">
                                                 <i class="material-icons">picture_as_pdf</i>
