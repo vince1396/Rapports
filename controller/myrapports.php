@@ -66,7 +66,7 @@
             }
             elseif ($opt == "display")
             {
-                echo "Disponible bientôt";
+                sendMail("REF001");
             }
             else
             {

@@ -1,6 +1,13 @@
 <?php
     use \PDFShift\PDFShift;
     
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    
+    require 'PHPMailer/src/Exception.php';
+    require 'PHPMailer/src/PHPMailer.php';
+    require 'PHPMailer/src/SMTP.php';
+    
     // =================================================================================================================
     /**
      * Call used class
@@ -94,7 +101,6 @@
      * Sanitize all $_POST variables with htmlentities and store them into $post as an array
      * Doesn't work with more than 3D arrays
      *
-     * @param $post
      * @return array
      */
     function getPost()
@@ -324,32 +330,42 @@
         return $session;
     }
     
-    /*function sendMail()
+    function sendMail($refCri)
     {
-        // ***** SEND MAIL *****
-    
-        // This require return $mailTemplate var
-        //require("./view/template/mailView.php");
-    
+        // Instantiation and passing `true` enables exceptions
         $mail = new PHPMailer(true);
+    
+        try {
+            //Server settings
+            $mail->SMTPDebug = 0;                                       // Enable verbose debug output
+            $mail->isSMTP();                                            // Set mailer to use SMTP
+            $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+            $mail->Username   = 'vincent.cotini96@gmail.com';           // SMTP username
+            $mail->Password   = 'lcfgtizoxvkaeljf';                     // SMTP password
+            $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
+            $mail->Port       = 587;                                    // TCP port to connect to
         
-        try{
             //Recipients
-            $mail->setFrom('vcotini@decimale.net', 'Vincent Cotini', 0);
-            $mail->addAddress('vincent.cotini96@gmail.com');
-            $mail->addReplyTo('vcotini@decimale.net', 'Vincent Cotini');
-    
-            //Attachment
-            $mail->addAttachment('pdf/CRI_REF001.pdf');
-    
-            //Content
-            $mail->isHTML(true);
+            $mail->setFrom('vcotini@decimale.net', 'Rapports Decimale');
+            $mail->addAddress('vincent.cotini96@gmail.com', 'Vincent');     // Add a recipient
+            //$mail->addReplyTo('info@example.com', 'Information');
+            //$mail->addCC('cc@example.com');
+            //$mail->addBCC('bcc@example.com');
+        
+            // Attachments
+            $mail->addAttachment('pdf/CRI_'.$refCri.'.pdf');               // Add attachments
+            //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+        
+            // Content
+            $mail->isHTML(true);                                       // Set email format to HTML
             $mail->Subject = 'CRI';
-            $mail->Body    = '<p>Votre Compte rendu d\'intervention</p>'; // HTML content
-            $mail->AltBody = 'Altbody'; // Plain text
-    
+            $mail->Body    = 'Voici votre rapport en PDF (HTML)';
+            $mail->AltBody = 'Voici votre rapport en PDF (Plain text)';
+        
             $mail->send();
+            echo 'Message has been sent';
         } catch (Exception $e) {
-            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
-    }*/
+    }
