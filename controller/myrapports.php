@@ -5,32 +5,43 @@
     if(isset($_SESSION['id_tech']))
     {
         $hasRapport = false;
+        $error = true;
     
-        // If admin has at least 1 rapport to see
-        if ($_SESSION["lvl"] == 1)
+        // =============================================================================================================
+        // If user is a tech
+        if($session["lvl"] == 0)
         {
-            $checkHasRapport = adminHasRapport();
+            $rapportsToDisplay = getRapports();
+            
+            if($rep = $rapportsToDisplay->fetch())
+            {
+                $hasRapport = true;
+                $rapportsToDisplay = $rapportsToDisplay->fetchAll();
+            }
+            
+            $error = false;
         }
-        // Else if user has at least 1 rapport to see
-        else
+        // =============================================================================================================
+        // If user is an admin
+        if($session["lvl"] == 1)
         {
-            $checkHasRapport = techHasRapport($_SESSION["id_tech"]);
+            $rapportsToDisplay = getAllRapports();
+            
+            if ($rep = $rapportsToDisplay->fetch())
+            {
+                $hasRapport = true;
+                $rapportsToDisplay = $rapportsToDisplay->fetchAll();
+            }
+            
+            $error = false;
         }
-        
-        
-        if($rep1 = $checkHasRapport->fetch())
-            $hasRapport = true;
-    
-        // Display all rapports if admin
-        if ($_SESSION["lvl"] == 1)
+        // =============================================================================================================
+        // If user has an unknown level
+        if($error)
         {
-            $rapports = getAllRapports()->fetchAll();
+            echo "Error";
         }
-        // Else only user's rapports
-        else
-        {
-            $rapports = getRapports()->fetchAll();
-        }
+        // =============================================================================================================
         
         if(isset($_GET["opt"]) AND isset($_GET["id"]))
         {

@@ -108,28 +108,6 @@
         return $req;
     }
     
-    function techHasRapport($id_tech)
-    {
-        global $bdd;
-        
-        $req = $bdd->prepare("SELECT * FROM rapport
-                                       WHERE id_tech = :id_tech");
-        $req->bindValue(":id_tech", $id_tech, PDO::PARAM_INT);
-        $req->execute();
-        
-        return $req;
-    }
-    
-    function adminHasRapport()
-    {
-        global $bdd;
-        
-        $req = $bdd-> prepare("SELECT * FROM rapport");
-        $req->execute();
-        
-        return $req;
-    }
-    
     function getAllRapports()
     {
         global $bdd;

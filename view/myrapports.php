@@ -16,44 +16,44 @@
                     <table class="stripped bordered center responsive-table">
                         <thead>
                             <tr>
-                                <th>Référence</th>
-                                <th>Client</th>
-                                <th>Date</th>
+                                <th>Référence </th>
+                                <th>Client    </th>
+                                <th>Date      </th>
                                 <th>Technicien</th>
-                                <th>Afficher</th>
-                                <th>Modifier</th>
-                                <th>PDF</th>
-                                <th>Supprimer</th>
+                                <th>Afficher  </th>
+                                <th>Modifier  </th>
+                                <th>PDF       </th>
+                                <th>Supprimer </th>
                             </tr>
                         </thead>
 
                         <tbody>
                             <?php
-                                foreach ($rapports as $k => $v)
+                                foreach ($rapportsToDisplay as $k => $v)
                                 { ?>
                                     <tr>
-                                        <td><?= $rapports[$k]["ref_cri"]      ?></td>
-                                        <td><?= $rapports[$k]["nom_client"]   ?></td>
-                                        <td><?= $rapports[$k]["date_rapport"] ?></td>
-                                        <td><?= $rapports[$k]["prenom"]." ". $rapports[$k]["nom"] ?></td>
+                                        <td><?= $rapportsToDisplay[$k]["ref_cri"]      ?>                    </td>
+                                        <td><?= $rapportsToDisplay[$k]["nom_client"]   ?>                    </td>
+                                        <td><?= $rapportsToDisplay[$k]["date_rapport"] ?>                    </td>
+                                        <td><?= $rapportsToDisplay[$k]["prenom"]." ". $rapportsToDisplay[$k]["nom"] ?></td>
                                         <td>
-                                            <a href="myrapports-display-<?= $rapports[$k]["id_rapport"]?>">
+                                            <a href="myrapports-display-<?= $rapportsToDisplay[$k]["id_rapport"]?>">
                                                 <i class="material-icons">remove_red_eye</i>
                                             </a>
                                         </td>
 
                                         <td>
-                                            <!--<a href="editRapport-edit-<?= $rapports[$k]["id_rapport"] ?>"> -->
+                                            <!--<a href="editRapport-edit-<?= $rapportsToDisplay[$k]["id_rapport"] ?>"> -->
                                                 <i class="material-icons">edit</i>
                                         </td>
                                         <td>
-                                            <a href="convertPdf-pdf-<?= $rapports[$k]["id_rapport"] ?>">
+                                            <a href="convertPdf-pdf-<?= $rapportsToDisplay[$k]["id_rapport"] ?>">
                                                 <i class="material-icons">picture_as_pdf</i>
                                             </a>
                                         </td>
 
                                         <td>
-                                            <a href="myrapports-delete-<?= $rapports[$k]["id_rapport"] ?>"
+                                            <a href="myrapports-delete-<?= $rapportsToDisplay[$k]["id_rapport"] ?>"
                                                onclick="return(confirm('Etes-vous sûr de vouloir supprimer cette entrée ?'));">
                                                 <i class="material-icons">delete</i>
                                             </a>
