@@ -1,24 +1,11 @@
 <?php
 
-    if(isset($_COOKIE['email']) OR isset($_COOKIE['mdp']))
+    if(isset($cookies['email']) OR isset($cookies['mdp']))
     {
-        setcookie(
-            'email',
-            '',
-            time() -3600,
-            null,
-            null,
-            false,
-            true);
-
-        setcookie(
-            'mdp',
-            '',
-            time() - 3600,
-            null,
-            null,
-            false,
-            true);
+        foreach ($cookies as $k)
+        {
+            destroyCookie($k);
+        }
     }
     session_start();
     session_destroy();

@@ -7,9 +7,8 @@
               <h1>Mes rapports</h1>
           </div>
       </div>
-      
       <?php
-        if ($hasRapport == true)
+        if ($hasRapport)
         { ?>
             <div class="row">
                 <div class="col s12">
@@ -29,7 +28,7 @@
 
                         <tbody>
                             <?php
-                                foreach ($rapportsToDisplay as $k => $v)
+                                foreach ($rapportsToDisplay as $k)
                                 { ?>
                                     <tr>
                                         <td><?= $rapportsToDisplay[$k]["ref_cri"]      ?>                    </td>

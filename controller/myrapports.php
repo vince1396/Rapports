@@ -13,11 +13,11 @@
         {
             $rapportsToDisplay = getRapports($session["id_tech"]);
             
-            if($rep = $rapportsToDisplay->fetch())
+            if($rep = $rapportsToDisplay->fetchAll())
             {
                 $hasRapport = true;
                 $rapportsToDisplay = $rapportsToDisplay->fetchAll();
-                echo "<br />";
+                print_r($rapportsToDisplay);
             }
             
             $error = false;
@@ -91,5 +91,4 @@
     {
         header("Location: login");
     }
-
   require 'view/myrapports.php';
