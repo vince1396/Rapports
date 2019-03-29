@@ -2,7 +2,7 @@
   require 'model/myrapports.php';
 
     // If connected
-    if(isset($_SESSION['id_tech']))
+    if(isset($session['id_tech']))
     {
         $hasRapport = false;
         $error = true;
@@ -11,12 +11,13 @@
         // If user is a tech
         if($session["lvl"] == 0)
         {
-            $rapportsToDisplay = getRapports();
+            $rapportsToDisplay = getRapports($session["id_tech"]);
             
             if($rep = $rapportsToDisplay->fetch())
             {
                 $hasRapport = true;
                 $rapportsToDisplay = $rapportsToDisplay->fetchAll();
+                echo "<br />";
             }
             
             $error = false;

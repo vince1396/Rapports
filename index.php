@@ -1,10 +1,9 @@
 <?php
     session_start();
     
-    // TODO : Envoi par mail
-    // TODO : Modif rapports
     // TODO : Changer MDP
     // TODO : Mot de passe oublié
+    // TODO : Recoder logout
     
     // =================================================================================================================
     require('pdfshift/init.php'); // Call PDFShift library
@@ -18,7 +17,7 @@
     
     // =================================================================================================================
     // Affichages des superglobales (A supprimer en production)
-    // displaySuperglobals();
+     displaySuperglobals();
     // =================================================================================================================
     
     // =================================================================================================================
@@ -29,7 +28,7 @@
     $session = $_SESSION;
     $cookies = sanitizeCookies();
     
-    if(empty($session['id_tech']) AND !empty($cookies["email"]) AND !empty($cookies["mdp"]))
+    if(!isset($session['id_tech']) AND !empty($cookies["email"]) AND !empty($cookies["mdp"]))
     {
         refreshSession($cookies);
     }

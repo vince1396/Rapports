@@ -1,16 +1,13 @@
 <?php
 
-    function getRapports()
+    function getRapports($id_tech)
     {
         global $bdd;
         
-        $req = $bdd->prepare("SELECT DISTINCT r.id_rapport, c.ref_cri, r.nom_client, r.date_rapport, t.nom, t.prenom
-                                       FROM cri c, rapport r, tech t
-                                       WHERE r.id_tech = :id_tech
-                                       AND c.id_rapport = r.id_rapport
-                                       AND r.id_tech = t.id_tech");
+        $req = $bdd->prepare("SELECT * FROM rapport, cri, tech
+                                       WHERE tech.id_tech = :id_tech");
         
-        $req->bindValue(":id_tech", $_SESSION["id_tech"], PDO::PARAM_INT);
+        $req->bindValue(":id_tech", $id_tech, PDO::PARAM_INT);
         $req->execute();
         
         return $req;
@@ -112,9 +109,10 @@
     {
         global $bdd;
         
-        $req = $bdd->prepare("SELECT DISTINCT * FROM rapport r, tech t,  cri c
+        $req = $bdd->prepare("SELECT DISTINCT r.id_rapport, c.ref_cri, r.nom_client, r.date_rapport, t.nom, t.prenom
+                                       FROM rapport r, tech t,  cri c
                                        WHERE r.id_tech = t.id_tech
-                                       AND r.id_rapport = c.id_rapport");
+                                       ");
         $req->execute();
         
         return $req;

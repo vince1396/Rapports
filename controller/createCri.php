@@ -12,9 +12,10 @@ require 'model/createCri.php';
         if (isset($_POST['submit']))
         {
             $post = getPost(); // Sanitize POST
+            print_r($post);
             $log = "";
             $error = false;
-            $regex = "#^MA\d{5}(-0\d)?$#";
+            $regex = "/^MA[0-9]{5}(-0[0-9])?$/";
             
             // =========================================================================================================
             // ref missing or empty
@@ -63,7 +64,7 @@ require 'model/createCri.php';
             if(isset($post["detailPresta"]))
             {
                 // if detailPresta is empty
-                if(isEmpty($post['detailPresta']))
+                if(empty($post['detailPresta']))
                 {
                     $log .= " / Détails de prestation manquants";
                     $error = true;
@@ -121,7 +122,7 @@ require 'model/createCri.php';
                     foreach($post['piece'][$kD1] as $kD2 => $vD2)
                     {
                         // if a piece has an empty field
-                        if(isEmpty($vD2))
+                        if(empty($vD2))
                         {
                             $nbError++;
                             $error = true;
@@ -132,21 +133,21 @@ require 'model/createCri.php';
             }
             // =========================================================================================================
             // etatReseau missing or empty
-            if(!isset($post['etatReseau']) OR isEmpty($post['etatReseau']))
+            if(!isset($post['etatReseau']) OR empty($post['etatReseau']))
             {
                 $log .= "Etat Réseau non séléctionné";
                 $error = true;
             }
             // =========================================================================================================
             // needInter missing or empty
-            if(!isset($post['needInter']) OR isEmpty($post['needInter']))
+            if(!isset($post['needInter']) OR empty($post['needInter']))
             {
                 $log .= "Besoin nouvelle intervention non séléctionné";
                 $error = true;
             }
             // =========================================================================================================
             // Check reference format
-            if(preg_match($regex, $post["ref"]))
+            if(!preg_match($regex, $post["ref"]))
             {
                 $log .= "Référence invalide";
                 $error = true;
@@ -177,9 +178,12 @@ require 'model/createCri.php';
                     insertRealiser($action, $lastRapport[0]);
                 }
                 
-                foreach($post["piece"] as $kD1 => $vD1)
+                if(isset($post["piece"]))
                 {
-                    insertPiece($post["piece"][$kD1]["refPiece"], $post["piece"][$kD1]["detailPiece"], $post["piece"][$kD1]["qtePiece"], $lastRapport[0]);
+                    foreach($post["piece"] as $kD1 => $vD1)
+                    {
+                        insertPiece($post["piece"][$kD1]["refPiece"], $post["piece"][$kD1]["detailPiece"], $post["piece"][$kD1]["qtePiece"], $lastRapport[0]);
+                    }
                 }
             }
             // =========================================================================================================

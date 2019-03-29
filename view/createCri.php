@@ -1,19 +1,23 @@
 <body>
     <div class="container">
-        <?php if($error)
-        { ?>
-            <div class="row">
-                <div class="col s12 l8 offset-l4 red">
-                    <p>
-                        <?php
-                            echo $log;
-                        ?>
-                    </p>
-                </div>
-            </div>
         <?php
-        }
-        ?>
+            if(isset($error))
+            {
+                if($error)
+                { ?>
+                    <div class="row">
+                        <div class="col s12 l8 offset-l4 red">
+                            <p>
+                                <?php
+                                    echo $log;
+                                ?>
+                            </p>
+                        </div>
+                    </div>
+                    <?php
+                }
+            }
+            ?>
         <div class="row">
             <form action="#" method="POST" id="formCri" class="col s12 l8 offset-l4">
                 <!-- =============================================================================================== -->
@@ -340,19 +344,23 @@
             </form>
         </div>
         
-        <?php if($error)
-        { ?>
-            <div class="row">
-                <div class="col s12 l8 offset-l4 red">
-                    <p>
-                        <?php
-                            echo $log;
-                        ?>
-                    </p>
-                </div>
-            </div>
-            <?php
-        }
-        ?>
+        <?php
+            if(isset($error))
+            {
+                if($error)
+                { ?>
+                    <div class="row">
+                        <div class="col s12 l8 offset-l4 red">
+                            <p>
+                                <?php
+                                    echo $log;
+                                ?>
+                            </p>
+                        </div>
+                    </div>
+                    <?php
+                }
+            }
+            ?>
     </div>
 </body>
