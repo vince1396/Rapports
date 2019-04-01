@@ -9,8 +9,12 @@
         {
             if($_GET["opt"] == "edit")
             {
+                print_r($post);
+                
                 $id_rapport = $_GET["id"];
                 
+                // =====================================================================================================
+                // Get all rapport's data
                 $rapport = getTargetRapport($id_rapport)->fetch();
                 $cri     = getTargetCri($id_rapport)->fetch();
                 $dates   = getTargetDates($id_rapport)->fetchAll();
@@ -19,48 +23,70 @@
                 $etat    = getTargetEtat($id_rapport)->fetch();
                 $inter   = getTargetIntervenants($id_rapport)->fetchAll();
                 $pieces  = getTargetPieces($id_rapport)->fetchAll();
+                // =====================================================================================================
                 
+                // =====================================================================================================
+                // Formating date
                 setlocale(LC_TIME, "fr_FR");
+                strftime("%d %m %Y", strtotime($rapport["date_rapport"]));
                 foreach ($dates as $k => $v)
                 {
                     strftime("%d %m %Y", strtotime($dates[$k][0]));
                 }
                 // =====================================================================================================
-                $textInput = array(
-                    "ref_cri"    => $cri["ref_cri"],
-                    "nom_client" => $rapport["nom_client"],
-                    "contact"    => $rapport["contact"],
-                    "adresse"    => $rapport["adresse"],
-                    "cp"         => $rapport["cp"],
-                    "ville"      => $rapport["ville"]
-                );
-    
-                $textLabel = array(
-                    "ref_cri"    => "Référence",
-                    "nom_client" => "Nom du client",
-                    "contact"    => "Nom du contact sur site",
-                    "adresse"    => "Adresse client",
-                    "cp"         => "Code postal",
-                    "ville"      => "Ville"
+
+                // =====================================================================================================
+                // Sort data in an array
+                $fields = array(
+                    "ref_cri"        => array(
+                                            "value" => $cri["ref_cri"],
+                                            "type"  => "text"
+                                        ),
+                    "date_rapport"   => array(
+                                            "value" => $rapport["date_rapport"],
+                                            "type"  => "date"
+                                        ),
+                    "nom_client"     => array(
+                                            "value" =>$rapport["nom_client"],
+                                            "type"  => "text"
+                                        ),
+                    "contact"        => array(
+                                            "value" => $rapport["contact"],
+                                            "type"  =>"text"
+                                        ),
+                    "adresse"        => array(
+                                            "value" =>$rapport["adresse"],
+                                            "type"  => "text"
+                                        ),
+                    "cp"             => array(
+                                            "value" =>$rapport["cp"],
+                                            "type"  => "text"
+                                        ),
+                    "ville"          => array(
+                                            "value" => $rapport["ville"],
+                                            "type"  => "text"
+                                        ),
+                    "probleme"       => array(
+                                            "value" => $cri["probleme"],
+                                            "type"  => "area"
+                                        ),
+                    "details_presta" => array(
+                                            "value" => $cri["details_presta"],
+                                            "type"  => "area"
+                    )
                 );
                 // =====================================================================================================
-                if(isset($_POST["submitRapport"]))
-                {
-                    $post = getPost();
-                    print_r($post);
-                    $field = key($post);
-                    $val = $post[key($post)];
-                    
-                    echo "<br />";
-                    echo $field;
-                    echo "<br />";
-                    echo $val;
-                    echo "<br />";
-                    
-                    updateRapport($id_rapport, $field, $val);
-                    
-                    //header("Location: editRapport-edit-".$id_rapport);
-                }
+                // Fields label
+                $fieldsLabel = array(
+                    "ref_cri"      => "Référence",
+                    "date_rapport" => "Date du rapport",
+                    "nom_client"   => "Nom du client",
+                    "adresse"      => "Adresse client",
+                    "cp"           => "Code postal",
+                    "contact"      => "Nom du contact sur site",
+                    "ville"        => "Ville"
+                );
+                // =====================================================================================================
             }
             else
             {

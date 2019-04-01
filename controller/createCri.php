@@ -60,16 +60,7 @@ require 'model/createCri.php';
                 $error = true;
             }
             // =========================================================================================================
-            // if detailPresta exists
-            if(isset($post["detailPresta"]))
-            {
-                // if detailPresta is empty
-                if(empty($post['detailPresta']))
-                {
-                    $log .= " / Détails de prestation manquants";
-                    $error = true;
-                }
-            }
+
             // =========================================================================================================
             // if dateInter exists
             if(isset($post['dateInter']))

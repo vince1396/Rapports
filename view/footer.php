@@ -10,6 +10,8 @@
     
     <!-- ========== Call navbar JS ========== -->
     <script src="assets/js/navbar.js"></script>
+
+    <script src="assets/js/general.js"></script>
     
     <?php
         // Call page dedicated JS file

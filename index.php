@@ -3,8 +3,8 @@
     
     // TODO : Changer MDP
     // TODO : Mot de passe oublié
-    // TODO : Recoder logout
     
+    // TODO : Regex ref editRapport
     // =================================================================================================================
     require('pdfshift/init.php'); // Call PDFShift library
     // =================================================================================================================
@@ -27,6 +27,11 @@
     
     $session = $_SESSION;
     $cookies = sanitizeCookies();
+    
+    if(isset($_POST))
+    {
+        $post = getPost();
+    }
     
     if(!isset($session['id_tech']) AND !empty($cookies["email"]) AND !empty($cookies["mdp"]))
     {
