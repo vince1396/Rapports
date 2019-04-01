@@ -17,7 +17,7 @@
     
     // =================================================================================================================
     // Affichages des superglobales (A supprimer en production)
-     displaySuperglobals();
+    // displaySuperglobals();
     // =================================================================================================================
     
     // =================================================================================================================
@@ -27,7 +27,6 @@
     
     $session = $_SESSION;
     $cookies = sanitizeCookies();
-    print_r($cookies);
     
     if(!isset($session['id_tech']) AND !empty($cookies["email"]) AND !empty($cookies["mdp"]))
     {

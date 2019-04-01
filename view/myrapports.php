@@ -28,7 +28,7 @@
 
                         <tbody>
                             <?php
-                                foreach ($rapportsToDisplay as $k)
+                                foreach ($rapportsToDisplay as $k => $v)
                                 { ?>
                                     <tr>
                                         <td><?= $rapportsToDisplay[$k]["ref_cri"]      ?>                    </td>

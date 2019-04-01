@@ -13,11 +13,10 @@
         {
             $rapportsToDisplay = getRapports($session["id_tech"]);
             
-            if($rep = $rapportsToDisplay->fetchAll())
+            if($rep = $rapportsToDisplay->fetch())
             {
                 $hasRapport = true;
-                $rapportsToDisplay = $rapportsToDisplay->fetchAll();
-                print_r($rapportsToDisplay);
+                $rapportsToDisplay = getRapports($session["id_tech"])->fetchAll();
             }
             
             $error = false;
@@ -31,7 +30,7 @@
             if ($rep = $rapportsToDisplay->fetch())
             {
                 $hasRapport = true;
-                $rapportsToDisplay = $rapportsToDisplay->fetchAll();
+                $rapportsToDisplay = getAllRapports()->fetchAll();
             }
             
             $error = false;

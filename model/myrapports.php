@@ -114,6 +114,7 @@
         $req = $bdd->prepare("SELECT DISTINCT r.id_rapport, c.ref_cri, r.nom_client, r.date_rapport, t.nom, t.prenom
                                        FROM rapport r, tech t,  cri c
                                        WHERE r.id_tech = t.id_tech
+                                       AND c.id_tech = t.id_tech;
                                        ");
         $req->execute();
         
