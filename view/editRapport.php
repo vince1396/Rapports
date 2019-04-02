@@ -6,10 +6,26 @@
         <div class="row">
             <div class="col s10 offset-s2 l8 offset-l4">
                 <h1>Modifier Rapport</h1>
+                <p>Veuillez modifier les champs un par un svp</p>
             </div>
         </div>
         <!-- ======================================================================================================= -->
         <div class="row"></div>
+    
+        <?php
+            if(isset($log))
+            { ?>
+                <div class="row">
+                    <div class="col s12 l6 offset-l3 red">
+                        <p>
+                            <?php
+                                echo $log; ?>
+                        </p>
+                    </div>
+                </div>
+                <?php
+            }
+        ?>
         
         <?php
             foreach($fields as $k => $v)
@@ -32,7 +48,8 @@
                                     ?>
                                     <div class="col s4 offset-l3 input-field">
                                         <i class="material-icons prefix">edit</i>
-                                        <input required type="text"
+                                        <input <?php if($k != "adresse") { echo "";} ?>
+                                               type="text"
                                                name="<?= $k ?>"
                                                id="<?= $k ?>"
                                                value="<?= $fields[$k]["value"] ?>"
@@ -87,7 +104,7 @@
                                 
                                 if($error == true)
                                 {
-                                    echo "Erreur Type";
+                                    $log = "Erreur Type";
                                 }
                             ?>
                             <!-- =================================================================================== -->
@@ -95,22 +112,36 @@
                             <div class="col s4">
                                 <button class="btn waves-effect waves-light"
                                         type="submit"
-                                        name="submit_<?= $k ?>"
+                                        name="submit"
                                         id="submit.<?= $k ?>"
-                                        value="submit">
+                                        value="<?= $k ?>">
                                     Modifier <?= $fieldsLabel[$k] ?>
                                     <i class="material-icons right">send</i>
                                 </button>
                             </div>
                             <!-- =================================================================================== -->
                         </div>
-        
                     </form>
                 </div>
-                
+                <div class="row"></div>
                 <?php
             }
         ?>
+    
+        <?php
+            if(isset($log))
+            { ?>
+                <div class="row">
+                    <div class="col s12 l6 offset-l3 red">
+                        <p>
+                            <?php
+                                echo $log; ?>
+                        </p>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
         
     </div>
 </body>

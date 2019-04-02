@@ -9,8 +9,6 @@
         {
             if($_GET["opt"] == "edit")
             {
-                print_r($post);
-                
                 $id_rapport = $_GET["id"];
                 
                 // =====================================================================================================
@@ -78,14 +76,160 @@
                 // =====================================================================================================
                 // Fields label
                 $fieldsLabel = array(
-                    "ref_cri"      => "Référence",
-                    "date_rapport" => "Date du rapport",
-                    "nom_client"   => "Nom du client",
-                    "adresse"      => "Adresse client",
-                    "cp"           => "Code postal",
-                    "contact"      => "Nom du contact sur site",
-                    "ville"        => "Ville"
+                    "ref_cri"        => "Référence",
+                    "date_rapport"   => "Date du rapport",
+                    "nom_client"     => "Nom du client",
+                    "adresse"        => "Adresse client",
+                    "cp"             => "Code postal",
+                    "contact"        => "Nom du contact sur site",
+                    "ville"          => "Ville",
+                    "probleme"       => "Rappel du contexte",
+                    "details_presta" => "Détails maintenance"
                 );
+                // =====================================================================================================
+                
+                // =====================================================================================================
+                // Processing POST
+                if(isset($post["submit"]))
+                {
+                    $errorSubmit = true;
+                    $errorEmpty = true;
+                    
+                    if($post["submit"] == "ref_cri")
+                    {
+                        $errorSubmit = false;
+    
+                        if(empty($post["ref_cri"]))
+                        {
+                            $log = "Le champ est vide";
+                        }
+                        else
+                        {
+                            $errorEmpty = false;
+                            updateRef($id_rapport, $post["ref_cri"]);
+                        }
+                    }
+    
+                    if($post["submit"] == "date_rapport")
+                    {
+                        $errorSubmit = false;
+    
+                        if(empty($post["date_rapport"]))
+                        {
+                            $log = "Le champ est vide";
+                        }
+                        else
+                        {
+                            $errorEmpty = false;
+                            updateDateRapport($id_rapport, $post["date_rapport"]);
+                        }
+                    }
+    
+                    if($post["submit"] == "nom_client")
+                    {
+                        $errorSubmit = false;
+    
+                        if(empty($post["nom_client"]))
+                        {
+                            $log = "Le champ est vide";
+                        }
+                        else
+                        {
+                            $errorEmpty = false;
+                            updateNomClient($id_rapport, $post["nom_client"]);
+                        }
+                    }
+    
+                    if($post["submit"] == "contact")
+                    {
+                        $errorSubmit = false;
+                        
+                        if(empty($post["contact"]))
+                        {
+                            $log = "Le champ est vide";
+                        }
+                        else
+                        {
+                            $errorEmpty = false;
+                            updateContact($id_rapport, $post["contact"]);
+                        }
+                    }
+    
+                    if($post["submit"] == "adresse")
+                    {
+                        $errorSubmit = false;
+                        $errorEmpty  = false;
+                        updateAdresse($id_rapport, $post["adresse"]);
+                    }
+    
+                    if($post["submit"] == "cp")
+                    {
+                        $errorSubmit = false;
+    
+                        if(empty($post["cp"]))
+                        {
+                            $log = "Le champ est vide";
+                        }
+                        else
+                        {
+                            $errorEmpty = false;
+                            updateCp($id_rapport, $post["cp"]);
+                        }
+                    }
+    
+                    if($post["submit"] == "ville")
+                    {
+                        $errorSubmit = false;
+    
+                        if(empty($post["ville"]))
+                        {
+                            $log = "Le champ est vide";
+                        }
+                        else
+                        {
+                            $errorEmpty = false;
+                            updateVille($id_rapport, $post["ville"]);
+                        }
+                    }
+    
+                    if($post["submit"] == "probleme")
+                    {
+                        $errorSubmit = false;
+    
+                        if(empty($post["probleme"]))
+                        {
+                            $log = "Le champ est vide";
+                        }
+                        else
+                        {
+                            $errorEmpty = false;
+                            updateProbleme($id_rapport, $post["probleme"]);
+                        }
+                    }
+    
+                    if($post["submit"] == "details_presta")
+                    {
+                        $errorSubmit = false;
+                        $errorEmpty  = false;
+                        updateDetailsPresta($id_rapport, $post["details_presta"]);
+                    }
+                    
+                    if($errorSubmit)
+                    {
+                        $log = "Probleme value submit";
+                    }
+                    
+                    if($errorEmpty)
+                    {
+                        $log = "Le champ est vide";
+                    }
+                    
+                    if(!$errorEmpty AND !$errorSubmit)
+                    {
+                        header("Location: editRapport-edit-".$id_rapport);
+                    }
+    
+                }
                 // =====================================================================================================
             }
             else
