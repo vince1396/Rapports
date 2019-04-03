@@ -9,3 +9,7 @@ input::placeholder {
 .blue-border {
     border: solid 3px #1da3ff;
 }
+
+#deleteDates {
+    border-right: solid 3px lightskyblue;
+}

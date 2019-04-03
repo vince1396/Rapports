@@ -15,4 +15,6 @@ $(function () {
         format: "yyyy-mm-dd"
     });
     
+    $('ul.tabs').tabs();
+    
 });

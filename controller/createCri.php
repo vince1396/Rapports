@@ -12,7 +12,6 @@ require 'model/createCri.php';
         if (isset($_POST['submit']))
         {
             $post = getPost(); // Sanitize POST
-            print_r($post);
             $log = "";
             $error = false;
             $regex = "/^MA[0-9]{5}(-0[0-9])?$/";

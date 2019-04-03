@@ -1,10 +1,12 @@
 <?php
     session_start();
     
+    // TODO : SMTP Décimale
+    
     // TODO : Changer MDP
     // TODO : Mot de passe oublié
     
-    // TODO : Regex ref editRapport
+    // TODO : Svaing tabs state Materialize
     // =================================================================================================================
     require('pdfshift/init.php'); // Call PDFShift library
     // =================================================================================================================

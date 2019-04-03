@@ -20,7 +20,7 @@
                 $reseau  = getTargetReseau($id_rapport)->fetch();
                 $etat    = getTargetEtat($id_rapport)->fetch();
                 $inter   = getTargetIntervenants($id_rapport)->fetchAll();
-                $pieces  = getTargetPieces($id_rapport)->fetchAll();
+                $pieces  = getTargetPieces($id_rapport);
                 // =====================================================================================================
                 
                 // =====================================================================================================
@@ -29,7 +29,7 @@
                 strftime("%d %m %Y", strtotime($rapport["date_rapport"]));
                 foreach ($dates as $k => $v)
                 {
-                    strftime("%d %m %Y", strtotime($dates[$k][0]));
+                    strftime("%d %m %Y", strtotime($dates[$k]["date_inter"]));
                 }
                 // =====================================================================================================
 
@@ -89,28 +89,37 @@
                 // =====================================================================================================
                 
                 // =====================================================================================================
-                // Processing POST
-                if(isset($post["submit"]))
+                // Processing general POST
+                if(isset($post["submitGeneral"]))
                 {
                     $errorSubmit = true;
                     $errorEmpty = true;
                     
-                    if($post["submit"] == "ref_cri")
+                    if($post["submitGeneral"] == "ref_cri")
                     {
                         $errorSubmit = false;
+                        $errorRegex = false;
+                        $errorEmpty = false;
     
                         if(empty($post["ref_cri"]))
                         {
-                            $log = "Le champ est vide";
+                            $errorEmpty = true;
                         }
-                        else
+                        
+                        if(!preg_match("#^MA\d{5}(-0\d)?#", $post["ref"]))
                         {
-                            $errorEmpty = false;
+                            $errorRegex = true;
+                            $log = "Référence invalide";
+                        }
+                        
+                        if(!$errorEmpty AND !$errorRegex)
+                        {
                             updateRef($id_rapport, $post["ref_cri"]);
                         }
+                        
                     }
     
-                    if($post["submit"] == "date_rapport")
+                    if($post["submitGeneral"] == "date_rapport")
                     {
                         $errorSubmit = false;
     
@@ -125,7 +134,7 @@
                         }
                     }
     
-                    if($post["submit"] == "nom_client")
+                    if($post["submitGeneral"] == "nom_client")
                     {
                         $errorSubmit = false;
     
@@ -140,7 +149,7 @@
                         }
                     }
     
-                    if($post["submit"] == "contact")
+                    if($post["submitGeneral"] == "contact")
                     {
                         $errorSubmit = false;
                         
@@ -155,14 +164,14 @@
                         }
                     }
     
-                    if($post["submit"] == "adresse")
+                    if($post["submitGeneral"] == "adresse")
                     {
                         $errorSubmit = false;
                         $errorEmpty  = false;
                         updateAdresse($id_rapport, $post["adresse"]);
                     }
     
-                    if($post["submit"] == "cp")
+                    if($post["submitGeneral"] == "cp")
                     {
                         $errorSubmit = false;
     
@@ -177,7 +186,7 @@
                         }
                     }
     
-                    if($post["submit"] == "ville")
+                    if($post["submitGeneral"] == "ville")
                     {
                         $errorSubmit = false;
     
@@ -192,7 +201,7 @@
                         }
                     }
     
-                    if($post["submit"] == "probleme")
+                    if($post["submitGeneral"] == "probleme")
                     {
                         $errorSubmit = false;
     
@@ -207,7 +216,7 @@
                         }
                     }
     
-                    if($post["submit"] == "details_presta")
+                    if($post["submitGeneral"] == "details_presta")
                     {
                         $errorSubmit = false;
                         $errorEmpty  = false;
@@ -229,6 +238,115 @@
                         header("Location: editRapport-edit-".$id_rapport);
                     }
     
+                }
+                // =====================================================================================================
+                
+                // =====================================================================================================
+                // Processing Piece POST
+                if(isset($post["submitPiece"]))
+                {
+                    $errorSubmit = true;
+                    $errorEmpty  = false;
+                    
+                    if($post["submitPiece"] == "ref")
+                    {
+                        $errorSubmit = false;
+                        
+                        if(empty($post["ref"]))
+                        {
+                            $log = "Le champ est vide";
+                            $errorEmpty = true;
+                        }
+                        
+                        if(!$errorEmpty)
+                        {
+                            updateRefPiece($post["id"], $post["ref"]);
+                        }
+                    }
+                    
+                    if($post["submitPiece"] == "details")
+                    {
+                        $errorSubmit = false;
+    
+                        if(empty($post["details"]))
+                        {
+                            $log = "Le champ est vide";
+                            $errorEmpty = true;
+                        }
+    
+                        if(!$errorEmpty)
+                        {
+                            updateDetailsPiece($post["id"], $post["details"]);
+                        }
+                    }
+                    
+                    if($post["submitPiece"] == "qte")
+                    {
+                        $errorSubmit = false;
+    
+                        if(empty($post["qte"]))
+                        {
+                            $log = "Le champ est vide";
+                            $errorEmpty = true;
+                        }
+    
+                        if(!$errorEmpty)
+                        {
+                            $qte = (int) $post["qte"];
+                            updateQtePiece($post["id"], $qte);
+                        }
+                    }
+    
+                    if(!$errorEmpty AND !$errorSubmit)
+                    {
+                        header("Location: editRapport-edit-".$id_rapport);
+                    }
+                }
+                // =====================================================================================================
+    
+                // =====================================================================================================
+                // Processing Add Piece POST
+                if(isset($post["submitAddPiece"]))
+                {
+                    $errorEmpty  = false;
+                    
+                    if(isEmpty($post))
+                    {
+                        $errorEmpty = true;
+                        $log = "Veuillez remplir tous les champs du formulaire";
+                    }
+                    
+                    if(!$errorEmpty)
+                    {
+                        insertNewPiece($id_rapport, $post);
+    
+                        header("Location: editRapport-edit-".$id_rapport);
+                    }
+                }
+                // =====================================================================================================
+    
+                // =====================================================================================================
+                // Processing delete piece
+                if(isset($post["deletePiece"]))
+                {
+                    deletePiece($post["deletePiece"]);
+                    header("Location: editRapport-edit-".$id_rapport);
+                }
+                // =====================================================================================================
+    
+                // =====================================================================================================
+                // Processing delete piece POST
+                if(isset($post["submitDeleteDate"]))
+                {
+                
+                }
+                // =====================================================================================================
+    
+                // =====================================================================================================
+                // Processing add piece
+                if(isset($post["submitAddPiece"]))
+                {
+                
                 }
                 // =====================================================================================================
             }
