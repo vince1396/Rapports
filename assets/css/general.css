@@ -9,3 +9,13 @@ input::placeholder {
 .blue-border {
     border: solid 3px #1da3ff;
 }
+
+#deleteDates {
+    border-right: solid 3px lightskyblue;
+}
+
+.loginCon{
+    margin: -100px auto;
+    max-width: 1280px;
+    width: 90%;
+}

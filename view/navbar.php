@@ -13,12 +13,12 @@
                   <?php
                     if($session["lvl"] == 1)
                     { ?>
-                        <li><a href="admin">Admin</a></li> <?php
+                        <li class="admin"><a href="admin">Admin</a></li> <?php
                     }
                   ?>
-                  <li><a href="rapportType">Créer Rapport</a></li>
-                  <li><a href="myrapports">Mes Rapports</a></li>
-                  <li><a href="profil"><?= $_SESSION["prenom"]." ".$_SESSION["nom"]; ?></a></li>
+                  <li class="rapportType"><a href="rapportType">Créer Rapport</a></li>
+                  <li class="myrapports"><a href="myrapports">Mes Rapports</a></li>
+                  <li class="profil"><a href="profil"><?= $_SESSION["prenom"]." ".$_SESSION["nom"]; ?></a></li>
                   <li class="red darken-2"><a href="logout">Déconnexion</a></li>
               </ul>
           </div>
@@ -33,14 +33,14 @@
           <?php
               if($session["lvl"] == 1)
               { ?>
-                  <li><a href="admin" class="waves-effect"><i class="material-icons">build</i>Admin</a></li><?php
+                  <li class="admin"><a href="admin" class="waves-effect"><i class="material-icons">build</i>Admin</a></li><?php
               }
           ?>
-          <li><a href="rapportType" class="waves-effect"><i class="material-icons">add_circle</i>Créer Rapport</a></li>
+          <li class="rapportType"><a href="rapportType" class="waves-effect"><i class="material-icons">add_circle</i>Créer Rapport</a></li>
           <li><div class="divider"></div></li>
-          <li><a href="myrapports" class="waves-effect"><i class="material-icons">collections_bookmark</i>Mes Rapports </a></li>
+          <li class="myrapports"><a href="myrapports" class="waves-effect"><i class="material-icons">collections_bookmark</i>Mes Rapports </a></li>
           <li><div class="divider"></div></li>
-          <li><a href="profil" class="waves-effect"><i class="material-icons">account_circle</i> Profil </a></li>
+          <li class="profil"><a href="profil" class="waves-effect"><i class="material-icons">account_circle</i> Profil </a></li>
           <li><div class="divider"></div></li>
           <li class="red darken-1"><a href="logout" class="waves-effect white-text"><i class="material-icons">close</i> Déconnexion</a></li>
       </ul>

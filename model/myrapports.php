@@ -4,10 +4,11 @@
     {
         global $bdd;
         
-        $req = $bdd->prepare("SELECT * FROM rapport r, cri c, tech t
+        $req = $bdd->prepare("SELECT DISTINCT * FROM rapport r, cri c, tech t
                                        WHERE t.id_tech = :id_tech
                                        AND r.id_tech = :id_tech
-                                       AND  c.id_tech = :id_tech");
+                                       AND  c.id_tech = :id_tech
+                                       AND r.id_rapport = c.id_rapport");
         
         $req->bindValue(":id_tech", $id_tech, PDO::PARAM_INT);
         $req->execute();

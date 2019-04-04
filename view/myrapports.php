@@ -42,8 +42,9 @@
                                         </td>
 
                                         <td>
-                                            <!--<a href="editRapport-edit-<?= $rapportsToDisplay[$k]["id_rapport"] ?>"> -->
+                                            <a href="editRapport-edit-<?= $rapportsToDisplay[$k]["id_rapport"] ?>">
                                                 <i class="material-icons">edit</i>
+                                            </a>
                                         </td>
                                         <td>
                                             <a href="convertPdf-pdf-<?= $rapportsToDisplay[$k]["id_rapport"] ?>">

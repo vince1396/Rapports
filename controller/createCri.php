@@ -12,7 +12,6 @@ require 'model/createCri.php';
         if (isset($_POST['submit']))
         {
             $post = getPost(); // Sanitize POST
-            print_r($post);
             $log = "";
             $error = false;
             $regex = "/^MA[0-9]{5}(-0[0-9])?$/";
@@ -60,16 +59,7 @@ require 'model/createCri.php';
                 $error = true;
             }
             // =========================================================================================================
-            // if detailPresta exists
-            if(isset($post["detailPresta"]))
-            {
-                // if detailPresta is empty
-                if(empty($post['detailPresta']))
-                {
-                    $log .= " / Détails de prestation manquants";
-                    $error = true;
-                }
-            }
+
             // =========================================================================================================
             // if dateInter exists
             if(isset($post['dateInter']))

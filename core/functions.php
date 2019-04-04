@@ -255,7 +255,7 @@
             destroyCookie("nom");
             destroyCookie("lvl");
         
-            header("Refresh:0; url=login");
+            //header("Refresh:0; url=login");
         }
     }
     // =================================================================================================================

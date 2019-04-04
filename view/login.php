@@ -1,5 +1,5 @@
 <body>
-  <div class="container">
+  <div class="loginCon">
       <!-- ========================================================================================================= -->
       <div class="row loginRow">
           <div class="col s10 offset-s2 l6 offset-l5">
@@ -61,18 +61,16 @@
               <!-- ================================================================================================= -->
           </form>
       </div>
-  </div>
-  
-  <?php
-      // Display logs if there's any
-      if(isset($log))
-      { ?>
-          <div class="row ">
-              <div class="col s12 l3 offset-l4 red">
-                  <p class="center-align"><?= addslashes($log); ?></p>
-              </div>
-          </div> <?php
-      }
+      <?php
+          // Display logs if there's any
+          if(isset($log))
+          { ?>
+              <div class="row ">
+                  <div class="col s12 l3 offset-l4 red">
+                      <p class="center-align"><?= addslashes($log); ?></p>
+                  </div>
+              </div> <?php
+          }
       ?>
-
+  </div>
 </body>
