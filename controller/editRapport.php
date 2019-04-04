@@ -338,7 +338,24 @@
                 // Processing delete piece POST
                 if(isset($post["submitDeleteDate"]))
                 {
-                
+                    $error = true;
+                    
+                    if(isset($post["id_date_inter"]))
+                    {
+                       $error = false;
+                    }
+                    
+                    if(!$error)
+                    {
+                        $id_date = $post["id_date_inter"];
+                        deleteDateCri($id_date);
+                    }
+                    
+                    if ($error)
+                    {
+                        $log = "Erreur supression";
+                    }
+                    
                 }
                 // =====================================================================================================
     
@@ -346,7 +363,15 @@
                 // Processing add piece
                 if(isset($post["submitAddPiece"]))
                 {
-                
+                    $error = true;
+                    $errorEmpty = true;
+                    
+                    if(isset($post["date"]))
+                    {
+                        $error = false;
+                    }
+                    
+                    if(empty($post["date"]))
                 }
                 // =====================================================================================================
             }

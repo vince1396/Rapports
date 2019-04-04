@@ -180,3 +180,23 @@
         
         $req->execute();
     }
+    
+    function deleteDateCri($id_date)
+    {
+        global $bbd;
+        
+        $req = $bbd->prepare("DELETE FROM date_cri
+                              WHERE id_date_inter = :id_date");
+        $req->bindValue(":id_date", $id_date, PDO::PARAM_INT);
+        
+        $req->execute();
+    }
+    
+    function insertDateCri($value)
+    {
+        global $bbd;
+        
+        $req = $bbd->prepare("INSERT INTO ");
+        
+        $req->execute();
+    }

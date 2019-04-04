@@ -13,9 +13,3 @@ input::placeholder {
 #deleteDates {
     border-right: solid 3px lightskyblue;
 }
-
-.loginCon{
-    margin: -100px auto;
-    max-width: 1280px;
-    width: 90%;
-}

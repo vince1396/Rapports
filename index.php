@@ -6,7 +6,7 @@
     // TODO : Changer MDP
     // TODO : Mot de passe oublié
     
-    // TODO : Svaing tabs state Materialize
+    // TODO : Saving tabs state Materialize
     // =================================================================================================================
     require('pdfshift/init.php'); // Call PDFShift library
     // =================================================================================================================

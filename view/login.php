@@ -1,5 +1,5 @@
 <body>
-  <div class="loginCon">
+  <div class="container">
       <!-- ========================================================================================================= -->
       <div class="row loginRow">
           <div class="col s10 offset-s2 l6 offset-l5">
@@ -20,7 +20,7 @@
                              name="email"
                              placeholder="Adresse email">
                       
-                      <label for="email"
+                      <label for="icon_prefix"
                              data-error="Adresse email non valide"
                              data-success="Ok"></label>
                   </div>
@@ -36,6 +36,7 @@
                               name="mdp"
                               placeholder="Mot de Passe">
                   </div>
+                  <label for="icon_lock"></label>
               </div>
               <!-- ================================================================================================= -->
               <!-- ========== Remember me option ========== -->

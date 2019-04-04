@@ -67,7 +67,7 @@
                                         {
                                             $error = false;
                                             ?>
-                                            <div class="col s4 offset-l3 input-field">
+                                            <div class="col s6 l6 offset-l2 input-field">
                                                 <i class="material-icons prefix">edit</i>
                                                 <input <?php if($k != "adresse") { echo "";} ?>
                                                         type="text"
@@ -89,7 +89,7 @@
                                             $error = false;
                                 
                                             ?>
-                                            <div class="col s4 offset-l3 input-field">
+                                            <div class="col s6 offset-l2 input-field">
                                                 <i class="material-icons prefix">edit</i>
                                                 <input required type="text"
                                                        name="<?= $k ?>"
@@ -110,7 +110,7 @@
                                             $error = false;
                                 
                                             ?>
-                                            <div class="col s4 offset-l3 input-field">
+                                            <div class="col s6 offset-l2 input-field">
                                                 <i class="material-icons prefix">insert_comment</i>
                                                 <label for="probleme"></label>
                                                 <textarea name="<?= $k ?>"
@@ -130,7 +130,7 @@
                                     ?>
                                     <!-- =========================================================================== -->
                                     <!-- Submit button -->
-                                    <div class="col s4">
+                                    <div class="col s3 l3">
                                         <button class="btn waves-effect waves-light"
                                                 type="submit"
                                                 name="submitGeneral"
@@ -160,28 +160,32 @@
                         <!-- ======================================================================================= -->
                         <!-- TITLE -->
                         <div class="row">
-                            <div class="col s12 l6 offset-l3">
+                            <div class="col s10 offset-s2 l6">
                                 <h5>Supprimer une date</h5>
                             </div>
                         </div>
                         <!-- ======================================================================================= -->
                         <br><br>
                         <?php
+                            print_r($dates);
                             foreach($dates as $k => $v)
                             { ?>
                                 <!-- =============================================================================== -->
                                 <div class="row">
-                                    <div class="col s12 l6">
+                                    <div class="col s6 l6">
                                         <p><b><?= $dates[$k]["date_inter"]; ?></b></p>
                                     </div>
                                     <!-- =========================================================================== -->
-                                    <div class="col s12 l6">
+                                    <div class="col s6 l6">
                                         <form action="#" method="post">
                                             <button class="btn waves-effect waves-light"
                                                     type="submit"
                                                     name="submitDeleteDate"
                                                     id=""
-                                                    value="<?= $dates[$k]["date_inter"]; ?>">
+                                                    value="<?= $dates[$k]["id_date_inter"]; ?>"
+                                                    onclick="return(
+                                                        confirm('Êtes-vous sûr de vouloir supprimer cette date ?')
+                                                        );">
                                                 Supprimer
                                             </button>
                                         </form>
@@ -195,7 +199,8 @@
                     
                     <!-- =========================================================================================== -->
                     <!-- ADD DATE -->
-                    <div class="col s12 l4 offset-l2">
+                    <div class="col s10 offset-s2 l4 offset-l2">
+                        <br><br><br>
                         <div class="row">
                             <div class="col s12 l6">
                                 <h5>Ajouter une date</h5>
@@ -205,7 +210,7 @@
                         <br><br>
                         <form action="#" method="post">
                             <div class="row">
-                                <div class="input-field col s12 l6">
+                                <div class="input-field col s8 l6">
                                     <i class="material-icons prefix">event</i>
                                     <label for="date">Date</label>
                                     <input required type="text" name="date" id="date" class="datepicker">
@@ -213,7 +218,7 @@
                             </div>
                             <!-- =================================================================================== -->
                             <div class="row">
-                                <div class="col s12 l6 offset-l2">
+                                <div class="col s10 offset-s2 l6 offset-l2">
                                     <button class="btn waves-effect waves-light"
                                             type="submit"
                                             name="submitAddDate"
@@ -264,7 +269,7 @@
                                             <!-- ============================= Ref Piece =========================== -->
                                             <form action="#" method="post">
                                                 <div class="row">
-                                                    <div class="input-field col s12 l8">
+                                                    <div class="input-field col s7 l8">
                                                         <i class="material-icons prefix">edit</i>
                                                         <input id="refPiece"
                                                                class="validate"
@@ -278,7 +283,7 @@
                                                            name="id"
                                                            value="<?= $pieces[$k]["id_piece"]; ?>">
 
-                                                    <div class="col s12 l4">
+                                                    <div class="col s4 l4">
                                                         <button class="btn waves-effect waves-light"
                                                                 type="submit"
                                                                 name="submitPiece"
@@ -295,7 +300,7 @@
                                             <!-- =========================== Détails Pièce ========================= -->
                                             <form action="#" method="post">
                                                 <div class="row">
-                                                    <div class="input-field col s12 l8">
+                                                    <div class="input-field col s7 l8">
                                                         <i class="material-icons prefix">edit</i>
                                                         <input id="detailPiece"
                                                                class="validate"
@@ -310,7 +315,7 @@
                                                            name="id"
                                                            value="<?= $pieces[$k]["id_piece"]; ?>">
                             
-                                                    <div class="col s12 l4">
+                                                    <div class="col s4 l4">
                                                         <button class="btn waves-effect waves-light"
                                                                 type="submit"
                                                                 name="submitPiece"
@@ -327,7 +332,7 @@
                                             <!-- ============================ Quantité Pièce ======================= -->
                                             <form action="#" method="post">
                                                 <div class="row">
-                                                    <div class="input-field col s12 l8">
+                                                    <div class="input-field col s7 l8">
                                                         <i class="material-icons prefix">edit</i>
                                                         <input id="qtePiece"
                                                                class="validate"
@@ -342,7 +347,7 @@
                                                            name="id"
                                                            value="<?= $pieces[$k]["id_piece"]; ?>">
 
-                                                    <div class="col s12 l4">
+                                                    <div class="col s4 l4">
                                                         <button class="btn waves-effect waves-light"
                                                                 type="submit"
                                                                 name="submitPiece"
@@ -359,7 +364,7 @@
                                             <!-- ============================= Delete piece ======================== -->
                                             <div class="row">
                                                 <form action="#" method="post">
-                                                    <div class="col s12 l4 offset-l3">
+                                                    <div class="col s10 offset-s2 l4 offset-l3">
                                                         <button class="btn waves-effect waves-light red"
                                                                 type="submit"
                                                                 name="deletePiece"
