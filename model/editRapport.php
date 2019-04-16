@@ -183,9 +183,9 @@
     
     function deleteDateCri($id_date)
     {
-        global $bbd;
+        global $bdd;
         
-        $req = $bbd->prepare("DELETE FROM date_cri
+        $req = $bdd->prepare("DELETE FROM date_cri
                               WHERE id_date_inter = :id_date");
         $req->bindValue(":id_date", $id_date, PDO::PARAM_INT);
         
@@ -194,9 +194,67 @@
     
     function insertDateCri($value)
     {
-        global $bbd;
+        global $bdd;
         
-        $req = $bbd->prepare("INSERT INTO ");
+        $req = $bdd->prepare("INSERT INTO date_cri
+                              VALUES (NULL, :val)");
+        $req->bindValue(":val", $value, PDO::PARAM_STR);
+        
+        $req->execute();
+    }
+    
+    function insertEffectuer($id_rapport, $id_tech)
+    {
+        global $bdd;
+        $lastId = $bdd->lastInsertId();
+        
+        $req = $bdd->prepare("INSERT INTO effectuer
+                       VALUES(:id_rapport, :lastId, :id_tech)");
+        $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
+        $req->bindValue(":lastId",     $lastId,     PDO::PARAM_INT);
+        $req->bindValue(":id_tech",    $id_tech,    PDO::PARAM_INT);
+        
+        $req->execute();
+    }
+    
+    function getUnselectedActions($id_rapport)
+    {
+        global $bdd;
+        
+        $req = $bdd->prepare("SELECT * FROM action a
+                                       WHERE a.id_action NOT IN (
+                                            SELECT a.id_action FROM realiser r, action a
+                                            WHERE r.id_rapport = :id_rapport
+                                            AND r.id_action = a.id_action)
+                                       ");
+        
+        $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
+        $req->execute();
+        
+        return $req;
+    }
+    
+    function insertRealiser($id_rapport, $id_action)
+    {
+        global $bdd;
+        
+        $req = $bdd->prepare("INSERT INTO realiser
+                                       VALUES(:id_action, :id_rapport)");
+        $req->bindValue(":id_action",  $id_action,  PDO::PARAM_INT);
+        $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
+        
+        $req->execute();
+    }
+    
+    function deleteRealiser($id_rapport, $id_action)
+    {
+        global $bdd;
+        
+        $req = $bdd->prepare("DELETE FROM realiser
+                                       WHERE id_action = :id_action
+                                       AND id_rapport = :id_rapport");
+        $req->bindValue(":id_action",  $id_action,  PDO::PARAM_INT);
+        $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
         
         $req->execute();
     }

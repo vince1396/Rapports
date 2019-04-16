@@ -167,7 +167,6 @@
                         <!-- ======================================================================================= -->
                         <br><br>
                         <?php
-                            print_r($dates);
                             foreach($dates as $k => $v)
                             { ?>
                                 <!-- =============================================================================== -->
@@ -178,11 +177,14 @@
                                     <!-- =========================================================================== -->
                                     <div class="col s6 l6">
                                         <form action="#" method="post">
+                                            <input type="hidden"
+                                                   name="id_date_inter"
+                                                   value="<?= $dates[$k]["id_date_inter"]; ?>">
                                             <button class="btn waves-effect waves-light"
                                                     type="submit"
                                                     name="submitDeleteDate"
                                                     id=""
-                                                    value="<?= $dates[$k]["id_date_inter"]; ?>"
+                                                    value=""
                                                     onclick="return(
                                                         confirm('Êtes-vous sûr de vouloir supprimer cette date ?')
                                                         );">
@@ -236,7 +238,95 @@
             <!-- =================================================================================================== -->
             <!-- =========== ACTIONS REALISEES =========== -->
             <div id="actions" class="col s12">
-                Test 3
+                <div id="dateInter" class="col s12">
+                    <br><br><br>
+                    <div class="row">
+                        <!-- ======================================================================================= -->
+                        <!-- DELETE ACTION -->
+                        <div class="col s12 l6" id="deleteAction">
+                            <!-- =================================================================================== -->
+                            <!-- TITLE -->
+                            <div class="row">
+                                <div class="col s10 offset-s2 l6">
+                                    <h5>Supprimer une action</h5>
+                                </div>
+                            </div>
+                            <!-- =================================================================================== -->
+                            <br><br>
+                            <?php
+                                foreach($actions as $k => $v)
+                                { ?>
+                                    <!-- =========================================================================== -->
+                                    <div class="row">
+                                        <div class="col s6 l6">
+                                            <p><b><?= $actions[$k]["libelle"]." : ".$actions[$k]["desc_action"]; ?></b></p>
+                                        </div>
+                                        <!-- ======================================================================= -->
+                                        <div class="col s6 l6">
+                                            <form action="#" method="post">
+                                                <input type="hidden"
+                                                       name="id_action"
+                                                       value="<?= $actions[$k]["id_action"]; ?>">
+                                                <button class="btn waves-effect waves-light"
+                                                        type="submit"
+                                                        name="submitDeleteAction"
+                                                        id=""
+                                                        value=""
+                                                        onclick="return(
+                                                        confirm('Êtes-vous sûr de vouloir supprimer cette action ?'));">
+                                                    Supprimer
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- =========================================================================== -->
+                                    <?php
+                                } ?>
+                        </div>
+                        <!-- ======================================================================================= -->
+
+                        <!-- ======================================================================================= -->
+                        <!-- ADD ACTION -->
+                        <div class="col s10 offset-s2 l4 offset-l2">
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col s12 l6">
+                                    <h5>Ajouter une action</h5>
+                                </div>
+                            </div>
+                            <!-- =================================================================================== -->
+                            <br><br>
+                            <form action="#" method="post" class="row">
+                                <div class="row">
+                                    <div class="input-field col s12 l8">
+                                        <select id="unsel" name="actions">
+                                            <?php
+                                                foreach ($unselActions as $k => $v)
+                                                { ?>
+                                                    <option value="<?= $unselActions[$k]["id_action"]; ?>"><?= $unselActions[$k]["libelle"]." : ".$unselActions[$k]["desc_action"]; ?></option>
+                                                    <?php
+                                                }
+                                            ?>
+                                        </select>
+                                        <label for="unsel">Séléctionner une action</label>
+                                    </div>
+                                </div>
+                                <!-- =============================================================================== -->
+                                <div class="row">
+                                    <div class="col s10 offset-s2 l6 offset-l2">
+                                        <button class="btn waves-effect waves-light"
+                                                type="submit"
+                                                name="submitAddAction"
+                                                value="submit">
+                                            Ajouter
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- ======================================================================================= -->
+                    </div>
+                </div>
             </div>
             <!-- =================================================================================================== -->
             <!-- =========== PIECES A CHANGER =========== -->

@@ -21,6 +21,7 @@
                 $etat    = getTargetEtat($id_rapport)->fetch();
                 $inter   = getTargetIntervenants($id_rapport)->fetchAll();
                 $pieces  = getTargetPieces($id_rapport);
+                $unselActions = getUnselectedActions($id_rapport)->fetchAll();
                 // =====================================================================================================
                 
                 // =====================================================================================================
@@ -335,7 +336,7 @@
                 // =====================================================================================================
     
                 // =====================================================================================================
-                // Processing delete piece POST
+                // Processing delete date POST
                 if(isset($post["submitDeleteDate"]))
                 {
                     $error = true;
@@ -349,6 +350,7 @@
                     {
                         $id_date = $post["id_date_inter"];
                         deleteDateCri($id_date);
+                        header("Location: editRapport-edit-".$id_rapport);
                     }
                     
                     if ($error)
@@ -361,10 +363,10 @@
     
                 // =====================================================================================================
                 // Processing add piece
-                if(isset($post["submitAddPiece"]))
+                if(isset($post["submitAddDate"]))
                 {
                     $error = true;
-                    $errorEmpty = true;
+                    $errorEmpty = false;
                     
                     if(isset($post["date"]))
                     {
@@ -372,8 +374,90 @@
                     }
                     
                     if(empty($post["date"]))
+                    {
+                        $errorEmpty = true;
+                        $log = "Le champ est vide";
+                    }
+                    
+                    if ($error)
+                    {
+                        $log ="Erreur ajout date";
+                    }
+                    
+                    if(!$error AND !$errorEmpty)
+                    {
+                        insertDateCri($post["date"]);
+                        insertEffectuer($id_rapport, $_SESSION["id_tech"]);
+                        header("Location: editRapport-edit-".$id_rapport);
+                    }
+                    
+                    
                 }
                 // =====================================================================================================
+                
+                // =====================================================================================================
+                // Processing delete action
+                if(isset($post["submitDeleteAction"]))
+                {
+                    $error = true;
+                    $errorEmpty = false;
+    
+                    if(isset($post["id_action"]))
+                    {
+                        $error = false;
+                        
+                        if(empty($post["id_action"]))
+                        {
+                            $errorEmpty = true;
+                            $log = "Error ID action to delete";
+                        }
+                    }
+                    
+                    if($error)
+                    {
+                        $log = "Erreur valeur inexistante";
+                    }
+                    
+                    if(!$error AND !$errorEmpty)
+                    {
+                        deleteRealiser($id_rapport, $post["id_action"]);
+                        header("Location: editRapport-edit-".$id_rapport);
+                    }
+                }
+                // =====================================================================================================
+    
+                // =====================================================================================================
+                // Processing add action
+                if(isset($post["submitAddAction"]))
+                {
+                    $error = true;
+                    $errorEmpty = false;
+                    
+                    if(isset($post["actions"]))
+                    {
+                        $error = false;
+                        
+                        if(empty($post["actions"]))
+                        {
+                            $errorEmpty = true;
+                            $log = "Aucune action sélectionnée";
+                        }
+                    }
+                    
+                    if($error)
+                    {
+                        $log = "Error unexisting Action";
+                    }
+                    
+                    if(!$error AND !$errorEmpty)
+                    {
+                        insertRealiser($id_rapport, $post["actions"]);
+                        header("Location: editRapport-edit-".$id_rapport);
+                    }
+                }
+                // =====================================================================================================
+                
+                
             }
             else
             {

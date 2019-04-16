@@ -13,3 +13,7 @@ input::placeholder {
 #deleteDates {
     border-right: solid 3px lightskyblue;
 }
+
+#deleteAction {
+    border-right: solid 3px lightskyblue;
+}

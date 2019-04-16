@@ -41,7 +41,7 @@
     {
         global $bdd;
         
-        $req = $bdd->prepare("SELECT libelle, desc_action FROM realiser r, action a
+        $req = $bdd->prepare("SELECT * FROM realiser r, action a
                                        WHERE r.id_rapport = :id_rapport
                                        AND r.id_action = a.id_action");
         $req->bindValue(":id_rapport", $id_rapport, PDO::PARAM_INT);
