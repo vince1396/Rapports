@@ -34,11 +34,11 @@
             <!-- =========== TABS TITLES =========== -->
             <div class="col s12">
                 <ul class="tabs tabs-fixed-width">
-                    <li class="tab col s3"><a class="blue-text text-darken-2" href="#general">Général</a></li>
-                    <li class="tab col s3"><a class="blue-text text-darken-2" href="#dateInter">Date(s) d'intervention(s)</a></li>
-                    <li class="tab col s3"><a class="blue-text text-darken-2" href="#actions">Actions Réalisées</a></li>
-                    <li class="tab col s3"><a class="blue-text text-darken-2" href="#pieces">Pièces à changer</a></li>
-                    <li class="tab col s3"><a class="blue-text text-darken-2" href="#addPiece">Ajouter une pièce</a></li>
+                    <li class="tab col s3" value="general"><a class="clickTab blue-text text-darken-2" href="#general">Général</a></li>
+                    <li class="tab col s3" value="dateInter"><a class="clickTab blue-text text-darken-2" href="#dateInter">Date(s) d'intervention(s)</a></li>
+                    <li class="tab col s3" value="actions"><a class="clickTab blue-text text-darken-2" href="#actions">Actions Réalisées</a></li>
+                    <li class="tab col s3" value="pieces"><a class="clickTab blue-text text-darken-2" href="#pieces">Pièces à changer</a></li>
+                    <li class="tab col s3" value="addPiece"><a class="clickTab blue-text text-darken-2" href="#addPiece">Ajouter une pièce</a></li>
                 </ul>
             </div>
             <!-- =================================================================================================== -->

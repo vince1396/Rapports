@@ -15,9 +15,6 @@ $(function () {
         format: "yyyy-mm-dd"
     });
     
-    $('ul.tabs').tabs();
-    
-    
     $('select').material_select();
     
     

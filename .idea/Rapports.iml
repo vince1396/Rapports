@@ -19,5 +19,9 @@
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="jquery-ui" level="application" />
     <orderEntry type="library" name="materialize" level="application" />
+    <orderEntry type="library" name="JQuery" level="application" />
+    <orderEntry type="library" name="JQueryUI" level="project" />
+    <orderEntry type="library" name="@types/jqueryui" level="application" />
+    <orderEntry type="library" name="@types/jquery" level="application" />
   </component>
 </module>
