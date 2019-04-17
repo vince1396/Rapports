@@ -1,8 +1,5 @@
 <component name="libraryTable">
-  <library name="JQueryUI" type="javaScript">
-    <properties>
-      <option name="frameworkName" value="jQuery UI" />
-    </properties>
+  <library name="JQueryUI">
     <CLASSES />
     <SOURCES />
   </library>
