@@ -3,12 +3,9 @@
     
     // === To Do ===
     // TODO : SMTP Décimale
-    // TODO : Mot de passe oublié
     
     // === Bug ===
     // TODO : User cannot be deleted if it has rapports
-    // TODO : Update date inter
-    // TODO : CreateCri : Page refreshes even with wrong ref
     
     // =================================================================================================================
     require('pdfshift/init.php'); // Call PDFShift library

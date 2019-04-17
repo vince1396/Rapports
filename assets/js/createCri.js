@@ -157,7 +157,7 @@ $(function () {
         
     });
     
-    $("#submit").on("click", function () {
+    $("#submit").on("click", function (e) {
        
         if (tech[0].value === "")
         {
@@ -166,6 +166,7 @@ $(function () {
         
         if(!regex.test(ref.val()))
         {
+            e.preventDefault();
             alert("La référence est invalide !");
         }
     });
@@ -174,8 +175,6 @@ $(function () {
     // REGEX
     
     ref.on("change", function () {
-        
-        console.log("Test");
         
         if (regex.test(ref.val()))
         {
