@@ -192,6 +192,16 @@
         $req->execute();
     }
     
+    function deleteEffectuer($id_date)
+    {
+        global $bdd;
+        
+        $req = $bdd->prepare("DELETE FROM effectuer
+                                       WHERE id_date_inter = :id_date");
+        $req->bindValue(":id_date", $id_date, PDO::PARAM_INT);
+        $req->execute();
+    }
+    
     function insertDateCri($value)
     {
         global $bdd;

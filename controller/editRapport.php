@@ -350,6 +350,7 @@
                     {
                         $id_date = $post["id_date_inter"];
                         deleteDateCri($id_date);
+                        deleteEffectuer($id_date);
                         header("Location: editRapport-edit-".$id_rapport);
                     }
                     
