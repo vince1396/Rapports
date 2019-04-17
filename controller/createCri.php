@@ -9,9 +9,8 @@ require 'model/createCri.php';
         $etat = getEtatReseau()->fetchAll();
         // =============================================================================================================
         // Form is sent
-        if (isset($_POST['submit']))
+        if (isset($post['submit']))
         {
-            $post = getPost(); // Sanitize POST
             $log = "";
             $error = false;
             $regex = "/^MA[0-9]{5}(-0[0-9])?$/";
@@ -156,11 +155,8 @@ require 'model/createCri.php';
                 {
                     insertDatesInter($date);
                     $lastIdDate = getLastId();
-    
-                    foreach($post["tech"] as $idTech => $tech)
-                    {
-                        insertEffectuer($lastIdDate[0], $tech, $lastRapport[0]);
-                    }
+                    
+                    insertEffectuer($lastIdDate[0], $session["id_tech"], $lastRapport[0]);
                 }
                 
                 foreach($post["actions"] as $idAction => $action)
@@ -175,6 +171,8 @@ require 'model/createCri.php';
                         insertPiece($post["piece"][$kD1]["refPiece"], $post["piece"][$kD1]["detailPiece"], $post["piece"][$kD1]["qtePiece"], $lastRapport[0]);
                     }
                 }
+                
+                header("Location: myrapports");
             }
             // =========================================================================================================
         }

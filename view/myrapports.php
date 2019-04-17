@@ -53,10 +53,10 @@
                                         </td>
 
                                         <td>
-                                            <a href="myrapports-delete-<?= $rapportsToDisplay[$k]["id_rapport"] ?>"
-                                               onclick="return(confirm('Etes-vous sûr de vouloir supprimer cette entrée ?'));">
+                                            <!--<a href="myrapports-delete-"
+                                               onclick="return(confirm('Etes-vous sûr de vouloir supprimer cette entrée ?'));">-->
                                                 <i class="material-icons">delete</i>
-                                            </a>
+                                            <!--</a>-->
                                         </td>
                                     </tr> <?php
                                 } ?>

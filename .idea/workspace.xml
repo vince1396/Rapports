@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="109c37f1-da5e-4950-ac85-ba2e584d2897" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controller/profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/profil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/createCri.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/createCri.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/myrapports.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/myrapports.php" afterDir="false" />
     </list>
     <ignored path="pdf/" />
     <ignored path="model/bdd.php" />
@@ -52,14 +53,14 @@
     <favorites_list name="Rapports" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.10885806">
+    <splitter split-orientation="horizontal" split-proportion="0.3895411">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+                <state relative-caret-position="145">
+                  <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
                 </state>
               </provider>
             </entry>
@@ -67,8 +68,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/functions.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="770">
-                  <caret line="235" column="37" selection-start-line="235" selection-start-column="37" selection-end-line="235" selection-end-column="37" />
+                <state relative-caret-position="462">
+                  <caret line="135" column="4" lean-forward="true" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
                   <folding>
                     <element signature="e#10#33#0#PHP" expanded="true" />
                     <element signature="e#376#439#0#PHP" />
@@ -95,11 +96,12 @@
                     <element signature="n#makeTabSha1#0;n#!!top" />
                     <element signature="e#6751#6836#0#PHP" />
                     <element signature="n#refreshSession#0;n#!!top" />
+                    <element signature="e#7581#7656#0#PHP" />
                     <element signature="n#routing#0;n#!!top" />
                     <element signature="n#sanitizeCookies#0;n#!!top" />
                     <element signature="n#sanitizeGet#0;n#!!top" />
                     <element signature="n#sanitizeSession#0;n#!!top" />
-                    <element signature="n#sendMail#0;n#!!top" />
+                    <element signature="e#9841#11926#0#PHP" />
                   </folding>
                 </state>
               </provider>
@@ -117,7 +119,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.3994012">
+        <splitter split-orientation="horizontal" split-proportion="0.33287293">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="false">
@@ -133,20 +135,20 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/model/editPassword.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="369">
-                      <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+                    <state relative-caret-position="238">
+                      <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/model/createCri.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="546">
-                      <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+                    <state relative-caret-position="308">
+                      <caret line="123" column="56" lean-forward="true" selection-start-line="123" selection-start-column="56" selection-end-line="123" selection-end-column="56" />
                       <folding>
                         <element signature="n#getTech#0;n#!!top" />
                         <element signature="n#getReseau#0;n#!!top" />
@@ -154,7 +156,6 @@
                         <element signature="n#getEtatReseau#0;n#!!top" />
                         <element signature="n#insertRapport#0;n#!!top" />
                         <element signature="n#insertCri#0;n#!!top" />
-                        <element signature="n#insertEffectuer#0;n#!!top" />
                         <element signature="n#insertDatesInter#0;n#!!top" />
                         <element signature="n#insertRealiser#0;n#!!top" />
                         <element signature="n#insertPiece#0;n#!!top" />
@@ -167,12 +168,11 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/model/displayRapport.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="225">
-                      <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+                    <state relative-caret-position="378">
+                      <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
                       <folding>
                         <element signature="n#getTargetRapport#0;n#!!top" />
                         <element signature="n#getTargetCri#0;n#!!top" />
-                        <element signature="n#getTargetDates#0;n#!!top" />
                         <element signature="n#getTargetActions#0;n#!!top" />
                         <element signature="n#getTargetReseau#0;n#!!top" />
                         <element signature="n#getTargetEtat#0;n#!!top" />
@@ -252,7 +252,7 @@
             </leaf>
           </split-first>
           <split-second>
-            <splitter split-orientation="horizontal" split-proportion="0.18463074">
+            <splitter split-orientation="horizontal" split-proportion="0.17233385">
               <split-first>
                 <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
                   <file pinned="false" current-in-tab="false">
@@ -264,11 +264,11 @@
                       </provider>
                     </entry>
                   </file>
-                  <file pinned="false" current-in-tab="true">
+                  <file pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/view/editPassword.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="392">
-                          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+                        <state relative-caret-position="434">
+                          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
                         </state>
                       </provider>
                     </entry>
@@ -276,7 +276,7 @@
                   <file pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/view/displayRapport.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="549">
+                        <state relative-caret-position="546">
                           <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
                         </state>
                       </provider>
@@ -285,8 +285,8 @@
                   <file pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/view/createCri.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="1596">
-                          <caret line="129" column="77" selection-start-line="129" selection-start-column="77" selection-end-line="129" selection-end-column="77" />
+                        <state relative-caret-position="763">
+                          <caret line="346" selection-start-line="346" selection-end-line="363" selection-end-column="14" />
                           <folding>
                             <element signature="e#61#542#0#PHP" />
                             <element signature="e#22241#22722#0#PHP" />
@@ -295,7 +295,7 @@
                       </provider>
                     </entry>
                   </file>
-                  <file pinned="false" current-in-tab="false">
+                  <file pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/view/editRapport.php">
                       <provider selected="true" editor-type-id="text-editor">
                         <state relative-caret-position="630">
@@ -345,8 +345,8 @@
                   <file pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/view/myrapports.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="1078">
-                          <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+                        <state relative-caret-position="632">
+                          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
                         </state>
                       </provider>
                     </entry>
@@ -354,7 +354,7 @@
                   <file pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/view/profil.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="758">
+                        <state relative-caret-position="756">
                           <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
                         </state>
                       </provider>
@@ -373,11 +373,11 @@
               </split-first>
               <split-second>
                 <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-                  <file pinned="false" current-in-tab="false">
+                  <file pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/controller/createCri.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="197">
-                          <caret line="14" selection-start-line="14" selection-end-line="14" />
+                        <state relative-caret-position="656">
+                          <caret line="177" column="16" lean-forward="true" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="16" />
                         </state>
                       </provider>
                     </entry>
@@ -385,7 +385,7 @@
                   <file pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/controller/displayRapport.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="241">
+                        <state relative-caret-position="238">
                           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
                         </state>
                       </provider>
@@ -440,8 +440,8 @@
                   <file pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/controller/myrapports.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="308">
-                          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+                        <state relative-caret-position="486">
+                          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
                         </state>
                       </provider>
                     </entry>
@@ -458,8 +458,8 @@
                   <file pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/controller/editPassword.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="392">
-                          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+                        <state relative-caret-position="686">
+                          <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
                         </state>
                       </provider>
                     </entry>
@@ -473,11 +473,11 @@
                       </provider>
                     </entry>
                   </file>
-                  <file pinned="false" current-in-tab="true">
+                  <file pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/controller/profil.php">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="238">
-                          <caret line="17" selection-start-line="17" selection-end-line="17" />
+                        <state relative-caret-position="462">
+                          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
                         </state>
                       </provider>
                     </entry>
@@ -513,7 +513,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_9.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_10.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_11.sql" />
         <option value="$PROJECT_DIR$/controller/convertPdf.php" />
@@ -535,15 +534,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/86b9befc-8f28-482c-a00c-2648c99db3b4/console_15.sql" />
         <option value="$PROJECT_DIR$/controller/logout.php" />
         <option value="$PROJECT_DIR$/controller/myrapports.php" />
-        <option value="$PROJECT_DIR$/view/myrapports.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_3.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_4.sql" />
         <option value="$PROJECT_DIR$/view/navbar.php" />
         <option value="$PROJECT_DIR$/view/footer.php" />
-        <option value="$PROJECT_DIR$/controller/createCri.php" />
-        <option value="$PROJECT_DIR$/core/functions.php" />
         <option value="$PROJECT_DIR$/view/createCri.php" />
         <option value="$PROJECT_DIR$/view/login.php" />
         <option value="$PROJECT_DIR$/assets/css/general.css" />
@@ -557,13 +553,17 @@
         <option value="$PROJECT_DIR$/assets/js/editRapport.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_6.sql" />
         <option value="$PROJECT_DIR$/model/myrapports.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/view/admin.php" />
-        <option value="$PROJECT_DIR$/view/editPassword.php" />
         <option value="$PROJECT_DIR$/model/editPassword.php" />
-        <option value="$PROJECT_DIR$/controller/editPassword.php" />
         <option value="$PROJECT_DIR$/controller/profil.php" />
+        <option value="$PROJECT_DIR$/view/editPassword.php" />
+        <option value="$PROJECT_DIR$/controller/editPassword.php" />
+        <option value="$PROJECT_DIR$/view/myrapports.php" />
+        <option value="$PROJECT_DIR$/core/functions.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_7.sql" />
+        <option value="$PROJECT_DIR$/controller/createCri.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -615,7 +615,7 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="javascript.karma.karma_node_package_dir" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -761,7 +761,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="639094000" />
+    <option name="totallyTimeSpent" value="644376000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -791,7 +791,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32914045" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.24004193" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026681" side_tool="true" weight="0.3297414" />
-      <window_info anchor="bottom" id="Database Console" order="12" sideWeight="0.49733192" weight="0.23706897" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="12" sideWeight="0.49733192" visible="true" weight="0.23706897" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -840,7 +840,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Delete Rapport" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_2.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_3.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_4.sql" />
     <entry file="file://$PROJECT_DIR$/assets/css/login.css">
@@ -855,8 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://432b4e04-c076-444f-a692-90f576e4cf7a/schema/rapports/table/effectuer" />
-    <entry file="das://432b4e04-c076-444f-a692-90f576e4cf7a/schema/rapports/table/date_cri" />
     <entry file="file://$PROJECT_DIR$/assets/css/general.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -880,73 +877,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="235" column="37" selection-start-line="235" selection-start-column="37" selection-end-line="235" selection-end-column="37" />
-          <folding>
-            <element signature="e#10#33#0#PHP" expanded="true" />
-            <element signature="e#376#439#0#PHP" />
-            <element signature="n#chargerClasse#0;n#!!top" />
-            <element signature="e#748#913#0#PHP" />
-            <element signature="n#confirmPsw#0;n#!!top" />
-            <element signature="e#1227#1571#0#PHP" />
-            <element signature="n#createPDF#0;n#!!top" />
-            <element signature="e#2230#2309#0#PHP" />
-            <element signature="n#destroyCookie#0;n#!!top" />
-            <element signature="e#2529#2601#0#PHP" />
-            <element signature="n#displaySuperglobals#0;n#!!top" />
-            <element signature="e#3043#3220#0#PHP" />
-            <element signature="n#getPost#0;n#!!top" />
-            <element signature="e#4296#4438#0#PHP" />
-            <element signature="n#isEmpty#0;n#!!top" />
-            <element signature="e#4832#4995#0#PHP" />
-            <element signature="n#login#0;n#!!top" />
-            <element signature="e#5469#5576#0#PHP" />
-            <element signature="n#makeCookie#0;n#!!top" />
-            <element signature="e#5958#6066#0#PHP" />
-            <element signature="n#makeSession#0;n#!!top" />
-            <element signature="e#6365#6460#0#PHP" />
-            <element signature="n#makeTabSha1#0;n#!!top" />
-            <element signature="e#6751#6836#0#PHP" />
-            <element signature="n#refreshSession#0;n#!!top" />
-            <element signature="n#routing#0;n#!!top" />
-            <element signature="n#sanitizeCookies#0;n#!!top" />
-            <element signature="n#sanitizeGet#0;n#!!top" />
-            <element signature="n#sanitizeSession#0;n#!!top" />
-            <element signature="n#sendMail#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/createCri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding>
-            <element signature="n#getTech#0;n#!!top" />
-            <element signature="n#getReseau#0;n#!!top" />
-            <element signature="n#getActions#0;n#!!top" />
-            <element signature="n#getEtatReseau#0;n#!!top" />
-            <element signature="n#insertRapport#0;n#!!top" />
-            <element signature="n#insertCri#0;n#!!top" />
-            <element signature="n#insertEffectuer#0;n#!!top" />
-            <element signature="n#insertDatesInter#0;n#!!top" />
-            <element signature="n#insertRealiser#0;n#!!top" />
-            <element signature="n#insertPiece#0;n#!!top" />
-            <element signature="n#getLastId#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/displayRapport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+        <state relative-caret-position="378">
+          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
           <folding>
             <element signature="n#getTargetRapport#0;n#!!top" />
             <element signature="n#getTargetCri#0;n#!!top" />
-            <element signature="n#getTargetDates#0;n#!!top" />
             <element signature="n#getTargetActions#0;n#!!top" />
             <element signature="n#getTargetReseau#0;n#!!top" />
             <element signature="n#getTargetEtat#0;n#!!top" />
@@ -967,13 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/displayRapport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -983,7 +913,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/profil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
+        <state relative-caret-position="756">
           <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
         </state>
       </provider>
@@ -999,20 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/createCri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/displayRapport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1162,13 +1078,6 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_6.sql" />
-    <entry file="file://$PROJECT_DIR$/view/myrapports.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/myrapports.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1186,31 +1095,6 @@
             <element signature="n#checkPieces#0;n#!!top" />
             <element signature="n#getAllRapports#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://432b4e04-c076-444f-a692-90f576e4cf7a/schema/rapports/table/cri">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://432b4e04-c076-444f-a692-90f576e4cf7a/schema/rapports/table/rapport">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/myrapports.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1239,17 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/createCri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="129" column="77" selection-start-line="129" selection-start-column="77" selection-end-line="129" selection-end-column="77" />
-          <folding>
-            <element signature="e#61#542#0#PHP" />
-            <element signature="e#22241#22722#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="683">
@@ -1257,17 +1130,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/editPassword.php">
+    <entry file="file://$PROJECT_DIR$/controller/profil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        <state relative-caret-position="462">
+          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/controller/editPassword.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="686">
+          <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/editPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/editPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/displayRapport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/displayRapport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/createCri.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="346" selection-start-line="346" selection-end-line="363" selection-end-column="14" />
+          <folding>
+            <element signature="e#61#542#0#PHP" />
+            <element signature="e#22241#22722#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/myrapports.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/myrapports.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="135" column="4" lean-forward="true" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
+          <folding>
+            <element signature="e#10#33#0#PHP" expanded="true" />
+            <element signature="e#376#439#0#PHP" />
+            <element signature="n#chargerClasse#0;n#!!top" />
+            <element signature="e#748#913#0#PHP" />
+            <element signature="n#confirmPsw#0;n#!!top" />
+            <element signature="e#1227#1571#0#PHP" />
+            <element signature="n#createPDF#0;n#!!top" />
+            <element signature="e#2230#2309#0#PHP" />
+            <element signature="n#destroyCookie#0;n#!!top" />
+            <element signature="e#2529#2601#0#PHP" />
+            <element signature="n#displaySuperglobals#0;n#!!top" />
+            <element signature="e#3043#3220#0#PHP" />
+            <element signature="n#getPost#0;n#!!top" />
+            <element signature="e#4296#4438#0#PHP" />
+            <element signature="n#isEmpty#0;n#!!top" />
+            <element signature="e#4832#4995#0#PHP" />
+            <element signature="n#login#0;n#!!top" />
+            <element signature="e#5469#5576#0#PHP" />
+            <element signature="n#makeCookie#0;n#!!top" />
+            <element signature="e#5958#6066#0#PHP" />
+            <element signature="n#makeSession#0;n#!!top" />
+            <element signature="e#6365#6460#0#PHP" />
+            <element signature="n#makeTabSha1#0;n#!!top" />
+            <element signature="e#6751#6836#0#PHP" />
+            <element signature="n#refreshSession#0;n#!!top" />
+            <element signature="e#7581#7656#0#PHP" />
+            <element signature="n#routing#0;n#!!top" />
+            <element signature="n#sanitizeCookies#0;n#!!top" />
+            <element signature="n#sanitizeGet#0;n#!!top" />
+            <element signature="n#sanitizeSession#0;n#!!top" />
+            <element signature="e#9841#11926#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://432b4e04-c076-444f-a692-90f576e4cf7a/schema/rapports/table/rapport">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://432b4e04-c076-444f-a692-90f576e4cf7a/schema/rapports/table/cri">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
@@ -1280,24 +1264,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/editPassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/432b4e04-c076-444f-a692-90f576e4cf7a/console_7.sql" />
+    <entry file="das://432b4e04-c076-444f-a692-90f576e4cf7a/schema/rapports/table/date_cri">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/editPassword.php">
+    <entry file="file://$PROJECT_DIR$/model/createCri.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+        <state relative-caret-position="308">
+          <caret line="123" column="56" lean-forward="true" selection-start-line="123" selection-start-column="56" selection-end-line="123" selection-end-column="56" />
+          <folding>
+            <element signature="n#getTech#0;n#!!top" />
+            <element signature="n#getReseau#0;n#!!top" />
+            <element signature="n#getActions#0;n#!!top" />
+            <element signature="n#getEtatReseau#0;n#!!top" />
+            <element signature="n#insertRapport#0;n#!!top" />
+            <element signature="n#insertCri#0;n#!!top" />
+            <element signature="n#insertDatesInter#0;n#!!top" />
+            <element signature="n#insertRealiser#0;n#!!top" />
+            <element signature="n#insertPiece#0;n#!!top" />
+            <element signature="n#getLastId#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/profil.php">
+    <entry file="das://432b4e04-c076-444f-a692-90f576e4cf7a/schema/rapports/table/effectuer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/createCri.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="656">
+          <caret line="177" column="16" lean-forward="true" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
         </state>
       </provider>
     </entry>

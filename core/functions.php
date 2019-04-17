@@ -330,7 +330,7 @@
         return $session;
     }
     
-    function sendMail($refCri)
+    /*function sendMail($refCri)
     {
         // Instantiation and passing `true` enables exceptions
         $mail = new PHPMailer(true);
@@ -368,4 +368,4 @@
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
-    }
+    }*/
