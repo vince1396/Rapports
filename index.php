@@ -1,9 +1,13 @@
 <?php
     session_start();
     
+    // === To Do ===
     // TODO : SMTP Décimale
-    // TODO : Changer MDP
     // TODO : Mot de passe oublié
+    
+    // === Bug ===
+    // TODO : User cannot be deleted if it has rapports
+
     // =================================================================================================================
     require('pdfshift/init.php'); // Call PDFShift library
     // =================================================================================================================

@@ -14,6 +14,7 @@
                         <tr>
                             <th>Nom</th>
                             <th>Prénom</th>
+                            <th>Modifier Mdp</th>
                             <th>Supprimer</th>
                         </tr>
                     </thead>
@@ -25,6 +26,11 @@
                                 <tr>
                                     <td><?= $techs[$k]["nom"]; ?></td>
                                     <td><?= $techs[$k]["prenom"]; ?></td>
+                                    <td>
+                                        <a href="editPassword-<?= $techs[$k]["id_tech"]; ?>">
+                                            <i class="material-icons">edit</i>
+                                        </a>
+                                    </td>
                                     <td>
                                         <a href="admin-delete-<?= $techs[$k]["id_tech"]; ?>"
                                            onclick="return(confirm('Etes-vous sûr de vouloir supprimer cet utilisateur ?'));">

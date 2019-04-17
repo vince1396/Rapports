@@ -15,7 +15,6 @@
             else
             {
                 $post = makeTabSha1($post);
-                print_r($post);
                 $req = getInfosTech();
                 $rep = $req->fetch();
 
