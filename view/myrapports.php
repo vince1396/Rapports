@@ -36,9 +36,9 @@
                                         <td><?= $rapportsToDisplay[$k]["date_rapport"] ?>                    </td>
                                         <td><?= $rapportsToDisplay[$k]["prenom"]." ". $rapportsToDisplay[$k]["nom"] ?></td>
                                         <td>
-                                            <a href="myrapports-display-<?= $rapportsToDisplay[$k]["id_rapport"]?>">
+                                            <!--<a href="myrapports-display-">-->
                                                 <i class="material-icons">remove_red_eye</i>
-                                            </a>
+                                            <!--</a>-->
                                         </td>
 
                                         <td>
@@ -53,10 +53,10 @@
                                         </td>
 
                                         <td>
-                                            <!--<a href="myrapports-delete-"
-                                               onclick="return(confirm('Etes-vous sûr de vouloir supprimer cette entrée ?'));">-->
+                                            <a href="myrapports-delete-<?= $rapportsToDisplay[$k]["id_rapport"] ?>"
+                                               onclick="return(confirm('Etes-vous sûr de vouloir supprimer cette entrée ?'));">
                                                 <i class="material-icons">delete</i>
-                                            <!--</a>-->
+                                            </a>
                                         </td>
                                     </tr> <?php
                                 } ?>
