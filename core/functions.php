@@ -330,7 +330,7 @@
         return $session;
     }
     
-    /*function sendMail($refCri)
+    function sendMail($refCri)
     {
         // Instantiation and passing `true` enables exceptions
         $mail = new PHPMailer(true);
@@ -339,12 +339,12 @@
             //Server settings
             $mail->SMTPDebug = 0;                                       // Enable verbose debug output
             $mail->isSMTP();                                            // Set mailer to use SMTP
-            $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+            $mail->Host       = 'smtp.decimale.net';                       // Specify main and backup SMTP servers
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'vincent.cotini96@gmail.com';           // SMTP username
-            $mail->Password   = 'lcfgtizoxvkaeljf';                     // SMTP password
-            $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
-            $mail->Port       = 587;                                    // TCP port to connect to
+            $mail->Username   = 'vcotini@decimale.net';           // SMTP username
+            $mail->Password   = 'b6311963a';                     // SMTP password
+            $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
+            $mail->Port       = 465;                                    // TCP port to connect to
         
             //Recipients
             $mail->setFrom('vcotini@decimale.net', 'Rapports Decimale');
@@ -368,4 +368,4 @@
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
-    }*/
+    }
