@@ -43,14 +43,14 @@
                     <table class="stripped bordered center responsive-table">
                         <thead>
                             <tr>
-                                <th>Référence </th>
-                                <th>Client    </th>
-                                <th>Date      </th>
-                                <th>Technicien</th>
-                                <th>Afficher  </th>
-                                <th>Modifier  </th>
-                                <th>PDF       </th>
-                                <th>Supprimer </th>
+                                <th>Référence       </th>
+                                <th>Client          </th>
+                                <th>Date            </th>
+                                <th>Technicien      </th>
+                                <th>Envoi mail</th>
+                                <th>Modifier        </th>
+                                <th>PDF             </th>
+                                <th>Supprimer       </th>
                             </tr>
                         </thead>
 
