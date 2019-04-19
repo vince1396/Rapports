@@ -36,9 +36,9 @@
                                         <td><?= $rapportsToDisplay[$k]["date_rapport"] ?>                    </td>
                                         <td><?= $rapportsToDisplay[$k]["prenom"]." ". $rapportsToDisplay[$k]["nom"] ?></td>
                                         <td>
-                                            <!--<a href="myrapports-display-">-->
+                                            <a href="myrapports-display-<?= $rapportsToDisplay[$k]["id_rapport"] ?>">
                                                 <i class="material-icons">remove_red_eye</i>
-                                            <!--</a>-->
+                                            </a>
                                         </td>
 
                                         <td>
