@@ -337,17 +337,17 @@
     
         try {
             //Server settings
-            $mail->SMTPDebug = 0;                                          // Enable verbose debug output
-            $mail->isSMTP();                                               // Set mailer to use SMTP
-            $mail->Host       = 'smtp.ionos.fr';                          // Specify main and backup SMTP servers
+            $mail->SMTPDebug = 2;                                          // Enable verbose debug output
+            $mail->isSendmail();                                               // Set mailer to use SMTP
+            $mail->Host       = 'smtp.gmail.com';                           // Specify main and backup SMTP servers
             $mail->SMTPAuth   = true;                                      // Enable SMTP authentication
-            $mail->Username   = 'rapport.decimale@portfolio-vcotini.com';             // SMTP username
-            $mail->Password   = 'B6311963a!';                   // SMTP password
-            $mail->SMTPSecure = 'ssl';                                     // Enable TLS encryption, `ssl` also accepted
-            $mail->Port       = 465;                                       // TCP port to connect to
+            $mail->Username   = 'rapports.decimale@gmail.com';  // SMTP username
+            $mail->Password   = 'Decimale94rapportscri';                              // SMTP password
+            $mail->SMTPSecure = 'tls';                                     // Enable TLS encryption, `ssl` also accepted
+            $mail->Port       = 587;                                       // TCP port to connect to
             
             //Recipients
-            $mail->setFrom('rapport.decimale@portfolio-vcotini.com', 'Rapports Decimale');
+            $mail->setFrom('rapport.decimale@gmail.com', 'Rapports Decimale');
             $mail->addAddress('helpdesk@decimale.net', 'HelpDesk');     // Add a recipient
             //$mail->addReplyTo('info@example.com', 'Information');
             //$mail->addCC('cc@example.com');
