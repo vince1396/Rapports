@@ -1,3 +1,4 @@
 pdf/
 model/bdd.php
 .htaccess
+.gitsecret/keys/random_seed

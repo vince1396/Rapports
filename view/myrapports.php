@@ -7,6 +7,34 @@
               <h1>Mes rapports</h1>
           </div>
       </div>
+    
+      <?php
+          if(isset($mailSent))
+          {
+              if($mailSent == true)
+              {
+                  ?>
+                  <div class="row ">
+                      <div class="col s12 l6 offset-l3">
+                          <div class="card-panel green">
+                              <p>Le rapport a bien été envoyé</p>
+                          </div>
+                      </div>
+                  </div> <?php
+              }
+              else
+              {
+                  ?>
+                  <div class="row ">
+                      <div class="col s12 l6 offset-l3">
+                          <div class="card-panel red">
+                              <p>Le rapport n'a pas pu être envoyé</p>
+                          </div>
+                      </div>
+                  </div> <?php
+              }
+          }
+      ?>
       <?php
         if ($hasRapport)
         { ?>
@@ -37,7 +65,7 @@
                                         <td><?= $rapportsToDisplay[$k]["prenom"]." ". $rapportsToDisplay[$k]["nom"] ?></td>
                                         <td>
                                             <a href="myrapports-display-<?= $rapportsToDisplay[$k]["id_rapport"] ?>">
-                                                <i class="material-icons">remove_red_eye</i>
+                                                <i class="material-icons">email</i>
                                             </a>
                                         </td>
 

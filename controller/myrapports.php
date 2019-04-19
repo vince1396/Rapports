@@ -77,7 +77,7 @@
             }
             elseif ($opt == "display")
             {
-                sendMail("REF001");
+              $mailSent = sendMail("REF001");
             }
             else
             {

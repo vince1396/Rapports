@@ -339,16 +339,16 @@
             //Server settings
             $mail->SMTPDebug = 0;                                          // Enable verbose debug output
             $mail->isSMTP();                                               // Set mailer to use SMTP
-            $mail->Host       = 'smtp.decimale.net';                       // Specify main and backup SMTP servers
+            $mail->Host       = 'smtp.gmail.com';                          // Specify main and backup SMTP servers
             $mail->SMTPAuth   = true;                                      // Enable SMTP authentication
-            $mail->Username   = 'vcotini@decimale.net';                    // SMTP username
-            $mail->Password   = 'b6311963a';                               // SMTP password
-            $mail->SMTPSecure = 'ssl';                                     // Enable TLS encryption, `ssl` also accepted
-            $mail->Port       = 465;                                       // TCP port to connect to
+            $mail->Username   = 'rapports.decimale@gmail.com';             // SMTP username
+            $mail->Password   = 'Decimale94rapportscri';                   // SMTP password
+            $mail->SMTPSecure = 'tls';                                     // Enable TLS encryption, `ssl` also accepted
+            $mail->Port       = 587;                                       // TCP port to connect to
         
             //Recipients
-            $mail->setFrom('vcotini@decimale.net', 'Rapports Decimale');
-            $mail->addAddress('vincent.cotini96@gmail.com', 'Vincent');     // Add a recipient
+            $mail->setFrom('rapports.decimale@gmail.com', 'Rapports Decimale');
+            $mail->addAddress('helpdesk@decimale.net', 'HelpDesk');     // Add a recipient
             //$mail->addReplyTo('info@example.com', 'Information');
             //$mail->addCC('cc@example.com');
             //$mail->addBCC('bcc@example.com');
@@ -364,8 +364,12 @@
             $mail->AltBody = 'Voici votre rapport en PDF (Plain text)';
         
             $mail->send();
-            echo 'Message has been sent';
-        } catch (Exception $e) {
+            return true;
+            
+        }
+        catch (Exception $e)
+        {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            return false;
         }
     }
