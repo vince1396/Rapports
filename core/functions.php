@@ -337,14 +337,14 @@
     
         try {
             //Server settings
-            $mail->SMTPDebug = 0;                                       // Enable verbose debug output
-            $mail->isSMTP();                                            // Set mailer to use SMTP
+            $mail->SMTPDebug = 0;                                          // Enable verbose debug output
+            $mail->isSMTP();                                               // Set mailer to use SMTP
             $mail->Host       = 'smtp.decimale.net';                       // Specify main and backup SMTP servers
-            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'vcotini@decimale.net';           // SMTP username
-            $mail->Password   = 'b6311963a';                     // SMTP password
-            $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
-            $mail->Port       = 465;                                    // TCP port to connect to
+            $mail->SMTPAuth   = true;                                      // Enable SMTP authentication
+            $mail->Username   = 'vcotini@decimale.net';                    // SMTP username
+            $mail->Password   = 'b6311963a';                               // SMTP password
+            $mail->SMTPSecure = 'ssl';                                     // Enable TLS encryption, `ssl` also accepted
+            $mail->Port       = 465;                                       // TCP port to connect to
         
             //Recipients
             $mail->setFrom('vcotini@decimale.net', 'Rapports Decimale');
