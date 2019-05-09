@@ -316,7 +316,7 @@
                     <div class="row">
                         <div class="col s12">
                             <?php
-                                if($cri["newInter"] == "ouiInter")
+                                if($cri["new_inter"] == "ouiInter")
                                 {
                                     echo "<b>OUI</b>";
                                 }
