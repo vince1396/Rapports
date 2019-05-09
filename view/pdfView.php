@@ -188,7 +188,7 @@
                 <div class="col s12 blue-border-top ">
                     <div class="row">
                         <div class="col s12">
-                            <h5>Problème(s) rencontré(s) : </h5>
+                            <h5>Rappel du contexte : </h5>
                         </div>
                     </div>
                     <div class="row">
