@@ -21,48 +21,54 @@
     ?>
     
     <?php
-        if($_GET["p"] == "rapportType" OR $_GET["p"] == "createCri")
-        { ?>
-            <script>
-                $(function () {
-                    $(".rapportType").addClass("active");
-                });
-            </script>
-            <?php
-        }
         
-        if($_GET["p"] == "myrapports" OR $_GET["p"] == "editRapport")
+        if(isset($_GET["p"]))
         {
-            ?>
-            <script>
-                $(function () {
-                    $(".myrapports").addClass("active");
-                });
-            </script>
+            if($_GET["p"] == "rapportType" OR $_GET["p"] == "createCri")
+            { ?>
+                <script>
+                    $(function () {
+                        $(".rapportType").addClass("active");
+                    });
+                </script>
             <?php
-        }
+                }
         
-        if($_GET["p"] == "profil")
-        {
+                if($_GET["p"] == "myrapports" OR $_GET["p"] == "editRapport")
+                {
             ?>
-            <script>
-                $(function () {
-                    $(".profil").addClass("active");
-                });
-            </script>
+                <script>
+                    $(function () {
+                        $(".myrapports").addClass("active");
+                    });
+                </script>
             <?php
-        }
+                }
         
-        if($_GET["p"] == "admin" AND $session["lvl"] == 1)
-        {
+                if($_GET["p"] == "profil")
+                {
             ?>
-            <script>
-                $(function () {
-                    $(".admin").addClass("active");
-                });
-            </script>
+                <script>
+                    $(function () {
+                        $(".profil").addClass("active");
+                    });
+                </script>
             <?php
+                }
+        
+                if($_GET["p"] == "admin" AND $session["lvl"] == 1)
+                {
+            ?>
+                <script>
+                    $(function () {
+                        $(".admin").addClass("active");
+                    });
+                </script>
+                <?php
+            }
+    
         }
+
     ?>
 
 </footer>

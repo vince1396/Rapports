@@ -119,6 +119,12 @@
                                     }
                                 ?>
                             </p>
+                            <p>
+                                <?= $rapport["ville"] ?>
+                            </p>
+                            <p>
+                                <?= $rapport["cp"] ?>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -318,6 +324,7 @@
                                 {
                                     echo "<b>NON</b>";
                                 }
+                                echo $cri["newInter"];
                             ?>
                         </div>
                     </div>
